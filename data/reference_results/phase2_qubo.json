@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "objective": "min_active_hosts",
+  "method": "enumerate_all_xy_and_minimize_slack_exactly",
+  "qiskit_version": "2.5.2",
+  "qiskit_optimization_version": "0.7.0",
+  "results": [
+    {
+      "instance_id": "p0_reference",
+      "base_bits": 10,
+      "slack_bits": 13,
+      "qubo_bits": 23,
+      "penalty": 3.0,
+      "checked_base_vectors": 1024,
+      "min_energy": 2.0,
+      "original_best_objective": 2,
+      "minimizer_xy_count": 1,
+      "all_minimizers_feasible": true,
+      "passed": true,
+      "coefficient_checks": 277,
+      "variable_names": [
+        "x_0_0",
+        "x_0_1",
+        "x_1_0",
+        "x_1_1",
+        "x_2_0",
+        "x_2_1",
+        "x_3_0",
+        "x_3_1",
+        "y_0",
+        "y_1",
+        "s_0_cpu_0",
+        "s_0_cpu_1",
+        "s_0_cpu_2",
+        "s_0_ram_0",
+        "s_0_ram_1",
+        "s_0_ram_2",
+        "s_1_cpu_0",
+        "s_1_cpu_1",
+        "s_1_cpu_2",
+        "s_1_ram_0",
+        "s_1_ram_1",
+        "s_1_ram_2",
+        "s_1_ram_3"
+      ],
+      "example_minimizer": {
+        "bits": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "energy": 2.0,
+        "decoded": {
+          "feasible": true,
+          "objective": 2,
+          "one_hot_ok": true,
+          "capacity_ok": true,
+          "x": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "y": [
+            1,
+            1
+          ],
+          "usage": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "instance_id": "p1_choice",
+      "base_bits": 10,
+      "slack_bits": 10,
+      "qubo_bits": 20,
+      "penalty": 3.0,
+      "checked_base_vectors": 1024,
+      "min_energy": 1.0,
+      "original_best_objective": 1,
+      "minimizer_xy_count": 1,
+      "all_minimizers_feasible": true,
+      "passed": true,
+      "coefficient_checks": 211,
+      "variable_names": [
+        "x_0_0",
+        "x_0_1",
+        "x_1_0",
+        "x_1_1",
+        "x_2_0",
+        "x_2_1",
+        "x_3_0",
+        "x_3_1",
+        "y_0",
+        "y_1",
+        "s_0_cpu_0",
+        "s_0_cpu_1",
+        "s_0_cpu_2",
+        "s_0_ram_0",
+        "s_0_ram_1",
+        "s_0_ram_2",
+        "s_1_cpu_0",
+        "s_1_cpu_1",
+        "s_1_ram_0",
+        "s_1_ram_1"
+      ],
+      "example_minimizer": {
+        "bits": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "energy": 1.0,
+        "decoded": {
+          "feasible": true,
+          "objective": 1,
+          "one_hot_ok": true,
+          "capacity_ok": true,
+          "x": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "y": [
+            1,
+            0
+          ],
+          "usage": [
+            [
+              5,
+              5
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "instance_id": "p1_tight",
+      "base_bits": 10,
+      "slack_bits": 8,
+      "qubo_bits": 18,
+      "penalty": 3.0,
+      "checked_base_vectors": 1024,
+      "min_energy": 2.0,
+      "original_best_objective": 2,
+      "minimizer_xy_count": 4,
+      "all_minimizers_feasible": true,
+      "passed": true,
+      "coefficient_checks": 172,
+      "variable_names": [
+        "x_0_0",
+        "x_0_1",
+        "x_1_0",
+        "x_1_1",
+        "x_2_0",
+        "x_2_1",
+        "x_3_0",
+        "x_3_1",
+        "y_0",
+        "y_1",
+        "s_0_cpu_0",
+        "s_0_cpu_1",
+        "s_0_ram_0",
+        "s_0_ram_1",
+        "s_1_cpu_0",
+        "s_1_cpu_1",
+        "s_1_ram_0",
+        "s_1_ram_1"
+      ],
+      "example_minimizer": {
+        "bits": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "energy": 2.0,
+        "decoded": {
+          "feasible": true,
+          "objective": 2,
+          "one_hot_ok": true,
+          "capacity_ok": true,
+          "x": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "y": [
+            1,
+            1
+          ],
+          "usage": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "instance_id": "p1_infeasible",
+      "base_bits": 10,
+      "slack_bits": 10,
+      "qubo_bits": 20,
+      "penalty": 3.0,
+      "checked_base_vectors": 1024,
+      "min_energy": 5.0,
+      "original_best_objective": null,
+      "minimizer_xy_count": 12,
+      "all_minimizers_feasible": false,
+      "passed": true,
+      "coefficient_checks": 211,
+      "variable_names": [
+        "x_0_0",
+        "x_0_1",
+        "x_1_0",
+        "x_1_1",
+        "x_2_0",
+        "x_2_1",
+        "x_3_0",
+        "x_3_1",
+        "y_0",
+        "y_1",
+        "s_0_cpu_0",
+        "s_0_cpu_1",
+        "s_0_cpu_2",
+        "s_0_ram_0",
+        "s_0_ram_1",
+        "s_0_ram_2",
+        "s_1_cpu_0",
+        "s_1_cpu_1",
+        "s_1_ram_0",
+        "s_1_ram_1"
+      ],
+      "example_minimizer": {
+        "bits": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "energy": 5.0,
+        "decoded": {
+          "feasible": false,
+          "objective": null,
+          "one_hot_ok": false,
+          "capacity_ok": true,
+          "x": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "y": [
+            1,
+            1
+          ],
+          "usage": [
+            [
+              4,
+              4
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}
