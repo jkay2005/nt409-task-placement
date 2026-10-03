@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "phase3_original_instances_single_seed_pilot",
+  "created_at_utc": "2026-10-02T14:33:39.054126+00:00",
+  "selected_instances": [
+    "p1_infeasible"
+  ],
+  "runs": [
+    {
+      "instance_id": "p1_infeasible",
+      "status": "completed",
+      "report": "data/reference_results/phase3_runs/p1_infeasible_p1_seed42_20261002T143240425687Z.json"
+    }
+  ],
+  "summary": [
+    {
+      "instance": "p1_infeasible",
+      "qubits": 20,
+      "status": "completed",
+      "seconds": 274.9952396000008,
+      "evals": 26,
+      "exact best hosts": null,
+      "observed best hosts": null,
+      "feasible probability": 0,
+      "optimal placement probability": null
+    }
+  ]
+}

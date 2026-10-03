@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "scope": "phase3_original_instances_single_seed_pilot",
+  "created_at_utc": "2026-10-03T09:09:33.611435+00:00",
+  "completed_instances": [
+    "p0_reference"
+  ],
+  "runs": [
+    {
+      "instance_id": "p0_reference",
+      "status": "completed",
+      "report": "data/reference_results/phase3_runs/p0_reference_p1_seed42_20261003T090852250115Z.json"
+    }
+  ],
+  "summary": [
+    {
+      "instance": "p0_reference",
+      "qubits": 23,
+      "status": "completed",
+      "seconds": 14.699606700000004,
+      "evals": 29,
+      "Python peak RSS MiB": 302.82421875,
+      "exact best hosts": 2,
+      "observed best hosts": null,
+      "feasible probability": 0,
+      "optimal placement probability": 0
+    }
+  ]
+}
