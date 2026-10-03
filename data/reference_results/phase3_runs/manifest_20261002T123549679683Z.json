@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "phase3_original_instances_single_seed_pilot",
+  "created_at_utc": "2026-10-02T12:35:49.679683+00:00",
+  "selected_instances": [
+    "p1_tight"
+  ],
+  "runs": [
+    {
+      "instance_id": "p1_tight",
+      "status": "completed",
+      "report": "data/reference_results/phase3_runs/p1_tight_p1_seed42_20261002T123549603912Z.json"
+    }
+  ],
+  "summary": [
+    {
+      "instance": "p1_tight",
+      "qubits": 18,
+      "status": "completed",
+      "seconds": 78.04477559999941,
+      "evals": 31,
+      "exact best hosts": 2,
+      "observed best hosts": 2,
+      "feasible probability": 0.021484375,
+      "optimal placement probability": 0.021484375
+    }
+  ]
+}

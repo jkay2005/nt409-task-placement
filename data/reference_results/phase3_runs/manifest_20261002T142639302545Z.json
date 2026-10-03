@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "phase3_original_instances_single_seed_pilot",
+  "created_at_utc": "2026-10-02T14:26:39.301540+00:00",
+  "selected_instances": [
+    "p1_choice"
+  ],
+  "runs": [
+    {
+      "instance_id": "p1_choice",
+      "status": "completed",
+      "report": "data/reference_results/phase3_runs/p1_choice_p1_seed42_20261002T135038695945Z.json"
+    }
+  ],
+  "summary": [
+    {
+      "instance": "p1_choice",
+      "qubits": 20,
+      "status": "completed",
+      "seconds": 302.6310186999981,
+      "evals": 28,
+      "exact best hosts": 1,
+      "observed best hosts": 1,
+      "feasible probability": 0.017578125,
+      "optimal placement probability": 0.0009765625
+    }
+  ]
+}
