@@ -1,0 +1,9 @@
+{
+  "notebook_seconds_excluding_previously_completed_audit": 7.424092691999249,
+  "audit_seconds": 261.7208277480004,
+  "folder": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4j_summary/summary_20261011T054442585153Z",
+  "archive": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4j_summary/summary_20261011T054442585153Z/summary_20261011T054442585153Z.zip",
+  "code_cells": 8,
+  "quantum_jobs_submitted": 0,
+  "note": "Linux validation only. Same archive fully semantically audited once before notebook execution; that audit result reused in cell2. IPython display replaced with text and Matplotlib Agg; no GUI Jupyter kernel."
+}

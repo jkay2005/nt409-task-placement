@@ -1,0 +1,13 @@
+﻿instance_id,role,method,feasible_probability,optimal_probability,optimal_batch_1024_probability,source
+p1_choice,benchmark,uniform_one_hot_slack_v1_1,0.01171875,0.0009765625,0.6323002605887288,analytic uniform on encoded bits; decoded placement quality
+p1_tight,benchmark,uniform_one_hot_slack_v1_1,0.00390625,0.00390625,0.9818272653594924,analytic uniform on encoded bits; decoded placement quality
+p0_reference,benchmark,uniform_one_hot_slack_v1_1,0.0009765625,0.0009765625,0.6323002605887288,analytic uniform on encoded bits; decoded placement quality
+p1_infeasible,negative_control,uniform_one_hot_slack_v1_1,0.0,,,analytic uniform on encoded bits; decoded placement quality
+p1_choice,benchmark,uniform_two_host_binary_v1,0.1875,0.015625,0.9999999008188177,analytic uniform on encoded bits; decoded placement quality
+p1_tight,benchmark,uniform_two_host_binary_v1,0.0625,0.0625,1.0,analytic uniform on encoded bits; decoded placement quality
+p0_reference,benchmark,uniform_two_host_binary_v1,0.015625,0.015625,0.9999999008188177,analytic uniform on encoded bits; decoded placement quality
+p1_infeasible,negative_control,uniform_two_host_binary_v1,0.0,,,analytic uniform on encoded bits; decoded placement quality
+p1_choice,benchmark,random_assignment_y_inferred,0.6875,0.0625,1.0,"exact enumeration of host choices, no repair of overloaded assignments"
+p1_tight,benchmark,random_assignment_y_inferred,0.25,0.25,1.0,"exact enumeration of host choices, no repair of overloaded assignments"
+p0_reference,benchmark,random_assignment_y_inferred,0.0625,0.0625,1.0,"exact enumeration of host choices, no repair of overloaded assignments"
+p1_infeasible,negative_control,random_assignment_y_inferred,0.0,,,"exact enumeration of host choices, no repair of overloaded assignments"

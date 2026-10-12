@@ -1,0 +1,54 @@
+[
+  {
+    "file": "placement.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "qubo.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "ising.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "qaoa_experiment.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "penalty_analysis.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "independent_campaign.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "scaling_campaign.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "depth_campaign.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "qaoa_optimizer.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "convergence_diagnostics.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "convergence_campaign.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "benchmark_a_runner.py",
+    "matches_historical_source_ignoring_line_endings": true
+  },
+  {
+    "file": "benchmark_a_campaign.py",
+    "matches_historical_source_ignoring_line_endings": true
+  }
+]

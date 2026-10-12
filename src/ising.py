@@ -14,6 +14,44 @@ def build_ising(bundle):
     return operator, float(offset)
 
 
+def scale_ising(operator, method="none"):
+    """Change execution units only; raw QUBO coefficients remain unchanged.
+
+    Identity coefficients contribute a global phase and do not set the scale.
+    A zero/constant Hamiltonian uses scale 1 rather than dividing by zero.
+    """
+    if method not in ("none", "max_abs"):
+        raise ValueError("hamiltonian_scaling must be 'none' or 'max_abs'.")
+    coefficients = [abs(complex(c)) for label, c in operator.to_list() if set(label) != {"I"}]
+    maximum = float(max(coefficients, default=0))
+    if not np.isfinite(maximum):
+        raise ValueError("Hamiltonian coefficients must be finite.")
+    scale = maximum if method == "max_abs" and maximum > 0 else 1.0
+    return operator / scale, {
+        "method": method, "scale": scale,
+        "raw_max_abs_coefficient": maximum,
+        "execution_max_abs_coefficient": maximum / scale,
+    }
+
+
+def scaled_qaoa_point(point, reps, scale):
+    """Map gamma_raw to gamma_execution=scale*gamma_raw, preserving beta.
+
+    Qiskit parameter order is beta[0..p-1], gamma[0..p-1]. Use 1/scale
+    for the inverse mapping. No optimizer bounds or steps are transformed.
+    """
+    point = np.asarray(point, dtype=float)
+    if (type(reps) is not int or reps < 1 or point.shape != (2 * reps,)
+            or not np.isfinite(point).all() or isinstance(scale, (bool, np.bool_))
+            or not np.isfinite(scale) or scale <= 0):
+        raise ValueError("Expected 2*p finite angles and a positive finite scale.")
+    result = point.copy()
+    result[reps:] *= scale
+    if not np.isfinite(result).all():
+        raise ValueError("Scaled angles must remain finite.")
+    return result.tolist()
+
+
 def integer_to_bits(value, num_bits):
     """Qiskit qubit k corresponds to QUBO variable k (least-significant bit)."""
     if isinstance(value, str):

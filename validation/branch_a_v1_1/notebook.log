@@ -1,0 +1,159 @@
+
+CELL imports
+Python: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3
+RAM available (GiB): 8.93
+
+CELL campaign
+RESUME_DIR = 'data/reference_results/phase4h_benchmark_a/benchmark_a_20261010T075609346675Z'
+Benchmark: nt409_benchmark_v1_1
+Design: 9c9439efceb98d605c4b3c9f79f1d50c24c66048bfb1924e36e18949dcfcb4cd
+Phiên này: ['p1_choice', 'p1_tight', 'p0_reference']
+Dữ liệu/config đã khóa; 45 lượt chính thức + 1 negative-control smoke.
+VALIDATION ONLY: select p1_choice for this session; full matrix remains45.
+
+CELL models
+  instance_id             role  qubits  optimal_hosts  qubo_min  model_reference_seconds  cache_hit
+    p1_choice        benchmark      20            1.0       1.0                 1.088127      False
+     p1_tight        benchmark      18            2.0       2.0                 1.020291      False
+ p0_reference        benchmark      23            2.0       2.0                 1.065753      False
+p1_infeasible negative_control      20            NaN       5.0                 1.053756      False
+p                  initial_point
+1                     [0.3, 1.0]
+2           [0.3, 0.0, 1.0, 0.0]
+3 [0.3, 0.0, 0.0, 1.0, 0.0, 0.0]
+Seed training: 70–74 | seed cuối: 100070–100074 | shots cuối: 1024
+
+CELL preflight
+Probe p1_choice p=1
+passed 213.94036008296223
+Probe p1_choice p=2
+passed 192.76926192898213
+Probe p1_choice p=3
+passed 339.7299969540063
+ instance  p status  estimated_solver_seconds  peak_rss_mib                                                                         reason
+p1_choice  1 passed                213.940360    203.421875 Probe estimate includes a 1.5 safety factor; this is not a guaranteed runtime.
+p1_choice  2 passed                192.769262    206.175781 Probe estimate includes a 1.5 safety factor; this is not a guaranteed runtime.
+p1_choice  3 passed                339.729997    221.050781 Probe estimate includes a 1.5 safety factor; this is not a guaranteed runtime.
+PASS preflight cho các instance đã chọn. Thời gian thực tế có thể khác ước lượng.
+
+CELL runs
+VALIDATION ONLY: inject insufficient available RAM to test saved partial export.
+Run p1_infeasible p=1 seed=70 (negative_control)
+resource_blocked before_setup: available=0.000 GiB, RSS=0.200 GiB; resource policy exceeded.
+Hoàn tất chính thức: 0/45
+  instance_id  p  seed             role           status  attempt_count  nfev                                                                 stop_reason
+    p1_choice  1    70        benchmark          pending              0   NaN                                                                        None
+    p1_choice  1    71        benchmark          pending              0   NaN                                                                        None
+    p1_choice  1    72        benchmark          pending              0   NaN                                                                        None
+    p1_choice  1    73        benchmark          pending              0   NaN                                                                        None
+    p1_choice  1    74        benchmark          pending              0   NaN                                                                        None
+    p1_choice  2    70        benchmark          pending              0   NaN                                                                        None
+    p1_choice  2    71        benchmark          pending              0   NaN                                                                        None
+    p1_choice  2    72        benchmark          pending              0   NaN                                                                        None
+    p1_choice  2    73        benchmark          pending              0   NaN                                                                        None
+    p1_choice  2    74        benchmark          pending              0   NaN                                                                        None
+    p1_choice  3    70        benchmark          pending              0   NaN                                                                        None
+    p1_choice  3    71        benchmark          pending              0   NaN                                                                        None
+    p1_choice  3    72        benchmark          pending              0   NaN                                                                        None
+    p1_choice  3    73        benchmark          pending              0   NaN                                                                        None
+    p1_choice  3    74        benchmark          pending              0   NaN                                                                        None
+     p1_tight  1    70        benchmark          pending              0   NaN                                                                        None
+     p1_tight  1    71        benchmark          pending              0   NaN                                                                        None
+     p1_tight  1    72        benchmark          pending              0   NaN                                                                        None
+     p1_tight  1    73        benchmark          pending              0   NaN                                                                        None
+     p1_tight  1    74        benchmark          pending              0   NaN                                                                        None
+     p1_tight  2    70        benchmark          pending              0   NaN                                                                        None
+     p1_tight  2    71        benchmark          pending              0   NaN                                                                        None
+     p1_tight  2    72        benchmark          pending              0   NaN                                                                        None
+     p1_tight  2    73        benchmark          pending              0   NaN                                                                        None
+     p1_tight  2    74        benchmark          pending              0   NaN                                                                        None
+     p1_tight  3    70        benchmark          pending              0   NaN                                                                        None
+     p1_tight  3    71        benchmark          pending              0   NaN                                                                        None
+     p1_tight  3    72        benchmark          pending              0   NaN                                                                        None
+     p1_tight  3    73        benchmark          pending              0   NaN                                                                        None
+     p1_tight  3    74        benchmark          pending              0   NaN                                                                        None
+ p0_reference  1    70        benchmark          pending              0   NaN                                                                        None
+ p0_reference  1    71        benchmark          pending              0   NaN                                                                        None
+ p0_reference  1    72        benchmark          pending              0   NaN                                                                        None
+ p0_reference  1    73        benchmark          pending              0   NaN                                                                        None
+ p0_reference  1    74        benchmark          pending              0   NaN                                                                        None
+ p0_reference  2    70        benchmark          pending              0   NaN                                                                        None
+ p0_reference  2    71        benchmark          pending              0   NaN                                                                        None
+ p0_reference  2    72        benchmark          pending              0   NaN                                                                        None
+ p0_reference  2    73        benchmark          pending              0   NaN                                                                        None
+ p0_reference  2    74        benchmark          pending              0   NaN                                                                        None
+ p0_reference  3    70        benchmark          pending              0   NaN                                                                        None
+ p0_reference  3    71        benchmark          pending              0   NaN                                                                        None
+ p0_reference  3    72        benchmark          pending              0   NaN                                                                        None
+ p0_reference  3    73        benchmark          pending              0   NaN                                                                        None
+ p0_reference  3    74        benchmark          pending              0   NaN                                                                        None
+p1_infeasible  1    70 negative_control resource_blocked              1   0.0 before_setup: available=0.000 GiB, RSS=0.200 GiB; resource policy exceeded.
+
+CELL audit
+ instance_id  p  seed  status found_valid selected_objective optimality_gap  feasible_probability_percent  optimal_probability_percent mode_tie_count optimizer_success  total_seconds
+   p1_choice  1    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  1    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  1    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  1    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  1    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  2    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  2    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  2    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  2    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  2    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  3    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  3    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  3    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  3    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+   p1_choice  3    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  1    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  1    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  1    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  1    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  1    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  2    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  2    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  2    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  2    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  2    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  3    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  3    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  3    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  3    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+    p1_tight  3    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  1    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  1    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  1    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  1    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  1    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  2    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  2    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  2    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  2    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  2    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  3    70 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  3    71 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  3    72 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  3    73 pending        None               None           None                           NaN                          NaN           None              None            NaN
+p0_reference  3    74 pending        None               None           None                           NaN                          NaN           None              None            NaN
+  instance_id           status found_valid found_optimal                                                                 stop_reason
+p1_infeasible resource_blocked        None          None before_setup: available=0.000 GiB, RSS=0.200 GiB; resource policy exceeded.
+
+CELL summary
+    instance  p  planned  completed  pending  stopped_or_error  valid_runs  optimal_runs  mean_measured_Popt_percent  mean_runner_seconds
+   p1_choice  1        5          0        5                 0           0             0                         NaN                  NaN
+   p1_choice  2        5          0        5                 0           0             0                         NaN                  NaN
+   p1_choice  3        5          0        5                 0           0             0                         NaN                  NaN
+    p1_tight  1        5          0        5                 0           0             0                         NaN                  NaN
+    p1_tight  2        5          0        5                 0           0             0                         NaN                  NaN
+    p1_tight  3        5          0        5                 0           0             0                         NaN                  NaN
+p0_reference  1        5          0        5                 0           0             0                         NaN                  NaN
+p0_reference  2        5          0        5                 0           0             0                         NaN                  NaN
+p0_reference  3        5          0        5                 0           0             0                         NaN                  NaN
+
+CELL export
+PARTIAL — 0/45 formal runs completed. ZIP giữ đầy đủ trạng thái; chưa nghiệm thu xong.
+Gửi ZIP: data/reference_results/phase4h_benchmark_a/benchmark_a_20261010T075609346675Z/benchmark_a_20261010T075609346675Z.zip
+RESUME_DIR = 'data/reference_results/phase4h_benchmark_a/benchmark_a_20261010T075609346675Z'
+Save As: 16_qaoa_unified_benchmark_a_executed.ipynb
+PASS: all8 code cells, saved failure,45pending export, and full p3 report audit.

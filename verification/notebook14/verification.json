@@ -1,0 +1,85 @@
+{
+  "code_cells": 10,
+  "full_default_trials": 2,
+  "resume_no_rerun": true,
+  "manifest": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4f_cvar_runs/cvar_choice_20261009T124740997362Z.json",
+  "export": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4f_cvar_runs/cvar_choice_20261009T124740997362Z.zip",
+  "comparisons": [
+    {
+      "start": "common",
+      "CVaR_at_mean": 14.613494680167628,
+      "CVaR_at_cvar": 12.17912218128804,
+      "E_mean_at_mean": 59.293627997229294,
+      "E_mean_at_cvar": 85.33044890869087,
+      "P_opt_mean_percent": 0.12577054491206338,
+      "P_opt_cvar_percent": 0.15235254754049696,
+      "delta_P_opt_pp": 0.026582002628433576,
+      "P_feasible_mean_percent": 2.743211886452936,
+      "P_feasible_cvar_percent": 2.1139211379374663,
+      "P_ground_mean_percent": 0.0006558163560633287,
+      "P_ground_cvar_percent": 0.005157652067139491,
+      "optimal_shots_mean": 4,
+      "optimal_shots_cvar": 1,
+      "E_eval_cvar": 84.060546875,
+      "nfev_mean": 151,
+      "nfev_cvar": 200,
+      "success_cvar": false,
+      "stop_cvar": "Return from COBYLA because the objective function has been evaluated MAXFUN times.",
+      "solver_seconds_cvar": 26.808821148000334,
+      "peak_rss_mib": 281.76953125
+    },
+    {
+      "start": "alternative",
+      "CVaR_at_mean": 14.613888020369416,
+      "CVaR_at_cvar": 12.17797767138983,
+      "E_mean_at_mean": 59.29362364000676,
+      "E_mean_at_cvar": 87.35655299835884,
+      "P_opt_mean_percent": 0.125774162617793,
+      "P_opt_cvar_percent": 0.15035221096379672,
+      "delta_P_opt_pp": 0.02457804834600371,
+      "P_feasible_mean_percent": 2.7433521703726633,
+      "P_feasible_cvar_percent": 2.099127193864469,
+      "P_ground_mean_percent": 0.0006557237195597034,
+      "P_ground_cvar_percent": 0.0051405621539776574,
+      "optimal_shots_mean": 1,
+      "optimal_shots_cvar": 4,
+      "E_eval_cvar": 84.2197265625,
+      "nfev_mean": 105,
+      "nfev_cvar": 178,
+      "success_cvar": true,
+      "stop_cvar": "Return from COBYLA because the trust region radius reaches its lower bound.",
+      "solver_seconds_cvar": 30.055883167000047,
+      "peak_rss_mib": 286.78515625
+    }
+  ],
+  "runtime_changes": {
+    "platform": {
+      "baseline": "Windows-11-10.0.26200-SP0",
+      "current": "Linux-6.18.44-x86_64-with-glibc2.39"
+    },
+    "numpy_version": {
+      "baseline": "2.5.3",
+      "current": "2.3.5"
+    },
+    "scipy_version": {
+      "baseline": "1.18.1",
+      "current": "1.17.0"
+    }
+  },
+  "independent_final_audits": [
+    {
+      "start": "common",
+      "direct_quantile_cvar": 12.179122181288044,
+      "quantile_energy": 16.0,
+      "mass_below_quantile": 0.0873449752862073,
+      "seeded_counts_replay": true
+    },
+    {
+      "start": "alternative",
+      "direct_quantile_cvar": 12.177977671389844,
+      "quantile_energy": 16.0,
+      "mass_below_quantile": 0.08729655843971149,
+      "seeded_counts_replay": true
+    }
+  ]
+}
