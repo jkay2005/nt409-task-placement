@@ -1,0 +1,10 @@
+{
+  "status": "pilot_complete",
+  "completed": 14,
+  "planned": 14,
+  "projected_90_trial_seconds": 15800.14822125001,
+  "within_six_hours_by_projection": true,
+  "projection_scope": "15 test trials per size/p times development median; excludes future preparation and failures; cost structure may differ; not a runtime guarantee",
+  "depth_selection": "none",
+  "test_campaign_started": false
+}

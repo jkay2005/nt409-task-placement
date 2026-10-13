@@ -1,0 +1,2034 @@
+{
+  "schema_version": 1,
+  "scope": "phase4k_three_host_pilot_v2",
+  "campaign_id": "20261012T073256184704Z",
+  "design": {
+    "benchmark": {
+      "manifest": {
+        "schema_version": 1,
+        "scope": "nt409_three_host_benchmark_v2",
+        "protocol_path": "protocol.json",
+        "protocol_canonical_sha256": "f655cbcb5e7f8b37a1168d4be1fe765553ced12576846a682ddc0fe0b0167e68",
+        "pool_statistics": {
+          "4": {
+            "raw_candidates": 508,
+            "informative_candidates": 146,
+            "informative_heterogeneous_cpu_ram_swap_unique": 77
+          },
+          "5": {
+            "raw_candidates": 82,
+            "informative_candidates": 47,
+            "informative_heterogeneous_cpu_ram_swap_unique": 25
+          }
+        },
+        "instances": [
+          {
+            "instance_id": "a3_dev_n4",
+            "role": "development",
+            "path": "instances/a3_dev_n4.json",
+            "canonical_sha256": "ecee2ce0d65ee5be4cc1c057c3286ecd331ffb54f72c4b0bfca94b269945747e",
+            "structural_signature": "0edd6a89e387298d3722f97dd5fc4b80dfe441811268d2da0db2a9a940958940",
+            "num_tasks": 4,
+            "num_qubits": 23,
+            "optimum": 2,
+            "uniform_batch_success": 0.6323002605887288,
+            "uniform_optimal_probability": 0.0009765625
+          },
+          {
+            "instance_id": "a3_test_n4_1",
+            "role": "test",
+            "path": "instances/a3_test_n4_1.json",
+            "canonical_sha256": "a97d31bcf5e36fbfb47c2f8dca4f0db20c2f7040a76a6aa04ad99099b9fa9b4f",
+            "structural_signature": "965d9140b80c259e7ef119685fcb07622930841eefd402fe31bb14b56e565d73",
+            "num_tasks": 4,
+            "num_qubits": 20,
+            "optimum": 2,
+            "uniform_batch_success": 0.39354339926296605,
+            "uniform_optimal_probability": 0.00048828125
+          },
+          {
+            "instance_id": "a3_test_n4_2",
+            "role": "test",
+            "path": "instances/a3_test_n4_2.json",
+            "canonical_sha256": "b802b81eda240561125770f7da9f0376a3f80a05b1614bf935297ca497526a22",
+            "structural_signature": "624b56444550330264e474a62aad9f32fe686fe7fe6e5b6f9d4a2047315e7a18",
+            "num_tasks": 4,
+            "num_qubits": 22,
+            "optimum": 2,
+            "uniform_batch_success": 0.6323002605887288,
+            "uniform_optimal_probability": 0.0009765625
+          },
+          {
+            "instance_id": "a3_test_n4_3",
+            "role": "test",
+            "path": "instances/a3_test_n4_3.json",
+            "canonical_sha256": "acfdb7c6e642f8b81a5b4fbcd411672916715d053992627fc9a3d1c77c8f5f4d",
+            "structural_signature": "be5b2cd0403fe0b20d05e68277240dbd9bf3e025ac3e408bc6aa653d23bd1f7c",
+            "num_tasks": 4,
+            "num_qubits": 22,
+            "optimum": 2,
+            "uniform_batch_success": 0.6323002605887288,
+            "uniform_optimal_probability": 0.0009765625
+          },
+          {
+            "instance_id": "a3_dev_n5",
+            "role": "development",
+            "path": "instances/a3_dev_n5.json",
+            "canonical_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+            "structural_signature": "51eb7af72dbcb79303ef2401370cf6ed764075cd4026c2aa7bf80efc1ed7529b",
+            "num_tasks": 5,
+            "num_qubits": 25,
+            "optimum": 2,
+            "uniform_batch_success": 0.6323002605887288,
+            "uniform_optimal_probability": 0.0009765625
+          },
+          {
+            "instance_id": "a3_test_n5_1",
+            "role": "test",
+            "path": "instances/a3_test_n5_1.json",
+            "canonical_sha256": "e7df3da96d629861c3dbd882966cb7f7cc75c8088193f004c66eb39f4b13a067",
+            "structural_signature": "57844c5eff6256bd310cdb32c62e69dbc3a3f8d7703400654c646aa2217c5bf3",
+            "num_tasks": 5,
+            "num_qubits": 24,
+            "optimum": 2,
+            "uniform_batch_success": 0.22122298754861836,
+            "uniform_optimal_probability": 0.000244140625
+          },
+          {
+            "instance_id": "a3_test_n5_2",
+            "role": "test",
+            "path": "instances/a3_test_n5_2.json",
+            "canonical_sha256": "7ed78e13cbfa6bc7b27f680c8d814616c9c35b28e9768aff7eae9024d0b5a014",
+            "structural_signature": "606e7cfe77019fe1ac5c7f4d98bc8b0e2c43d22f6b29997caee950f5697d3f77",
+            "num_tasks": 5,
+            "num_qubits": 24,
+            "optimum": 2,
+            "uniform_batch_success": 0.39354339926296605,
+            "uniform_optimal_probability": 0.00048828125
+          },
+          {
+            "instance_id": "a3_test_n5_3",
+            "role": "test",
+            "path": "instances/a3_test_n5_3.json",
+            "canonical_sha256": "c30372c20a376d7193ceb9a413ae247f790cc937ad49fd3500bf44ad6a6117fd",
+            "structural_signature": "bb6cff369612011ec28b0743226bd74ea2f5b7646144a09bef284217ff82bf29",
+            "num_tasks": 5,
+            "num_qubits": 25,
+            "optimum": 2,
+            "uniform_batch_success": 0.6323002605887288,
+            "uniform_optimal_probability": 0.0009765625
+          },
+          {
+            "instance_id": "a3_one_host",
+            "role": "functional_control",
+            "path": "instances/a3_one_host.json",
+            "canonical_sha256": "1e0340b07eea144df5472fbcb5bbd9c562aff336515b3393d137cd290ead380f",
+            "structural_signature": "1fecc09fbb6f2733dd3f4c5e9a2785cb9184f3bb9e5da982b13ab080e27dc897",
+            "num_tasks": 4,
+            "num_qubits": 21,
+            "optimum": 1,
+            "uniform_batch_success": null,
+            "uniform_optimal_probability": null
+          },
+          {
+            "instance_id": "a3_infeasible",
+            "role": "functional_control",
+            "path": "instances/a3_infeasible.json",
+            "canonical_sha256": "7f0617c91f9115c884ac85b97668111787df4a34ea4fb60080f939d41e2254aa",
+            "structural_signature": "e03928b9f09fdc46093dc991f3d5b95a9541031206ed3bdb54b55a7f6a8f22f1",
+            "num_tasks": 4,
+            "num_qubits": 23,
+            "optimum": null,
+            "uniform_batch_success": null,
+            "uniform_optimal_probability": null
+          }
+        ],
+        "selection": "seeded heterogeneous informative pool; CPU/RAM swap and task/host permutations excluded; three strata by baseline probability",
+        "capacity_domain": "pool 1..3; functional optimum1 includes capacity5; model regression verifies capacity4",
+        "design_sha256": "0df7ad1f683eb2ae696422d15833e55a73ff5a552e47cf6b33f965bd9fdb8aad"
+      },
+      "protocol": {
+        "scope": "phase4k_three_host_pilot_v2",
+        "selection_seed": 190019,
+        "qaoa": {
+          "depths": [
+            1,
+            2,
+            3
+          ],
+          "optimization_seeds": [
+            190,
+            191
+          ],
+          "evaluation_seeds": [
+            100190,
+            100191
+          ],
+          "shots": 1024,
+          "evaluation_shots": 1024,
+          "maxiter": 200,
+          "max_seconds": 2400,
+          "hamiltonian_scaling": "max_abs",
+          "cobyla_rhobeg": 1.0,
+          "cobyla_tol": 0.0001,
+          "initial_points_beta_then_gamma": {
+            "1": [
+              0.3,
+              1.0
+            ],
+            "2": [
+              0.3,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "3": [
+              0.3,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "functional_smoke": {
+          "reps": 1,
+          "seed": 192,
+          "evaluation_seed": 100192,
+          "maxiter": 35
+        },
+        "resource_policy": {
+          "max_qubits": 25,
+          "aer_threads": 4,
+          "aer_memory_mb": 2048,
+          "start_available_min_gib": 8.0,
+          "remaining_available_min_gib": 4.0,
+          "process_rss_stop_gib": 4.0
+        },
+        "analysis": {
+          "depth_selection": "none; p1/p2/p3 reported equally",
+          "absolute_success_threshold": null,
+          "controls": [
+            "uniform_encoded_domain_wall_y",
+            "random_assignment_y_inferred",
+            "exact_enumeration"
+          ],
+          "unit": "instance; seeds nested; no IID plug-in for pooled quantum P_opt",
+          "test_runs_draft": 90,
+          "test_campaign_started": false
+        }
+      },
+      "instances": {
+        "a3_dev_n4": {
+          "schema_version": 1,
+          "instance_id": "a3_dev_n4",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 2
+            },
+            {
+              "id": "t2",
+              "cpu": 2,
+              "ram": 1
+            },
+            {
+              "id": "t3",
+              "cpu": 2,
+              "ram": 2
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 2,
+              "ram": 2
+            },
+            {
+              "id": "h1",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        },
+        "a3_test_n4_1": {
+          "schema_version": 1,
+          "instance_id": "a3_test_n4_1",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t3",
+              "cpu": 1,
+              "ram": 3
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "h1",
+              "cpu": 1,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        },
+        "a3_test_n4_2": {
+          "schema_version": 1,
+          "instance_id": "a3_test_n4_2",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 2
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 2
+            },
+            {
+              "id": "t3",
+              "cpu": 2,
+              "ram": 1
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 2,
+              "ram": 3
+            },
+            {
+              "id": "h1",
+              "cpu": 3,
+              "ram": 1
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        },
+        "a3_test_n4_3": {
+          "schema_version": 1,
+          "instance_id": "a3_test_n4_3",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 2
+            },
+            {
+              "id": "t3",
+              "cpu": 2,
+              "ram": 1
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 1,
+              "ram": 2
+            },
+            {
+              "id": "h1",
+              "cpu": 2,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 2
+            }
+          ]
+        },
+        "a3_dev_n5": {
+          "schema_version": 1,
+          "instance_id": "a3_dev_n5",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t3",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t4",
+              "cpu": 1,
+              "ram": 2
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 2,
+              "ram": 2
+            },
+            {
+              "id": "h1",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        },
+        "a3_test_n5_1": {
+          "schema_version": 1,
+          "instance_id": "a3_test_n5_1",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t3",
+              "cpu": 1,
+              "ram": 2
+            },
+            {
+              "id": "t4",
+              "cpu": 2,
+              "ram": 1
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 1,
+              "ram": 3
+            },
+            {
+              "id": "h1",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        },
+        "a3_test_n5_2": {
+          "schema_version": 1,
+          "instance_id": "a3_test_n5_2",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t3",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t4",
+              "cpu": 1,
+              "ram": 2
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 1,
+              "ram": 3
+            },
+            {
+              "id": "h1",
+              "cpu": 2,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        },
+        "a3_test_n5_3": {
+          "schema_version": 1,
+          "instance_id": "a3_test_n5_3",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t3",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t4",
+              "cpu": 1,
+              "ram": 2
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 2,
+              "ram": 3
+            },
+            {
+              "id": "h1",
+              "cpu": 2,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        },
+        "a3_one_host": {
+          "schema_version": 1,
+          "instance_id": "a3_one_host",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t2",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "t3",
+              "cpu": 1,
+              "ram": 1
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 5,
+              "ram": 5
+            },
+            {
+              "id": "h1",
+              "cpu": 1,
+              "ram": 1
+            },
+            {
+              "id": "h2",
+              "cpu": 1,
+              "ram": 1
+            }
+          ]
+        },
+        "a3_infeasible": {
+          "schema_version": 1,
+          "instance_id": "a3_infeasible",
+          "objective": "min_active_hosts",
+          "tasks": [
+            {
+              "id": "t0",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "t1",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "t2",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "t3",
+              "cpu": 3,
+              "ram": 3
+            }
+          ],
+          "hosts": [
+            {
+              "id": "h0",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "h1",
+              "cpu": 3,
+              "ram": 3
+            },
+            {
+              "id": "h2",
+              "cpu": 3,
+              "ram": 3
+            }
+          ]
+        }
+      }
+    },
+    "environment": {
+      "core": {
+        "runtime": {
+          "python_version": "3.12.14",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "numpy_version": "2.5.3",
+          "scipy_version": "1.18.1",
+          "qiskit_version": "2.5.2",
+          "qiskit_optimization_version": "0.7.0",
+          "qiskit_aer_version": "0.17.2"
+        },
+        "source_sha256": {
+          "placement.py": "7cfa397beb22fdf3feddedc0d889e104a619d6ef3e641ee72a62d82b087deb35",
+          "qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+          "ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+          "qaoa_experiment.py": "e6afa1ba317e312a4095c67d2ade43ac1964351753384f9c9f2d2c7ff38c58cf",
+          "penalty_analysis.py": "1ee33001b1ac723df6d2c9bb541ecac27221e30fa77c1dc9fb9777d3d87363ba",
+          "independent_campaign.py": "af953f6f78b4fac9ff49522f3cb8f9677499eb3048401219bd7d411f7ac0c1eb",
+          "scaling_campaign.py": "dce7f8c22d56b1cd7341b269b7ecb55ab9269d025e2ab0d8087f8c0c8ba5810f",
+          "depth_campaign.py": "443c1019e9cb70da3b2df3cd500520d31534489a32c62869323ca5c3c5129b74",
+          "qaoa_optimizer.py": "1dfd9da488ffe1723d538e2bb05b6785bfb087cc897b483e81d0c8390894deda",
+          "convergence_diagnostics.py": "5664e4f5e045bc3fff4e2ff5231a88ee312eefbec3b5a4673a1e69c196bbb6da",
+          "convergence_campaign.py": "a2299a93d070057dd66b0eca21ab3e092cb5e25cd15a9f307a95c12e3f9ec89c"
+        }
+      },
+      "pilot_source_sha256": {
+        "three_host_encoding.py": "9b6e9d1d18ab66d6b26439b72ae93437bfb9933925f7a912f626bd4538e9c836",
+        "three_host_benchmark.py": "fceb9fc761d906eec0e89d44da67fe6dd3dc17bb850fa19ad9e582e8687fd066",
+        "three_host_runner.py": "b0db9463fe6c87fb0a7248abe981e01a4f803f9e3355cabf28dec50079631949",
+        "three_host_pilot.py": "989a1d78199700f9e1ff31ca4b7b35f286097af89af2e4c071d8fe7741eb4003",
+        "two_host_runner.py": "4c87f3ac24470071606476446132a96d55cfb5e241106628a62454f66bb03720",
+        "benchmark_a_runner.py": "52bd90954f287b434b1da4767030aa0fee6415788eafe1cc45629da54cddcd54",
+        "benchmark_a_campaign.py": "9d9d07c3cfb050437acec656931c64fa5f360496c312e2d113d573f25119d685",
+        "branch_a_summary.py": "a3273b24952c64151c9f565cc57809f9fa1c8cf10333779f069cf89fd5bd7532"
+      }
+    }
+  },
+  "design_hash": "89947f444467e9cd78617106dff0e9d59107338fe4b7a999261fd0d1f16b8fc1",
+  "planned_runs": [
+    {
+      "instance_id": "a3_dev_n4",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 190,
+        "evaluation_seed": 100190,
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ]
+      },
+      "run_key": "06066bab62248e1c27d4721bc051e0d17fd4e191421218cb956e929da82f6471"
+    },
+    {
+      "instance_id": "a3_dev_n4",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 191,
+        "evaluation_seed": 100191,
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ]
+      },
+      "run_key": "e04e8a9b3a13613eb5955c536a38112dd7a0efcea425dc546cf59641328c5767"
+    },
+    {
+      "instance_id": "a3_dev_n4",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 190,
+        "evaluation_seed": 100190,
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "run_key": "35d7b032407c857878b46c3edb4134365b5997ba4cb11632ec3a0139362e60b4"
+    },
+    {
+      "instance_id": "a3_dev_n4",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 191,
+        "evaluation_seed": 100191,
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "run_key": "dd386f890c2ab3dd50dce98193f568831cb40294b1407082f04bedf50423d7b5"
+    },
+    {
+      "instance_id": "a3_dev_n4",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 190,
+        "evaluation_seed": 100190,
+        "reps": 3,
+        "initial_point": [
+          0.3,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "run_key": "7d70290c7dc498fdab7f3e9afe0afb0e73f8f289de4edd333e595b92811b9588"
+    },
+    {
+      "instance_id": "a3_dev_n4",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 191,
+        "evaluation_seed": 100191,
+        "reps": 3,
+        "initial_point": [
+          0.3,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "run_key": "6161597adb8c87b699a47f87ea8b98998e3d8492ec965c6740249be3f2083a40"
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 190,
+        "evaluation_seed": 100190,
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ]
+      },
+      "run_key": "00e3e0ef4e62f3f132b33544b31b1227077376871628e6ef0e470eda4a23ce09"
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 191,
+        "evaluation_seed": 100191,
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ]
+      },
+      "run_key": "2ebd96778b59f5450b170e2aef2533999e738c444dae7a0a3e5caaf832715574"
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 190,
+        "evaluation_seed": 100190,
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "run_key": "af6daf8bf0631e9338ae167ff4c98039dcb74ec8855cb7020dac2a7c1b5557f9"
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 191,
+        "evaluation_seed": 100191,
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "run_key": "06326d49bff73518ed48fcea773bc4b3bafbf761527e4eae5c2e9950476ac344"
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 190,
+        "evaluation_seed": 100190,
+        "reps": 3,
+        "initial_point": [
+          0.3,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "run_key": "e32ef857c192c3351ccd476b38c93a54e0e0728ddbd7ca6bba7286d4f5be0adf"
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "role": "development",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 191,
+        "evaluation_seed": 100191,
+        "reps": 3,
+        "initial_point": [
+          0.3,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "run_key": "054430d0aea5720dab0bbe9a97fd7528ac7378054e5372c0c148f9a77aef3031"
+    },
+    {
+      "instance_id": "a3_one_host",
+      "role": "functional_control",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 35,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 192,
+        "evaluation_seed": 100192,
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ]
+      },
+      "run_key": "cd8f07c5b639cf8b1d4ae40dac5fc05bb654576660d612cbe8ad156ff9525a42"
+    },
+    {
+      "instance_id": "a3_infeasible",
+      "role": "functional_control",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 35,
+        "max_seconds": 2400,
+        "max_qubits": 25,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 192,
+        "evaluation_seed": 100192,
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ]
+      },
+      "run_key": "9bd922d9d44fd08536a82952be5d17d0b46889fa201170b465e0c47757929e94"
+    }
+  ],
+  "preprocessing_sessions": [
+    {
+      "rows": [
+        {
+          "instance_id": "a3_dev_n4",
+          "role": "development",
+          "num_qubits": 23,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 277,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 23,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 2,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 2048,
+              "total_bitstrings": 8388608,
+              "original_best_objective": 2,
+              "feasible_probability": 0.009765625,
+              "optimal_placement_probability": 0.0009765625,
+              "invalid_domain_probability": 0.68359375,
+              "ground_state_probability": 2.384185791015625e-07,
+              "mean_qubo_energy": 297.5
+            },
+            "structured_random": {
+              "assignments": 81,
+              "histogram": {
+                "2": 2,
+                "3": 16
+              },
+              "optimum": 2,
+              "feasible_probability": 0.2222222222222222,
+              "optimal_probability": 0.024691358024691357,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 2,
+              "3": 16
+            }
+          },
+          "model_reference_certificate_seconds": 0.1911826999967161
+        },
+        {
+          "instance_id": "a3_test_n4_1",
+          "role": "test",
+          "num_qubits": 20,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 211,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 20,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 1,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 2048,
+              "total_bitstrings": 1048576,
+              "original_best_objective": 2,
+              "feasible_probability": 0.00244140625,
+              "optimal_placement_probability": 0.00048828125,
+              "invalid_domain_probability": 0.68359375,
+              "ground_state_probability": 9.5367431640625e-07,
+              "mean_qubo_energy": 221.5
+            },
+            "structured_random": {
+              "assignments": 81,
+              "histogram": {
+                "2": 1,
+                "3": 3
+              },
+              "optimum": 2,
+              "feasible_probability": 0.04938271604938271,
+              "optimal_probability": 0.012345679012345678,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 1,
+              "3": 3
+            }
+          },
+          "model_reference_certificate_seconds": 0.14218199999959324
+        },
+        {
+          "instance_id": "a3_test_n4_2",
+          "role": "test",
+          "num_qubits": 22,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 254,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 22,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 2,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 2048,
+              "total_bitstrings": 4194304,
+              "original_best_objective": 2,
+              "feasible_probability": 0.0048828125,
+              "optimal_placement_probability": 0.0009765625,
+              "invalid_domain_probability": 0.68359375,
+              "ground_state_probability": 4.76837158203125e-07,
+              "mean_qubo_energy": 259.5
+            },
+            "structured_random": {
+              "assignments": 81,
+              "histogram": {
+                "2": 2,
+                "3": 6
+              },
+              "optimum": 2,
+              "feasible_probability": 0.09876543209876543,
+              "optimal_probability": 0.024691358024691357,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 2,
+              "3": 6
+            }
+          },
+          "model_reference_certificate_seconds": 0.17867760000081034
+        },
+        {
+          "instance_id": "a3_test_n4_3",
+          "role": "test",
+          "num_qubits": 22,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 254,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 22,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 2,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 2048,
+              "total_bitstrings": 4194304,
+              "original_best_objective": 2,
+              "feasible_probability": 0.005859375,
+              "optimal_placement_probability": 0.0009765625,
+              "invalid_domain_probability": 0.68359375,
+              "ground_state_probability": 4.76837158203125e-07,
+              "mean_qubo_energy": 209.5
+            },
+            "structured_random": {
+              "assignments": 81,
+              "histogram": {
+                "2": 2,
+                "3": 8
+              },
+              "optimum": 2,
+              "feasible_probability": 0.12345679012345678,
+              "optimal_probability": 0.024691358024691357,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 2,
+              "3": 8
+            }
+          },
+          "model_reference_certificate_seconds": 0.18480130000170902
+        },
+        {
+          "instance_id": "a3_dev_n5",
+          "role": "development",
+          "num_qubits": 25,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 326,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 25,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 8,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 8192,
+              "total_bitstrings": 33554432,
+              "original_best_objective": 2,
+              "feasible_probability": 0.011962890625,
+              "optimal_placement_probability": 0.0009765625,
+              "invalid_domain_probability": 0.7626953125,
+              "ground_state_probability": 2.384185791015625e-07,
+              "mean_qubo_energy": 248.5
+            },
+            "structured_random": {
+              "assignments": 243,
+              "histogram": {
+                "2": 8,
+                "3": 82
+              },
+              "optimum": 2,
+              "feasible_probability": 0.37037037037037035,
+              "optimal_probability": 0.03292181069958848,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 8,
+              "3": 82
+            }
+          },
+          "model_reference_certificate_seconds": 0.27202289999695495
+        },
+        {
+          "instance_id": "a3_test_n5_1",
+          "role": "test",
+          "num_qubits": 24,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 301,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 24,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 2,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 8192,
+              "total_bitstrings": 16777216,
+              "original_best_objective": 2,
+              "feasible_probability": 0.003662109375,
+              "optimal_placement_probability": 0.000244140625,
+              "invalid_domain_probability": 0.7626953125,
+              "ground_state_probability": 1.1920928955078125e-07,
+              "mean_qubo_energy": 286.5
+            },
+            "structured_random": {
+              "assignments": 243,
+              "histogram": {
+                "2": 2,
+                "3": 26
+              },
+              "optimum": 2,
+              "feasible_probability": 0.11522633744855967,
+              "optimal_probability": 0.00823045267489712,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 2,
+              "3": 26
+            }
+          },
+          "model_reference_certificate_seconds": 0.24687610000182758
+        },
+        {
+          "instance_id": "a3_test_n5_2",
+          "role": "test",
+          "num_qubits": 24,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 301,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 24,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 4,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 8192,
+              "total_bitstrings": 16777216,
+              "original_best_objective": 2,
+              "feasible_probability": 0.005615234375,
+              "optimal_placement_probability": 0.00048828125,
+              "invalid_domain_probability": 0.7626953125,
+              "ground_state_probability": 2.384185791015625e-07,
+              "mean_qubo_energy": 244.5
+            },
+            "structured_random": {
+              "assignments": 243,
+              "histogram": {
+                "2": 4,
+                "3": 38
+              },
+              "optimum": 2,
+              "feasible_probability": 0.1728395061728395,
+              "optimal_probability": 0.01646090534979424,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 4,
+              "3": 38
+            }
+          },
+          "model_reference_certificate_seconds": 0.24967180000021472
+        },
+        {
+          "instance_id": "a3_test_n5_3",
+          "role": "test",
+          "num_qubits": 25,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 326,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 25,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 2.0,
+            "original_best_objective": 2,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 8,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 8192,
+              "total_bitstrings": 33554432,
+              "original_best_objective": 2,
+              "feasible_probability": 0.013916015625,
+              "optimal_placement_probability": 0.0009765625,
+              "invalid_domain_probability": 0.7626953125,
+              "ground_state_probability": 2.384185791015625e-07,
+              "mean_qubo_energy": 248.5
+            },
+            "structured_random": {
+              "assignments": 243,
+              "histogram": {
+                "2": 8,
+                "3": 98
+              },
+              "optimum": 2,
+              "feasible_probability": 0.43621399176954734,
+              "optimal_probability": 0.03292181069958848,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "2": 8,
+              "3": 98
+            }
+          },
+          "model_reference_certificate_seconds": 0.26560049999898183
+        },
+        {
+          "instance_id": "a3_one_host",
+          "role": "functional_control",
+          "num_qubits": 21,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 232,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 21,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 1.0,
+            "original_best_objective": 1,
+            "instance_feasible": true,
+            "all_qubo_minimizers_feasible": true,
+            "example_minimizer_bits": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 1,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 2048,
+              "total_bitstrings": 2097152,
+              "original_best_objective": 1,
+              "feasible_probability": 0.015625,
+              "optimal_placement_probability": 0.00048828125,
+              "invalid_domain_probability": 0.68359375,
+              "ground_state_probability": 4.76837158203125e-07,
+              "mean_qubo_energy": 177.5
+            },
+            "structured_random": {
+              "assignments": 81,
+              "histogram": {
+                "1": 1,
+                "2": 8,
+                "3": 12
+              },
+              "optimum": 1,
+              "feasible_probability": 0.25925925925925924,
+              "optimal_probability": 0.012345679012345678,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {
+              "1": 1,
+              "2": 8,
+              "3": 12
+            }
+          },
+          "model_reference_certificate_seconds": 0.18120690000068862
+        },
+        {
+          "instance_id": "a3_infeasible",
+          "role": "functional_control",
+          "num_qubits": 23,
+          "certificate": {
+            "polynomial_identity": true,
+            "degree_two_basis_vectors": 277,
+            "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+            "num_qubits": 23,
+            "domain_and_capacity_penalty": 4
+          },
+          "reference": {
+            "minimum_energy": 75.0,
+            "original_best_objective": null,
+            "instance_feasible": false,
+            "all_qubo_minimizers_feasible": false,
+            "example_minimizer_bits": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "minimizer_base_count": 36,
+            "uniform_baseline": {
+              "method": "exact_domain_wall_y_enumeration_slack_marginal",
+              "checked_base_vectors": 2048,
+              "total_bitstrings": 8388608,
+              "original_best_objective": null,
+              "feasible_probability": 0.0,
+              "optimal_placement_probability": null,
+              "invalid_domain_probability": 0.68359375,
+              "ground_state_probability": 4.291534423828125e-06,
+              "mean_qubo_energy": 953.5
+            },
+            "structured_random": {
+              "assignments": 81,
+              "histogram": {},
+              "optimum": null,
+              "feasible_probability": 0.0,
+              "optimal_probability": null,
+              "method": "exact host-assignment enumeration; y inferred; no overload repair"
+            },
+            "placement_histogram": {}
+          },
+          "model_reference_certificate_seconds": 0.2053555000020424
+        }
+      ],
+      "at_utc": "2026-10-12T07:39:24.314947+00:00"
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "probe",
+      "run_key": "06066bab62248e1c27d4721bc051e0d17fd4e191421218cb956e929da82f6471",
+      "instance_id": "a3_dev_n4",
+      "reps": 1,
+      "status": "passed",
+      "report": "attempts/0001_probe_06066bab6224.json",
+      "report_sha256": "191610eda14ffb1332a601b6408db3f504a810e7859ba2c37fbdf9cf957a06f6"
+    },
+    {
+      "number": 2,
+      "kind": "probe",
+      "run_key": "35d7b032407c857878b46c3edb4134365b5997ba4cb11632ec3a0139362e60b4",
+      "instance_id": "a3_dev_n4",
+      "reps": 2,
+      "status": "passed",
+      "report": "attempts/0002_probe_35d7b032407c.json",
+      "report_sha256": "8b4dd6292252ebd72630c0ace63ffceb06c287a723822ad9896db12b9d10bc45"
+    },
+    {
+      "number": 3,
+      "kind": "probe",
+      "run_key": "7d70290c7dc498fdab7f3e9afe0afb0e73f8f289de4edd333e595b92811b9588",
+      "instance_id": "a3_dev_n4",
+      "reps": 3,
+      "status": "passed",
+      "report": "attempts/0003_probe_7d70290c7dc4.json",
+      "report_sha256": "e7caedd5a32f00ef21b84b5552421f65ea41d7206ab5e647e1092b1f1f19d1a4"
+    },
+    {
+      "number": 4,
+      "kind": "probe",
+      "run_key": "00e3e0ef4e62f3f132b33544b31b1227077376871628e6ef0e470eda4a23ce09",
+      "instance_id": "a3_dev_n5",
+      "reps": 1,
+      "status": "passed",
+      "report": "attempts/0004_probe_00e3e0ef4e62.json",
+      "report_sha256": "88143820a4dc0102705fe0b6eb7e9629d94b809647daf7a77b349a7296f0f485"
+    },
+    {
+      "number": 5,
+      "kind": "probe",
+      "run_key": "af6daf8bf0631e9338ae167ff4c98039dcb74ec8855cb7020dac2a7c1b5557f9",
+      "instance_id": "a3_dev_n5",
+      "reps": 2,
+      "status": "passed",
+      "report": "attempts/0005_probe_af6daf8bf063.json",
+      "report_sha256": "c3f5ccaed92c6d3fb0507b8279b87072c6a0fd9c758cac481b46b4ac16fbd0ee"
+    },
+    {
+      "number": 6,
+      "kind": "probe",
+      "run_key": "e32ef857c192c3351ccd476b38c93a54e0e0728ddbd7ca6bba7286d4f5be0adf",
+      "instance_id": "a3_dev_n5",
+      "reps": 3,
+      "status": "passed",
+      "report": "attempts/0006_probe_e32ef857c192.json",
+      "report_sha256": "d610193115ffa20726a71a00870ac1a255ae20b9108f60caa46c355b379fa38b"
+    },
+    {
+      "number": 7,
+      "kind": "probe",
+      "run_key": "cd8f07c5b639cf8b1d4ae40dac5fc05bb654576660d612cbe8ad156ff9525a42",
+      "instance_id": "a3_one_host",
+      "reps": 1,
+      "status": "passed",
+      "report": "attempts/0007_probe_cd8f07c5b639.json",
+      "report_sha256": "43af1676f17a97b85c9a4a4bc31e0fb1285baf8927308138d2eac5ea1a3ea2f5"
+    },
+    {
+      "number": 8,
+      "kind": "probe",
+      "run_key": "9bd922d9d44fd08536a82952be5d17d0b46889fa201170b465e0c47757929e94",
+      "instance_id": "a3_infeasible",
+      "reps": 1,
+      "status": "passed",
+      "report": "attempts/0008_probe_9bd922d9d44f.json",
+      "report_sha256": "9ec73377f46d1cfbc47d6eb796b00ed5aadbbae137b93852d4cabef31b4e495d"
+    },
+    {
+      "number": 9,
+      "kind": "trial",
+      "run_key": "06066bab62248e1c27d4721bc051e0d17fd4e191421218cb956e929da82f6471",
+      "instance_id": "a3_dev_n4",
+      "reps": 1,
+      "status": "completed",
+      "report": "attempts/0009_trial_06066bab6224.json",
+      "report_sha256": "c8bae74b4389d3a2575e003bd6d6dc273d940a55cd60c13601d97b8833c1e42b"
+    },
+    {
+      "number": 10,
+      "kind": "trial",
+      "run_key": "e04e8a9b3a13613eb5955c536a38112dd7a0efcea425dc546cf59641328c5767",
+      "instance_id": "a3_dev_n4",
+      "reps": 1,
+      "status": "completed",
+      "report": "attempts/0010_trial_e04e8a9b3a13.json",
+      "report_sha256": "6724362a2adb32bca7c633d24b05935b962466adef2dcf16200554dd9253b9cc"
+    },
+    {
+      "number": 11,
+      "kind": "trial",
+      "run_key": "35d7b032407c857878b46c3edb4134365b5997ba4cb11632ec3a0139362e60b4",
+      "instance_id": "a3_dev_n4",
+      "reps": 2,
+      "status": "completed",
+      "report": "attempts/0011_trial_35d7b032407c.json",
+      "report_sha256": "691f92f0b0a77cbc67c788734cf57820430d5fcf3445f26d8126cd438cb3caa0"
+    },
+    {
+      "number": 12,
+      "kind": "trial",
+      "run_key": "dd386f890c2ab3dd50dce98193f568831cb40294b1407082f04bedf50423d7b5",
+      "instance_id": "a3_dev_n4",
+      "reps": 2,
+      "status": "completed",
+      "report": "attempts/0012_trial_dd386f890c2a.json",
+      "report_sha256": "2ad7b309185cba0fee90d5fceabdf52b42b80bfc34b2f28d38b237f8932f3ef9"
+    },
+    {
+      "number": 13,
+      "kind": "trial",
+      "run_key": "7d70290c7dc498fdab7f3e9afe0afb0e73f8f289de4edd333e595b92811b9588",
+      "instance_id": "a3_dev_n4",
+      "reps": 3,
+      "status": "completed",
+      "report": "attempts/0013_trial_7d70290c7dc4.json",
+      "report_sha256": "dde3bb0d39e5cf729f0c86cce35cf0c8e94e6619ae9f1fae2b162cb2c4124ba6"
+    },
+    {
+      "number": 14,
+      "kind": "trial",
+      "run_key": "6161597adb8c87b699a47f87ea8b98998e3d8492ec965c6740249be3f2083a40",
+      "instance_id": "a3_dev_n4",
+      "reps": 3,
+      "status": "completed",
+      "report": "attempts/0014_trial_6161597adb8c.json",
+      "report_sha256": "32c1e75b85cbc253f6969e7d14c1f42b0454d467cac0e7147279d8c030bdb691"
+    },
+    {
+      "number": 15,
+      "kind": "trial",
+      "run_key": "00e3e0ef4e62f3f132b33544b31b1227077376871628e6ef0e470eda4a23ce09",
+      "instance_id": "a3_dev_n5",
+      "reps": 1,
+      "status": "completed",
+      "report": "attempts/0015_trial_00e3e0ef4e62.json",
+      "report_sha256": "493b294d7b2f09a116619cce915aaf481f9c1ea2eaab3bd4fe7be8458e3cd276"
+    },
+    {
+      "number": 16,
+      "kind": "trial",
+      "run_key": "2ebd96778b59f5450b170e2aef2533999e738c444dae7a0a3e5caaf832715574",
+      "instance_id": "a3_dev_n5",
+      "reps": 1,
+      "status": "completed",
+      "report": "attempts/0016_trial_2ebd96778b59.json",
+      "report_sha256": "95e246a3adec0bded764308366b8d76ade8a4ebefc90b7398fce91394ed8689c"
+    },
+    {
+      "number": 17,
+      "kind": "trial",
+      "run_key": "af6daf8bf0631e9338ae167ff4c98039dcb74ec8855cb7020dac2a7c1b5557f9",
+      "instance_id": "a3_dev_n5",
+      "reps": 2,
+      "status": "completed",
+      "report": "attempts/0017_trial_af6daf8bf063.json",
+      "report_sha256": "4732b50638e1c74a467ea5eb373bcf91f95b1739c8467118729cda02efb7ce6f"
+    },
+    {
+      "number": 18,
+      "kind": "trial",
+      "run_key": "06326d49bff73518ed48fcea773bc4b3bafbf761527e4eae5c2e9950476ac344",
+      "instance_id": "a3_dev_n5",
+      "reps": 2,
+      "status": "completed",
+      "report": "attempts/0018_trial_06326d49bff7.json",
+      "report_sha256": "e799fb6abaffe75ec83060b51a9a7ee754939cd9d6584da56d7fee8e9ca8fe48"
+    },
+    {
+      "number": 19,
+      "kind": "trial",
+      "run_key": "e32ef857c192c3351ccd476b38c93a54e0e0728ddbd7ca6bba7286d4f5be0adf",
+      "instance_id": "a3_dev_n5",
+      "reps": 3,
+      "status": "completed",
+      "report": "attempts/0019_trial_e32ef857c192.json",
+      "report_sha256": "fa35d26246f4dbaee2bce20f64176f738f99047f511d130d9844cd892f7f22f9"
+    },
+    {
+      "number": 20,
+      "kind": "trial",
+      "run_key": "054430d0aea5720dab0bbe9a97fd7528ac7378054e5372c0c148f9a77aef3031",
+      "instance_id": "a3_dev_n5",
+      "reps": 3,
+      "status": "completed",
+      "report": "attempts/0020_trial_054430d0aea5.json",
+      "report_sha256": "5135a315073f1a1272b9775d45a68606d9432dd76815865cd5f3c0d04c9bfc8b"
+    },
+    {
+      "number": 21,
+      "kind": "trial",
+      "run_key": "cd8f07c5b639cf8b1d4ae40dac5fc05bb654576660d612cbe8ad156ff9525a42",
+      "instance_id": "a3_one_host",
+      "reps": 1,
+      "status": "completed",
+      "report": "attempts/0021_trial_cd8f07c5b639.json",
+      "report_sha256": "2094b086234b02ece03862f51b64eaedd074632b2d23bd993bb811c97e42aa71"
+    },
+    {
+      "number": 22,
+      "kind": "trial",
+      "run_key": "9bd922d9d44fd08536a82952be5d17d0b46889fa201170b465e0c47757929e94",
+      "instance_id": "a3_infeasible",
+      "reps": 1,
+      "status": "completed",
+      "report": "attempts/0022_trial_9bd922d9d44f.json",
+      "report_sha256": "0b2cb5c30fe0f181fd6af25c06592d6ac078c5a845c9827fbaaf2c1aff3ab745"
+    }
+  ],
+  "active": null
+}

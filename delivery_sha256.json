@@ -1,14 +1,24 @@
 {
-  "README_BRANCH_A_NOTEBOOK18.md": "d30199c5745cfbb4cc71bf6355c733d75b64764ffcfeaf5ec82dc926cc6a4ffc",
-  "data/benchmarks/nt409_summary_v1/notebook17_results.zip": "fd4643ef57d0fc6202c3a9d96aa0c25b56dad752868797b41483ad3e5c6552db",
-  "docs/branch_a_summary_protocol.md": "a2c4b7ca1fbf4ea40768a49076033c823ea732e1d04828f49fca48cf71d62bdd",
-  "notebooks/18_branch_a_controlled_summary.ipynb": "cbb3112207aa7221610ac5a26db53acb017702c0c7647aa815ed3c2c8eaf59f4",
-  "src/branch_a_evidence.py": "3dd208f06fb63fbb60c61993926030a00bd343604c1a35ba075cae9e4dcb8aaa",
-  "src/branch_a_summary.py": "a3273b24952c64151c9f565cc57809f9fa1c8cf10333779f069cf89fd5bd7532",
-  "tests/test_branch_a_evidence.py": "6d295007c27050b1bb683ed14e1711afbacebf6b87a90fd6bcf4a2eb0c46c5d2",
-  "tests/test_branch_a_summary.py": "6372cfa69139ec3090cab8b54e8337492d329ae6a88fd3185da9b997be321fd3",
-  "validation/notebook18/18_executed_linux_validation.ipynb": "9248b3ebd7dbb66d8143a15800d3aca525c8e5266698221ec2fbc644a2d3aa10",
-  "validation/notebook18/audit.log": "1b152b3e06d3de2867a9f2b0ddf4264205923f049c5d5556c52ba26ac22f9c4b",
-  "validation/notebook18/full_tests.log": "6ffc17509b7eac6600fcaece2a570cc6c8c6aa0b72bee2ccc240ed2e83617dc5",
-  "validation/notebook18/notebook_validation.json": "6ec72d59da62c9619358ab3eaf9135f9bd90903edf162d1b1bfdbc36cb928d39"
+  "delivery": "nt409_notebook20_three_host_test_campaign_v1",
+  "git_commit": "d8dd2536c1d7df014454f93fdd4ff1f263228129",
+  "baseline": "GitHub Notebook18 backup plus released Notebook19; existing project required",
+  "official_test_quantum_runs": 0,
+  "tests": "128 tests OK",
+  "validation": "IPython sequential9cells; tiny11q/32shots/cap8;90trial/18probe; no native Jupyter kernel startup verification",
+  "files_sha256": {
+    "README_BRANCH_A_NOTEBOOK20.md": "905944ab8d4d24b69973c4cd55caa83945acde62464d164b001f08778bcf3bba",
+    "data/benchmarks/nt409_three_host_test_v1/protocol.json": "c36f9aa667075d129d415a62c3212c0a0bf7c95dd9642f3466b499c66d35f8a3",
+    "docs/three_host_test_protocol.md": "4e337e253c99120886ec9e4154c8f94606d7e36a14041433313adfa44fba02d4",
+    "notebooks/20_three_host_frozen_test_campaign.ipynb": "942316cb0c2cbb22ef0b630bcac772bc9d1ba234bc87fd059c53222690dfc010",
+    "src/three_host_test_analysis.py": "bac26533a2244e4083bfacd5a29be7a2fa6654fe2a797269279ca190f33cd117",
+    "src/three_host_test_campaign.py": "3e73a91fb0fae5bc37dd71049753dfca07f3fe668a3b2cf8193c386727c5adaa",
+    "tests/test_three_host_test_analysis.py": "ab0fae5b29a04776da7b56a7cc92a160162d36943b812eb976d8f9daee075821",
+    "tests/test_three_host_test_campaign.py": "4683b866863a05d8669bd11dd7853446ce61fa16f565187555e91e8af0866551",
+    "validation/notebook20/20_executed_tiny_software_validation.ipynb": "c5ca22669d881ce9d3994a3809f75a2ca9cb26ad7fb3967416b147e63424da77",
+    "validation/notebook20/c2_audit.json": "3eb230715ac3960ee08012d1c26c6fdc5ac9d141a3ce1d4b1ac9e009cd6b3a98",
+    "validation/notebook20/full_tests.log": "4ead49a898e4b39c9b10910973c8df626597c55752941c52befcc02fcf4369b7",
+    "validation/notebook20/notebook_validation.json": "642f38ac691bf222fba1e647972f95bc8322fe08ec8136219cb785eb9d9f5b7e",
+    "validation/notebook20/review.md": "5486fb3052f4e1afd400a6186539ac63cd6850841308f7e742e66539cea6fd68",
+    "validation/notebook20/tiny_software_validation_results.zip": "da5b74baf3a0913a8e68f69131ba768e1b9ed5b647a668aef9f8dc97c3132d3b"
+  }
 }

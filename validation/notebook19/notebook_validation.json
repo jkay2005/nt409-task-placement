@@ -1,0 +1,29 @@
+{
+  "seconds": 713.306775264,
+  "folder": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4k_three_host_pilot/pilot_20261012T032855209810Z",
+  "archive": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4k_three_host_pilot/pilot_20261012T032855209810Z/pilot_20261012T032855209810Z.zip",
+  "code_cells": 9,
+  "assessment": {
+    "status": "pilot_complete",
+    "completed": 14,
+    "planned": 14,
+    "projected_90_trial_seconds": 4164.42650381249,
+    "within_six_hours_by_projection": true,
+    "projection_scope": "15 test trials per size/p times development median; excludes future preparation and failures; cost structure may differ; not a runtime guarantee",
+    "depth_selection": "none",
+    "test_campaign_started": false
+  },
+  "note": "Reduced Linux software validation only, frozen input unchanged;64shots/cap8; controls require no claim; plot uses true encoded baseline; no GUI Jupyter. Final export replayed in fresh process to finish recording; no added quantum trials.",
+  "final_export_replay_seconds": 1.1011071209995862,
+  "code_cell_execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

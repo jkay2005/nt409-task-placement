@@ -1,0 +1,25 @@
+{
+  "scope": "software validation only",
+  "seconds": 35.50592291900011,
+  "executed_cells": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "completed_trials": 90,
+  "passed_probes": 18,
+  "official_test_quantum_runs": 0,
+  "inputs": "six original IDs with one-task11qubit fixture substituted",
+  "training": "32shots/cap8",
+  "charged_seconds": 35.33629544900077,
+  "artifact": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4l_three_host_test/test_20261012T093928218403Z/test_20261012T093928218403Z.zip",
+  "c2": "real Windows19 raw semantic audit completed before fixture substitution",
+  "engine": "Sequential IPython interpreter; native Jupyter kernel sockets unavailable in the execution sandbox",
+  "limitations": "No Jupyter/VSCode kernel-start verification; no Windows20 timing/quality claim; no full-shot official test execution."
+}
