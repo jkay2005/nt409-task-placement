@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "scope": "phase4l_three_host_test_v1",
+  "parent_design": "0df7ad1f683eb2ae696422d15833e55a73ff5a552e47cf6b33f965bd9fdb8aad",
+  "qaoa": {
+    "depths": [
+      1,
+      2,
+      3
+    ],
+    "optimization_seeds": [
+      200,
+      201,
+      202,
+      203,
+      204
+    ],
+    "evaluation_seeds": [
+      100200,
+      100201,
+      100202,
+      100203,
+      100204
+    ],
+    "shots": 1024,
+    "evaluation_shots": 1024,
+    "maxiter": 200,
+    "max_seconds": 2400,
+    "hamiltonian_scaling": "max_abs",
+    "cobyla_rhobeg": 1.0,
+    "cobyla_tol": 0.0001,
+    "initial_points_beta_then_gamma": {
+      "1": [
+        0.3,
+        1.0
+      ],
+      "2": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "3": [
+        0.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "resource_policy": {
+    "max_qubits": 25,
+    "aer_threads": 4,
+    "aer_memory_mb": 2048,
+    "start_available_min_gib": 8.0,
+    "remaining_available_min_gib": 4.0,
+    "process_rss_stop_gib": 4.0
+  },
+  "budget": {
+    "limit_seconds": 21600.0,
+    "export_reserve_seconds": 60.0,
+    "probe_admission_seconds": 60.0,
+    "admission_rule": "trial: min(per_trial_limit, probe_cap200_estimate); stop at next planned row if budget cannot admit it",
+    "crash_accounting": "conservative wall gap since last checkpoint; may include downtime; never reset budget"
+  },
+  "order": "seed rounds; paired n4/n5 instances; Latin depth rotation by pair and seed; no data-dependent reorder",
+  "analysis": {
+    "depth_selection": "none; p1/p2/p3 reported equally",
+    "absolute_success_threshold": null,
+    "controls": [
+      "uniform_encoded_domain_wall_y",
+      "random_assignment_y_inferred",
+      "exact_enumeration"
+    ],
+    "unit": "instance; seeds nested; no IID plug-in for pooled quantum P_opt",
+    "planned_test_trials": 90
+  }
+}

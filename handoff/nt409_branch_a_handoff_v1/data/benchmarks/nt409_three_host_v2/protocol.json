@@ -1,0 +1,72 @@
+{
+  "scope": "phase4k_three_host_pilot_v2",
+  "selection_seed": 190019,
+  "qaoa": {
+    "depths": [
+      1,
+      2,
+      3
+    ],
+    "optimization_seeds": [
+      190,
+      191
+    ],
+    "evaluation_seeds": [
+      100190,
+      100191
+    ],
+    "shots": 1024,
+    "evaluation_shots": 1024,
+    "maxiter": 200,
+    "max_seconds": 2400,
+    "hamiltonian_scaling": "max_abs",
+    "cobyla_rhobeg": 1.0,
+    "cobyla_tol": 0.0001,
+    "initial_points_beta_then_gamma": {
+      "1": [
+        0.3,
+        1.0
+      ],
+      "2": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "3": [
+        0.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "functional_smoke": {
+    "reps": 1,
+    "seed": 192,
+    "evaluation_seed": 100192,
+    "maxiter": 35
+  },
+  "resource_policy": {
+    "max_qubits": 25,
+    "aer_threads": 4,
+    "aer_memory_mb": 2048,
+    "start_available_min_gib": 8.0,
+    "remaining_available_min_gib": 4.0,
+    "process_rss_stop_gib": 4.0
+  },
+  "analysis": {
+    "depth_selection": "none; p1/p2/p3 reported equally",
+    "absolute_success_threshold": null,
+    "controls": [
+      "uniform_encoded_domain_wall_y",
+      "random_assignment_y_inferred",
+      "exact_enumeration"
+    ],
+    "unit": "instance; seeds nested; no IID plug-in for pooled quantum P_opt",
+    "test_runs_draft": 90,
+    "test_campaign_started": false
+  }
+}

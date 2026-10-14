@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "protocol_id": "nt409_final_comparison_v1",
+  "status": "frozen_design_not_executed",
+  "objective": "min_active_hosts",
+  "model_version": "weighted_equalities_v2",
+  "qaoa": {
+    "objective_mode": "sampled_mean",
+    "assignment_penalty": 3,
+    "capacity_penalty": 3,
+    "mixer": "X",
+    "hamiltonian_scaling": "max_abs",
+    "depths": [
+      1,
+      2,
+      3
+    ],
+    "optimization_seeds": [
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "evaluation_seeds": [
+      100070,
+      100071,
+      100072,
+      100073,
+      100074
+    ],
+    "shots": 1024,
+    "evaluation_shots": 1024,
+    "maxiter": 200,
+    "max_seconds": 600.0,
+    "optimizer": "COBYLA",
+    "cobyla_rhobeg": 1.0,
+    "cobyla_tol": 0.0001,
+    "initial_points_beta_then_gamma": {
+      "1": [
+        0.3,
+        1.0
+      ],
+      "2": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "3": [
+        0.3,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "final_output": "best_valid_no_bit_repair",
+    "tie_order": [
+      "minimum_active_hosts",
+      "maximum_frequency",
+      "lexicographic_ascending_bits_in_variable_order"
+    ],
+    "report_mode_and_all_ties_separately": true,
+    "planned_formal_runs": 45
+  },
+  "resource_policy": {
+    "max_qubits": 23,
+    "method": "statevector",
+    "device": "CPU",
+    "precision": "double",
+    "aer_threads": 4,
+    "aer_memory_mb": 2048,
+    "max_parallel_experiments": 1,
+    "max_parallel_shots": 1,
+    "start_available_min_gib": 8.0,
+    "remaining_available_min_gib": 4.0,
+    "process_rss_stop_gib": 4.0,
+    "enforcement": "preflight_and_evaluation_boundaries_not_OS_hard_cap",
+    "status": "requires_new_runner_implementation"
+  },
+  "classical": {
+    "algorithms": [
+      "FirstFit",
+      "BFD",
+      "MILP"
+    ],
+    "rules": "docs/unified_benchmark_v1.md#4",
+    "input_order": "JSON_task_and_host_order",
+    "milp_time_limit_seconds": 600.0,
+    "milp_threads": 1,
+    "solver_implementation_version": "record_before_campaign",
+    "quality_repetitions_for_deterministic_baselines": 1
+  },
+  "negative_control": {
+    "instance_id": "p1_infeasible",
+    "in_formal_quality_ranking": false,
+    "qaoa_smoke": {
+      "reps": 1,
+      "seed": 70,
+      "evaluation_seed": 100070,
+      "shots": 64,
+      "evaluation_shots": 64,
+      "maxiter": 8
+    }
+  },
+  "historical_results_role": "exploratory_not_pooled_with_final_campaign",
+  "stop_rule": "audit_fixed_matrix_and_baselines_no_new_tuning_sweeps"
+}

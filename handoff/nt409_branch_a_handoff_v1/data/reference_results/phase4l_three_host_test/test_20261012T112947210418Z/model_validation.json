@@ -1,0 +1,427 @@
+[
+  {
+    "instance_id": "a3_test_n4_1",
+    "role": "test",
+    "num_qubits": 20,
+    "certificate": {
+      "polynomial_identity": true,
+      "degree_two_basis_vectors": 211,
+      "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+      "num_qubits": 20,
+      "domain_and_capacity_penalty": 4
+    },
+    "reference": {
+      "minimum_energy": 2.0,
+      "original_best_objective": 2,
+      "instance_feasible": true,
+      "all_qubo_minimizers_feasible": true,
+      "example_minimizer_bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimizer_base_count": 1,
+      "uniform_baseline": {
+        "method": "exact_domain_wall_y_enumeration_slack_marginal",
+        "checked_base_vectors": 2048,
+        "total_bitstrings": 1048576,
+        "original_best_objective": 2,
+        "feasible_probability": 0.00244140625,
+        "optimal_placement_probability": 0.00048828125,
+        "invalid_domain_probability": 0.68359375,
+        "ground_state_probability": 9.5367431640625e-07,
+        "mean_qubo_energy": 221.5
+      },
+      "structured_random": {
+        "assignments": 81,
+        "histogram": {
+          "2": 1,
+          "3": 3
+        },
+        "optimum": 2,
+        "feasible_probability": 0.04938271604938271,
+        "optimal_probability": 0.012345679012345678,
+        "method": "exact host-assignment enumeration; y inferred; no overload repair"
+      },
+      "placement_histogram": {
+        "2": 1,
+        "3": 3
+      }
+    },
+    "preparation_seconds": 0.14792210000086925
+  },
+  {
+    "instance_id": "a3_test_n4_2",
+    "role": "test",
+    "num_qubits": 22,
+    "certificate": {
+      "polynomial_identity": true,
+      "degree_two_basis_vectors": 254,
+      "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+      "num_qubits": 22,
+      "domain_and_capacity_penalty": 4
+    },
+    "reference": {
+      "minimum_energy": 2.0,
+      "original_best_objective": 2,
+      "instance_feasible": true,
+      "all_qubo_minimizers_feasible": true,
+      "example_minimizer_bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimizer_base_count": 2,
+      "uniform_baseline": {
+        "method": "exact_domain_wall_y_enumeration_slack_marginal",
+        "checked_base_vectors": 2048,
+        "total_bitstrings": 4194304,
+        "original_best_objective": 2,
+        "feasible_probability": 0.0048828125,
+        "optimal_placement_probability": 0.0009765625,
+        "invalid_domain_probability": 0.68359375,
+        "ground_state_probability": 4.76837158203125e-07,
+        "mean_qubo_energy": 259.5
+      },
+      "structured_random": {
+        "assignments": 81,
+        "histogram": {
+          "2": 2,
+          "3": 6
+        },
+        "optimum": 2,
+        "feasible_probability": 0.09876543209876543,
+        "optimal_probability": 0.024691358024691357,
+        "method": "exact host-assignment enumeration; y inferred; no overload repair"
+      },
+      "placement_histogram": {
+        "2": 2,
+        "3": 6
+      }
+    },
+    "preparation_seconds": 0.18058600000222214
+  },
+  {
+    "instance_id": "a3_test_n4_3",
+    "role": "test",
+    "num_qubits": 22,
+    "certificate": {
+      "polynomial_identity": true,
+      "degree_two_basis_vectors": 254,
+      "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+      "num_qubits": 22,
+      "domain_and_capacity_penalty": 4
+    },
+    "reference": {
+      "minimum_energy": 2.0,
+      "original_best_objective": 2,
+      "instance_feasible": true,
+      "all_qubo_minimizers_feasible": true,
+      "example_minimizer_bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimizer_base_count": 2,
+      "uniform_baseline": {
+        "method": "exact_domain_wall_y_enumeration_slack_marginal",
+        "checked_base_vectors": 2048,
+        "total_bitstrings": 4194304,
+        "original_best_objective": 2,
+        "feasible_probability": 0.005859375,
+        "optimal_placement_probability": 0.0009765625,
+        "invalid_domain_probability": 0.68359375,
+        "ground_state_probability": 4.76837158203125e-07,
+        "mean_qubo_energy": 209.5
+      },
+      "structured_random": {
+        "assignments": 81,
+        "histogram": {
+          "2": 2,
+          "3": 8
+        },
+        "optimum": 2,
+        "feasible_probability": 0.12345679012345678,
+        "optimal_probability": 0.024691358024691357,
+        "method": "exact host-assignment enumeration; y inferred; no overload repair"
+      },
+      "placement_histogram": {
+        "2": 2,
+        "3": 8
+      }
+    },
+    "preparation_seconds": 0.1788458000009996
+  },
+  {
+    "instance_id": "a3_test_n5_1",
+    "role": "test",
+    "num_qubits": 24,
+    "certificate": {
+      "polynomial_identity": true,
+      "degree_two_basis_vectors": 301,
+      "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+      "num_qubits": 24,
+      "domain_and_capacity_penalty": 4
+    },
+    "reference": {
+      "minimum_energy": 2.0,
+      "original_best_objective": 2,
+      "instance_feasible": true,
+      "all_qubo_minimizers_feasible": true,
+      "example_minimizer_bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimizer_base_count": 2,
+      "uniform_baseline": {
+        "method": "exact_domain_wall_y_enumeration_slack_marginal",
+        "checked_base_vectors": 8192,
+        "total_bitstrings": 16777216,
+        "original_best_objective": 2,
+        "feasible_probability": 0.003662109375,
+        "optimal_placement_probability": 0.000244140625,
+        "invalid_domain_probability": 0.7626953125,
+        "ground_state_probability": 1.1920928955078125e-07,
+        "mean_qubo_energy": 286.5
+      },
+      "structured_random": {
+        "assignments": 243,
+        "histogram": {
+          "2": 2,
+          "3": 26
+        },
+        "optimum": 2,
+        "feasible_probability": 0.11522633744855967,
+        "optimal_probability": 0.00823045267489712,
+        "method": "exact host-assignment enumeration; y inferred; no overload repair"
+      },
+      "placement_histogram": {
+        "2": 2,
+        "3": 26
+      }
+    },
+    "preparation_seconds": 0.2405892999995558
+  },
+  {
+    "instance_id": "a3_test_n5_2",
+    "role": "test",
+    "num_qubits": 24,
+    "certificate": {
+      "polynomial_identity": true,
+      "degree_two_basis_vectors": 301,
+      "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+      "num_qubits": 24,
+      "domain_and_capacity_penalty": 4
+    },
+    "reference": {
+      "minimum_energy": 2.0,
+      "original_best_objective": 2,
+      "instance_feasible": true,
+      "all_qubo_minimizers_feasible": true,
+      "example_minimizer_bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimizer_base_count": 4,
+      "uniform_baseline": {
+        "method": "exact_domain_wall_y_enumeration_slack_marginal",
+        "checked_base_vectors": 8192,
+        "total_bitstrings": 16777216,
+        "original_best_objective": 2,
+        "feasible_probability": 0.005615234375,
+        "optimal_placement_probability": 0.00048828125,
+        "invalid_domain_probability": 0.7626953125,
+        "ground_state_probability": 2.384185791015625e-07,
+        "mean_qubo_energy": 244.5
+      },
+      "structured_random": {
+        "assignments": 243,
+        "histogram": {
+          "2": 4,
+          "3": 38
+        },
+        "optimum": 2,
+        "feasible_probability": 0.1728395061728395,
+        "optimal_probability": 0.01646090534979424,
+        "method": "exact host-assignment enumeration; y inferred; no overload repair"
+      },
+      "placement_histogram": {
+        "2": 4,
+        "3": 38
+      }
+    },
+    "preparation_seconds": 0.2496772000013152
+  },
+  {
+    "instance_id": "a3_test_n5_3",
+    "role": "test",
+    "num_qubits": 25,
+    "certificate": {
+      "polynomial_identity": true,
+      "degree_two_basis_vectors": 326,
+      "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+      "num_qubits": 25,
+      "domain_and_capacity_penalty": 4
+    },
+    "reference": {
+      "minimum_energy": 2.0,
+      "original_best_objective": 2,
+      "instance_feasible": true,
+      "all_qubo_minimizers_feasible": true,
+      "example_minimizer_bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimizer_base_count": 8,
+      "uniform_baseline": {
+        "method": "exact_domain_wall_y_enumeration_slack_marginal",
+        "checked_base_vectors": 8192,
+        "total_bitstrings": 33554432,
+        "original_best_objective": 2,
+        "feasible_probability": 0.013916015625,
+        "optimal_placement_probability": 0.0009765625,
+        "invalid_domain_probability": 0.7626953125,
+        "ground_state_probability": 2.384185791015625e-07,
+        "mean_qubo_energy": 248.5
+      },
+      "structured_random": {
+        "assignments": 243,
+        "histogram": {
+          "2": 8,
+          "3": 98
+        },
+        "optimum": 2,
+        "feasible_probability": 0.43621399176954734,
+        "optimal_probability": 0.03292181069958848,
+        "method": "exact host-assignment enumeration; y inferred; no overload repair"
+      },
+      "placement_histogram": {
+        "2": 8,
+        "3": 98
+      }
+    },
+    "preparation_seconds": 0.2629962000028172
+  }
+]

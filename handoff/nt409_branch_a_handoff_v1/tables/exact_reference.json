@@ -1,0 +1,403 @@
+{
+  "role": "post-solve evaluation only; never feed optimum to a solver",
+  "placement_order": "JSON tasks; zero-based JSON host index",
+  "instances": {
+    "p1_choice": {
+      "total_assignments": 16,
+      "feasible_assignments": 11,
+      "optimal_assignments": 1,
+      "optimum": 1,
+      "objective_histogram": {
+        "1": 1,
+        "2": 10
+      },
+      "optimal_placements_host_indices": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "p1_tight": {
+      "total_assignments": 16,
+      "feasible_assignments": 4,
+      "optimal_assignments": 4,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 4
+      },
+      "optimal_placements_host_indices": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "p0_reference": {
+      "total_assignments": 16,
+      "feasible_assignments": 1,
+      "optimal_assignments": 1,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 1
+      },
+      "optimal_placements_host_indices": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    "p1_infeasible": {
+      "total_assignments": 16,
+      "feasible_assignments": 0,
+      "optimal_assignments": 0,
+      "optimum": null,
+      "objective_histogram": {},
+      "optimal_placements_host_indices": []
+    },
+    "a3_dev_n4": {
+      "total_assignments": 81,
+      "feasible_assignments": 18,
+      "optimal_assignments": 2,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 2,
+        "3": 16
+      },
+      "optimal_placements_host_indices": [
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          2
+        ]
+      ]
+    },
+    "a3_test_n4_1": {
+      "total_assignments": 81,
+      "feasible_assignments": 4,
+      "optimal_assignments": 1,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 1,
+        "3": 3
+      },
+      "optimal_placements_host_indices": [
+        [
+          2,
+          2,
+          2,
+          1
+        ]
+      ]
+    },
+    "a3_test_n4_2": {
+      "total_assignments": 81,
+      "feasible_assignments": 8,
+      "optimal_assignments": 2,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 2,
+        "3": 6
+      },
+      "optimal_placements_host_indices": [
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          2
+        ]
+      ]
+    },
+    "a3_test_n4_3": {
+      "total_assignments": 81,
+      "feasible_assignments": 10,
+      "optimal_assignments": 2,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 2,
+        "3": 8
+      },
+      "optimal_placements_host_indices": [
+        [
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          2
+        ]
+      ]
+    },
+    "a3_dev_n5": {
+      "total_assignments": 243,
+      "feasible_assignments": 90,
+      "optimal_assignments": 8,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 8,
+        "3": 82
+      },
+      "optimal_placements_host_indices": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "a3_test_n5_1": {
+      "total_assignments": 243,
+      "feasible_assignments": 28,
+      "optimal_assignments": 2,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 2,
+        "3": 26
+      },
+      "optimal_placements_host_indices": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "a3_test_n5_2": {
+      "total_assignments": 243,
+      "feasible_assignments": 42,
+      "optimal_assignments": 4,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 4,
+        "3": 38
+      },
+      "optimal_placements_host_indices": [
+        [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "a3_test_n5_3": {
+      "total_assignments": 243,
+      "feasible_assignments": 106,
+      "optimal_assignments": 8,
+      "optimum": 2,
+      "objective_histogram": {
+        "2": 8,
+        "3": 98
+      },
+      "optimal_placements_host_indices": [
+        [
+          0,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "a3_one_host": {
+      "total_assignments": 81,
+      "feasible_assignments": 21,
+      "optimal_assignments": 1,
+      "optimum": 1,
+      "objective_histogram": {
+        "1": 1,
+        "2": 8,
+        "3": 12
+      },
+      "optimal_placements_host_indices": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "a3_infeasible": {
+      "total_assignments": 81,
+      "feasible_assignments": 0,
+      "optimal_assignments": 0,
+      "optimum": null,
+      "objective_histogram": {},
+      "optimal_placements_host_indices": []
+    }
+  }
+}
