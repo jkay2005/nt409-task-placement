@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "study_id": "nt409_shot_noise_single_reference_v2",
+  "software_validation": false,
+  "instances": [
+    {
+      "instance_id": "a3_dev_n5",
+      "path": "data/benchmarks/nt409_shot_noise_v2/instance.json",
+      "input_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+      "qubo_sha256": "8fa77f91e277724277e5aaf4c1a29b5cec345e91e3660f13a6a166efc44fc515"
+    }
+  ],
+  "depths": [
+    1,
+    2
+  ],
+  "seeds": [
+    300,
+    301,
+    302,
+    303,
+    304
+  ],
+  "shots": 1024,
+  "final_shots": 1024,
+  "noise_batches": 20,
+  "maxiter": 200,
+  "rhobeg": 1.0,
+  "tol": 0.0001,
+  "threads": 4,
+  "max_seconds": 7200.0,
+  "min_available_gib": 4.0,
+  "encoding": "three_host_domain_wall_v2",
+  "capacity_penalty": 4,
+  "scaling": "max_abs",
+  "mixer": "X",
+  "initial_rule": "beta=[0.3,0,...]; gamma_execution=[1.0,0,...]",
+  "primary_metric": "exact endpoint P_opt; P_valid separately; no postselection/bit repair",
+  "comparison": "one fixed five-task three-host input; one exact and five shots optimizations per depth; same evaluation cap, not matched wall time",
+  "scope": "single previously observed reference instance; no generalization or QPU speed claims",
+  "historical_note": "Supersedes unexecuted Notebook22 v1; no pooling with two-host or historical runs",
+  "domain_penalty": 4
+}

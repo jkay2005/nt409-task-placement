@@ -1,0 +1,475 @@
+{
+  "instance_id": "p0_reference",
+  "input_canonical_sha256": "28b1e170fd58c0f81035502d70a75ac4cb6c2951203836712cc399fbf32b5940",
+  "quality": {
+    "algorithm": "FirstFit",
+    "status": "feasible",
+    "found_valid": true,
+    "objective": 2,
+    "placement": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "x": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "y": [
+      1,
+      1
+    ],
+    "solver_certified_optimal": false,
+    "solver_certified_infeasible": false,
+    "solver_bound": null,
+    "solver_gap": null,
+    "solver_version": null,
+    "trace": [
+      {
+        "task_index": 0,
+        "host_index": 0
+      },
+      {
+        "task_index": 1,
+        "host_index": 0
+      },
+      {
+        "task_index": 2,
+        "host_index": 1
+      },
+      {
+        "task_index": 3,
+        "host_index": 1
+      }
+    ],
+    "task_processing_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "build_seconds": 8.400000297115184e-06,
+    "solve_seconds": 1.3799999578623101e-05,
+    "check_seconds": 5.899999996472616e-05,
+    "total_seconds": 8.129999878292438e-05
+  },
+  "warmup": {
+    "algorithm": "FirstFit",
+    "status": "feasible",
+    "found_valid": true,
+    "objective": 2,
+    "placement": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "x": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "y": [
+      1,
+      1
+    ],
+    "solver_certified_optimal": false,
+    "solver_certified_infeasible": false,
+    "solver_bound": null,
+    "solver_gap": null,
+    "solver_version": null,
+    "trace": [
+      {
+        "task_index": 0,
+        "host_index": 0
+      },
+      {
+        "task_index": 1,
+        "host_index": 0
+      },
+      {
+        "task_index": 2,
+        "host_index": 1
+      },
+      {
+        "task_index": 3,
+        "host_index": 1
+      }
+    ],
+    "task_processing_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "build_seconds": 6.499998562503606e-06,
+    "solve_seconds": 8.200000593205914e-06,
+    "check_seconds": 5.500000042957254e-05,
+    "total_seconds": 6.979999852774199e-05
+  },
+  "timings": [
+    {
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 5.899999450775795e-06,
+      "solve_seconds": 8.099999831756577e-06,
+      "check_seconds": 5.3199999456410296e-05,
+      "total_seconds": 6.719999873894267e-05
+    },
+    {
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 6.000000212225132e-06,
+      "solve_seconds": 7.79999936639797e-06,
+      "check_seconds": 5.270000110613182e-05,
+      "total_seconds": 6.650000068475492e-05
+    },
+    {
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 6.099999154685065e-06,
+      "solve_seconds": 7.200000254670158e-06,
+      "check_seconds": 5.2800000048591755e-05,
+      "total_seconds": 6.629999916185625e-05
+    },
+    {
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 5.899999450775795e-06,
+      "solve_seconds": 7.0000005507608876e-06,
+      "check_seconds": 6.239999856916256e-05,
+      "total_seconds": 7.539999933214858e-05
+    },
+    {
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 6.299998858594336e-06,
+      "solve_seconds": 7.700000423938036e-06,
+      "check_seconds": 5.559999954130035e-05,
+      "total_seconds": 6.969999958528206e-05
+    }
+  ]
+}

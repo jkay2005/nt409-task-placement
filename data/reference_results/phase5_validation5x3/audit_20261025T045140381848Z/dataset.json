@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "study_id": "nt409_validation5x3_v1",
+  "shape": [
+    5,
+    3
+  ],
+  "qubits": 25,
+  "selection_protocol": "# Protocol kiểm chứng 5×3 — chốt trước khi chạy QAOA mới\n\nNgày 25/10/2026. Giữ a3_dev_n5 làm development; bổ sung đúng ba instance kiểm chứng, tất cả 5 task × 3 host và 25 qubit. Đây là mẫu tổng hợp có điều kiện, không đại diện mọi workload thực tế.\n\n## Quy tắc chọn dữ liệu\n\n1. Duyệt hết multiset 5 demand trong {1,2,3}² và multiset 3 capacity trong {2,3}². Không giới hạn tổng demand ≤6 như bộ cũ. Capacity 2/3 giữ đúng hai bit slack mỗi resource/host.\n2. Giữ instance có nghiệm, ít nhất hai loại task và hai loại host, đồng thời có assignment qua CPU nhưng trượt RAM và assignment qua RAM nhưng trượt CPU. Hai ràng buộc do đó không suy ra nhau trên toàn bộ 243 assignment.\n3. Loại tương đương do hoán vị task/host hoặc đổi CPU↔RAM; loại chữ ký của các input lịch sử 5×3 đã thu được trong snapshot A/B (lưu danh sách loại trừ).\n4. Chia ba tầng: optimum=2; optimum=3 với số assignment khả thi ở nửa dưới; optimum=3 ở nửa trên. Chia nửa bằng thứ tự (số khả thi, chữ ký), floor(N/2). Chọn một phần tử mỗi tầng có SHA256({seed:20261025, signature:…}) nhỏ nhất. Không dùng QAOA, FF hay BFD để lọc/chọn. Nghiệm tối ưu chỉ dùng định nghĩa tầng và chấm điểm.\n5. Xáo trộn thứ tự task/host một lần bằng Random(20261025+k), k=0,1,2 theo thứ tự tầng; khóa thứ tự cho mọi thuật toán. Không thử nhiều thứ tự rồi lấy kết quả đẹp.\n\nĐây là lựa chọn dự kiến trước kết quả QAOA trên các instance mới, không phải preregistration công khai hay kiểm định mù. Với ba instance và một lần khởi tạo, chỉ kết luận trên từng case; seed huấn luyện không làm tăng số instance độc lập. Optimum=3 khiến mọi placement khả thi đều tối ưu theo mục tiêu số host; phải đọc P_valid/P_opt cùng nhau và giải thích điều này.\n\n## T4 dự kiến được khóa trong bước này\n\nBa nhánh standard_x, valid_x, valid_dw; penalty domain/capacity=4; exact ideal Aer double CPU, 4 threads, RAM còn tối thiểu4GiB; mean-energy + COBYLA, max_abs Hamiltonian. Mỗi instance/nhánh: p1 bắt đầu [0.3,1.0], tối đa100 lời gọi objective; p2 INTERP từ góc mean-energy tốt nhất p1, tối đa100 lời gọi. rhobeg=1, tol=1e-4; giới hạn thời gian mỗi stage2400giây; báo nếu ngừng sớm. Không chọn góc theo P_opt. Không tái dùng kết quả huấn luyện lịch sử làm một nhánh miễn phí. Tính cả p1, setup, final scoring và mọi simulation ngoài optimizer; cap bằng nhau không đồng nghĩa thời gian bằng nhau.\n\nTrước hết chạy ba nhánh trên development (600 objective evaluations). Sau khi xác minh phần mềm/ngân sách, chạy nguyên cấu hình trên ba instance mới (1800 objective evaluations). Tổng tối đa2400 objective evaluations, cộng preflight/scoring/shots, dự kiến nhiều giờ trên Windows; không hứa thời gian từ một phép đo. Nếu thay phương pháp sau khi xem validation, đánh dấu validation đã dùng phát triển và báo thay đổi. Không tự tăng cap/chọn seed hoặc bỏ case thất bại.\n\nDepth p1 là chuẩn bị có trả chi phí; p2 là kết quả chính với tổng cap200. Báo các bước bị lỗi, nfev/cap, trạng thái dừng, runtime, P_domain/P_valid/P_opt/P_ground/mean-energy. Thêm final sampling1024 shot với seed20261025+k theo thứ tự instance, dùng cùng seed giữa nhánh chỉ để tái lập; exact metrics là chính, counts là minh họa. Chưa thực hiện optimizer trong Notebook26.\n\n## Kiểm toán trước huấn luyện\n\nNotebook26 tái tạo pool và chọn mẫu; kiểm hash/input/thứ tự; vét cạn243 assignment; kiểm QUBO/Ising trên326 vector cơ sở bậc2; giải chính xác slack cho8192 base. Uniform encoded giữ y đo được; random host assignment suy y là control khác. FF/BFD dùng nguyên source Notebook21; MILP vẫn chờ bước T5 với solver/version/status được ghi riêng. Không gọi vét cạn là MILP. Không đo tốc độ thuật toán từ một lần kiểm toán.\n\nProtocol này thay điều khoản “chỉ một exact input cho toàn study” trong kế hoạch cũ. Trong mỗi phép so sánh, mọi phương pháp phải dùng cùng input/hash; kích thước 5×3 cố định từ đầu đến cuối. Artifact T2 và Notebook22–25 vẫn đúng cho a3_dev_n5; không sửa kết quả cũ.\n",
+  "excluded_signatures": [
+    "51eb7af72dbcb79303ef2401370cf6ed764075cd4026c2aa7bf80efc1ed7529b",
+    "57844c5eff6256bd310cdb32c62e69dbc3a3f8d7703400654c646aa2217c5bf3",
+    "606e7cfe77019fe1ac5c7f4d98bc8b0e2c43d22f6b29997caee950f5697d3f77",
+    "bb6cff369612011ec28b0743226bd74ea2f5b7646144a09bef284217ff82bf29"
+  ],
+  "exclusion_origins": {
+    "51eb7af72dbcb79303ef2401370cf6ed764075cd4026c2aa7bf80efc1ed7529b": [
+      {
+        "instance_id": "a3_dev_n5",
+        "input_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278"
+      }
+    ],
+    "57844c5eff6256bd310cdb32c62e69dbc3a3f8d7703400654c646aa2217c5bf3": [
+      {
+        "instance_id": "a3_test_n5_1",
+        "input_sha256": "e7df3da96d629861c3dbd882966cb7f7cc75c8088193f004c66eb39f4b13a067"
+      },
+      {
+        "instance_id": "a3_test_n5_1",
+        "input_sha256": "e7df3da96d629861c3dbd882966cb7f7cc75c8088193f004c66eb39f4b13a067"
+      }
+    ],
+    "606e7cfe77019fe1ac5c7f4d98bc8b0e2c43d22f6b29997caee950f5697d3f77": [
+      {
+        "instance_id": "a3_test_n5_2",
+        "input_sha256": "7ed78e13cbfa6bc7b27f680c8d814616c9c35b28e9768aff7eae9024d0b5a014"
+      },
+      {
+        "instance_id": "a3_test_n5_2",
+        "input_sha256": "7ed78e13cbfa6bc7b27f680c8d814616c9c35b28e9768aff7eae9024d0b5a014"
+      }
+    ],
+    "bb6cff369612011ec28b0743226bd74ea2f5b7646144a09bef284217ff82bf29": [
+      {
+        "instance_id": "a3_test_n5_3",
+        "input_sha256": "c30372c20a376d7193ceb9a413ae247f790cc937ad49fd3500bf44ad6a6117fd"
+      },
+      {
+        "instance_id": "a3_test_n5_3",
+        "input_sha256": "c30372c20a376d7193ceb9a413ae247f790cc937ad49fd3500bf44ad6a6117fd"
+      }
+    ]
+  },
+  "pool_statistics": {
+    "raw_multiset_candidates": 25740,
+    "feasible_multiset_candidates": 752,
+    "independent_heterogeneous_candidates": 416,
+    "unique_eligible_after_exclusions": 217,
+    "excluded_signature_count": 4,
+    "strata_sizes": [
+      5,
+      106,
+      106
+    ],
+    "selection_seed": 20261025
+  },
+  "development_instance": {
+    "schema_version": 1,
+    "instance_id": "a3_dev_n5",
+    "objective": "min_active_hosts",
+    "tasks": [
+      {
+        "id": "t0",
+        "cpu": 1,
+        "ram": 1
+      },
+      {
+        "id": "t1",
+        "cpu": 1,
+        "ram": 1
+      },
+      {
+        "id": "t2",
+        "cpu": 1,
+        "ram": 1
+      },
+      {
+        "id": "t3",
+        "cpu": 1,
+        "ram": 1
+      },
+      {
+        "id": "t4",
+        "cpu": 1,
+        "ram": 2
+      }
+    ],
+    "hosts": [
+      {
+        "id": "h0",
+        "cpu": 2,
+        "ram": 2
+      },
+      {
+        "id": "h1",
+        "cpu": 3,
+        "ram": 3
+      },
+      {
+        "id": "h2",
+        "cpu": 3,
+        "ram": 3
+      }
+    ]
+  },
+  "validation_instances": [
+    {
+      "schema_version": 1,
+      "instance_id": "v5x3_1",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t4",
+          "cpu": 1,
+          "ram": 1
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 2,
+          "ram": 3
+        },
+        {
+          "id": "h1",
+          "cpu": 3,
+          "ram": 2
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "instance_id": "v5x3_2",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 3
+        },
+        {
+          "id": "t1",
+          "cpu": 2,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t4",
+          "cpu": 1,
+          "ram": 1
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 2,
+          "ram": 2
+        },
+        {
+          "id": "h1",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 2,
+          "ram": 3
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "instance_id": "v5x3_3",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 3,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t4",
+          "cpu": 1,
+          "ram": 1
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "h1",
+          "cpu": 2,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    }
+  ],
+  "planned_training": {
+    "variants": [
+      "standard_x",
+      "valid_x",
+      "valid_dw"
+    ],
+    "objective": "exact_mean_energy",
+    "optimizer": "COBYLA",
+    "depths": [
+      1,
+      2
+    ],
+    "max_evaluations_per_stage": 100,
+    "max_seconds_per_stage": 2400,
+    "rhobeg": 1.0,
+    "tol": 0.0001,
+    "initial_p1": [
+      0.3,
+      1.0
+    ],
+    "p2_start": "INTERP from own p1 best mean-energy point",
+    "threads": 4,
+    "min_available_gib": 4.0,
+    "hamiltonian_scaling": "max_abs",
+    "final_shots": 1024,
+    "final_seed_base": 20261025,
+    "primary_depth": 2,
+    "total_objective_cap_per_instance": 600
+  }
+}

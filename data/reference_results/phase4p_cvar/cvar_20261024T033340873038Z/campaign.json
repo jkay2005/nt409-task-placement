@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "created_utc": "20261024T033340873038Z",
+  "identity": {
+    "protocol": {
+      "schema_version": 1,
+      "study_id": "nt409_cvar_v1",
+      "software_validation": false,
+      "instances": [
+        {
+          "instance_id": "a3_dev_n5",
+          "path": "data/benchmarks/nt409_shot_noise_v2/instance.json",
+          "input_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+          "qubo_sha256": "8fa77f91e277724277e5aaf4c1a29b5cec345e91e3660f13a6a166efc44fc515"
+        }
+      ],
+      "depths": [
+        1,
+        2
+      ],
+      "seeds": [
+        400
+      ],
+      "shots": 1024,
+      "final_shots": 1024,
+      "noise_batches": 1,
+      "maxiter": 200,
+      "rhobeg": 1.0,
+      "tol": 0.0001,
+      "threads": 4,
+      "max_seconds": 7200.0,
+      "min_available_gib": 4.0,
+      "encoding": "three_host_domain_wall_v2",
+      "capacity_penalty": 4,
+      "scaling": "max_abs",
+      "mixer": "X",
+      "initial_rule": "fresh p1 anchor [0.3,1] -> repeat beta/gamma for p2",
+      "primary_metric": "exact endpoint P_opt; P_valid separately; no postselection/bit repair",
+      "comparison": "exact only; fresh mean p1:100 + INTERP p2:100 per objective; total cap200; no seed repetitions",
+      "scope": "one fixed previously observed reference; objective study after choosing INTERP on this reference; exploratory, no matched-time/generalization claims",
+      "historical_note": "no trained angles/results imported from Notebook23; alpha1 is a fresh control",
+      "domain_penalty": 4,
+      "total_budget": 200,
+      "local_budget": 100,
+      "interp_rule": "Zhou et al. PRX 10 021067 (2020), Appendix B Eq B1; p1 -> p2 repeats beta and gamma",
+      "winner_rule": "COBYLA returned point under that stage objective; never select using P_opt",
+      "alphas": [
+        1.0,
+        0.25,
+        0.1
+      ]
+    },
+    "inputs": {
+      "a3_dev_n5": {
+        "schema_version": 1,
+        "instance_id": "a3_dev_n5",
+        "objective": "min_active_hosts",
+        "tasks": [
+          {
+            "id": "t0",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t1",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t2",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t3",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t4",
+            "cpu": 1,
+            "ram": 2
+          }
+        ],
+        "hosts": [
+          {
+            "id": "h0",
+            "cpu": 2,
+            "ram": 2
+          },
+          {
+            "id": "h1",
+            "cpu": 3,
+            "ram": 3
+          },
+          {
+            "id": "h2",
+            "cpu": 3,
+            "ram": 3
+          }
+        ]
+      }
+    },
+    "source_sha256": {
+      "placement.py": "899206f239effdc5afaac5f15e9dcb0302c476e646d8b06426ff8ef5a78f1c8f",
+      "qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+      "ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+      "qaoa_experiment.py": "e6afa1ba317e312a4095c67d2ade43ac1964351753384f9c9f2d2c7ff38c58cf",
+      "qaoa_optimizer.py": "1dfd9da488ffe1723d538e2bb05b6785bfb087cc897b483e81d0c8390894deda",
+      "three_host_encoding.py": "9b6e9d1d18ab66d6b26439b72ae93437bfb9933925f7a912f626bd4538e9c836",
+      "shot_noise_diagnostic.py": "5e7e225000cab04e56ad174b029c65593e723b27a862e5c38a1f37e701ee8ec2",
+      "shot_noise_campaign.py": "ccd7222ffb12654ec7ca519f4c83ae9ab9a63e6416768ecf8797edfb62df19d4",
+      "initialization_campaign.py": "c6508308a9411bc4942bdddbb5adb949ea0de50d2c6b6df2fe445ae1296361ed",
+      "cvar_experiment.py": "dddafe2248feca63ef4307061af379e6b5d81f6c453211a0b787626bfdfe708f",
+      "convergence_diagnostics.py": "5664e4f5e045bc3fff4e2ff5231a88ee312eefbec3b5a4673a1e69c196bbb6da",
+      "convergence_campaign.py": "a2299a93d070057dd66b0eca21ab3e092cb5e25cd15a9f307a95c12e3f9ec89c",
+      "independent_campaign.py": "af953f6f78b4fac9ff49522f3cb8f9677499eb3048401219bd7d411f7ac0c1eb",
+      "penalty_analysis.py": "1ee33001b1ac723df6d2c9bb541ecac27221e30fa77c1dc9fb9777d3d87363ba",
+      "cvar_campaign.py": "afbef64b7287987d0151d425f8e3dd141188ac298bdd43d4f268990a950566bb"
+    },
+    "runtime": {
+      "python_version": "3.12.14",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "numpy_version": "2.5.3",
+      "scipy_version": "1.18.1",
+      "qiskit_version": "2.5.2",
+      "qiskit_optimization_version": "0.7.0",
+      "qiskit_aer_version": "0.17.2"
+    },
+    "model": {
+      "qubits": 25,
+      "scale": 65.5
+    }
+  },
+  "identity_sha256": "58638ef80d32594f98f5836bc60e22ff4767ea37472735aa529831f7ec0b4bbe",
+  "plan": [
+    {
+      "id": "p2__mean__stage1",
+      "group": "p2__mean",
+      "p": 1,
+      "alpha": 1.0,
+      "target_alpha": 1.0,
+      "instance_id": "a3_dev_n5",
+      "start": "anchor",
+      "depends_on": null,
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "maxiter": 100,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 0,
+        "final_seed": 60000000
+      }
+    },
+    {
+      "id": "p2__mean__stage2",
+      "group": "p2__mean",
+      "p": 2,
+      "alpha": 1.0,
+      "target_alpha": 1.0,
+      "instance_id": "a3_dev_n5",
+      "start": "interp",
+      "depends_on": "p2__mean__stage1",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "maxiter": 100,
+        "initial_point": null,
+        "seed": 0,
+        "final_seed": 60000001
+      }
+    },
+    {
+      "id": "p2__cvar_025__stage1",
+      "group": "p2__cvar_025",
+      "p": 1,
+      "alpha": 1.0,
+      "target_alpha": 0.25,
+      "instance_id": "a3_dev_n5",
+      "start": "anchor",
+      "depends_on": null,
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "maxiter": 100,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 0,
+        "final_seed": 60000002
+      }
+    },
+    {
+      "id": "p2__cvar_025__stage2",
+      "group": "p2__cvar_025",
+      "p": 2,
+      "alpha": 0.25,
+      "target_alpha": 0.25,
+      "instance_id": "a3_dev_n5",
+      "start": "interp",
+      "depends_on": "p2__cvar_025__stage1",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "maxiter": 100,
+        "initial_point": null,
+        "seed": 0,
+        "final_seed": 60000003
+      }
+    },
+    {
+      "id": "p2__cvar_010__stage1",
+      "group": "p2__cvar_010",
+      "p": 1,
+      "alpha": 1.0,
+      "target_alpha": 0.1,
+      "instance_id": "a3_dev_n5",
+      "start": "anchor",
+      "depends_on": null,
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "maxiter": 100,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 0,
+        "final_seed": 60000004
+      }
+    },
+    {
+      "id": "p2__cvar_010__stage2",
+      "group": "p2__cvar_010",
+      "p": 2,
+      "alpha": 0.1,
+      "target_alpha": 0.1,
+      "instance_id": "a3_dev_n5",
+      "start": "interp",
+      "depends_on": "p2__cvar_010__stage1",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "maxiter": 100,
+        "initial_point": null,
+        "seed": 0,
+        "final_seed": 60000005
+      }
+    }
+  ],
+  "trials": {
+    "p2__mean__stage1": {
+      "path": "raw/p2__mean__stage1.json",
+      "sha256": "499770dfe5eb55094cbf45efe308be502a4ef95dd255709b89aa783642b01d10",
+      "status": "completed"
+    },
+    "p2__mean__stage2": {
+      "path": "raw/p2__mean__stage2.json",
+      "sha256": "afbd105d2dee074caf1a92928f53f1f2e781ef7e54aab88d7d5863ce71d6f6e6",
+      "status": "completed"
+    },
+    "p2__cvar_025__stage1": {
+      "path": "raw/p2__cvar_025__stage1.json",
+      "sha256": "30bc2650a52434af113a97b286c25d9be4d73e320669568d59d5e6d540ca5f2e",
+      "status": "completed"
+    },
+    "p2__cvar_025__stage2": {
+      "path": "raw/p2__cvar_025__stage2.json",
+      "sha256": "98237d99069329898645fd99a103dcb139fe1e5bea82cfa7115735622018d97f",
+      "status": "completed"
+    },
+    "p2__cvar_010__stage1": {
+      "path": "raw/p2__cvar_010__stage1.json",
+      "sha256": "e735655721ea7606b167b081f4abb145aa310fc6992e7e6f6297d20f176da35a",
+      "status": "completed"
+    },
+    "p2__cvar_010__stage2": {
+      "path": "raw/p2__cvar_010__stage2.json",
+      "sha256": "358219c84ec1c924677ad27ee71bda150f0e590af2ad1f6dbb62358743f97347",
+      "status": "completed"
+    }
+  },
+  "profiles": {
+    "1": {
+      "path": "profiles/p1.json",
+      "sha256": "58807e5a2bf6c766117a3d1983a82a31b9279f2724c4b30afad481f702edea88"
+    },
+    "2": {
+      "path": "profiles/p2.json",
+      "sha256": "47656189ddc4cd71c7e41997d4091d576825003b9d4a100049b76837ba52cf74"
+    }
+  }
+}

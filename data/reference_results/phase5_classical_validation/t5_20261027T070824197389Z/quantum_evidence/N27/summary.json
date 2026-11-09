@@ -1,0 +1,152 @@
+{
+  "software_validation": false,
+  "instance_id": "a3_dev_n5",
+  "qubits": 25,
+  "complete": true,
+  "objective_cap": 600,
+  "objective_calls_reserved": 570,
+  "simulation_calls_reserved": 579,
+  "elapsed_stage_seconds": 3080.1975453999985,
+  "rows": [
+    {
+      "id": "standard_x_p1",
+      "variant": "standard_x",
+      "p": 1,
+      "status": "completed",
+      "cap": 100,
+      "objective_calls_reserved": 100,
+      "objective_calls_completed": 100,
+      "simulation_calls_reserved": 101,
+      "elapsed_seconds": 440.7134618,
+      "compiled_depth": 37,
+      "optimizer_stop": {
+        "status": 3,
+        "success": false,
+        "message": "Return from COBYLA because the objective function has been evaluated MAXFUN times.",
+        "nfev": 100
+      },
+      "mean_energy": 104.94071334836704,
+      "p_domain": 0.4495836940777346,
+      "p_valid": 0.07019756994366783,
+      "p_opt": 0.005270324843772189,
+      "p_ground": 2.818080095179582e-06
+    },
+    {
+      "id": "standard_x_p2",
+      "variant": "standard_x",
+      "p": 2,
+      "status": "completed",
+      "cap": 100,
+      "objective_calls_reserved": 100,
+      "objective_calls_completed": 100,
+      "simulation_calls_reserved": 102,
+      "elapsed_seconds": 724.7196855000002,
+      "compiled_depth": 63,
+      "optimizer_stop": {
+        "status": 3,
+        "success": false,
+        "message": "Return from COBYLA because the objective function has been evaluated MAXFUN times.",
+        "nfev": 100
+      },
+      "mean_energy": 62.823613460388856,
+      "p_domain": 0.5271655740590127,
+      "p_valid": 0.16336144274386027,
+      "p_opt": 0.00836107863450173,
+      "p_ground": 3.1476055993741065e-05
+    },
+    {
+      "id": "valid_x_p1",
+      "variant": "valid_x",
+      "p": 1,
+      "status": "completed",
+      "cap": 100,
+      "objective_calls_reserved": 100,
+      "objective_calls_completed": 100,
+      "simulation_calls_reserved": 101,
+      "elapsed_seconds": 350.5007931,
+      "compiled_depth": 38,
+      "optimizer_stop": {
+        "status": 3,
+        "success": false,
+        "message": "Return from COBYLA because the objective function has been evaluated MAXFUN times.",
+        "nfev": 100
+      },
+      "mean_energy": 97.86273356997273,
+      "p_domain": 0.571907112351178,
+      "p_valid": 0.08872609207771802,
+      "p_opt": 0.00609216917764085,
+      "p_ground": 5.793093993817458e-06
+    },
+    {
+      "id": "valid_x_p2",
+      "variant": "valid_x",
+      "p": 2,
+      "status": "completed",
+      "cap": 100,
+      "objective_calls_reserved": 100,
+      "objective_calls_completed": 100,
+      "simulation_calls_reserved": 102,
+      "elapsed_seconds": 606.9339684000006,
+      "compiled_depth": 64,
+      "optimizer_stop": {
+        "status": 3,
+        "success": false,
+        "message": "Return from COBYLA because the objective function has been evaluated MAXFUN times.",
+        "nfev": 100
+      },
+      "mean_energy": 68.6465923878754,
+      "p_domain": 0.2886412523384022,
+      "p_valid": 0.07330221545615527,
+      "p_opt": 0.008113817661442101,
+      "p_ground": 3.0484833366085275e-05
+    },
+    {
+      "id": "valid_dw_p1",
+      "variant": "valid_dw",
+      "p": 1,
+      "status": "completed",
+      "cap": 100,
+      "objective_calls_reserved": 70,
+      "objective_calls_completed": 70,
+      "simulation_calls_reserved": 71,
+      "elapsed_seconds": 298.8746364999988,
+      "compiled_depth": 39,
+      "optimizer_stop": {
+        "status": 0,
+        "success": true,
+        "message": "Return from COBYLA because the trust region radius reaches its lower bound.",
+        "nfev": 70
+      },
+      "mean_energy": 103.66963751968592,
+      "p_domain": 1.0000000000000042,
+      "p_valid": 0.11577191300957014,
+      "p_opt": 0.004473070461558336,
+      "p_ground": 4.5895249370386925e-06
+    },
+    {
+      "id": "valid_dw_p2",
+      "variant": "valid_dw",
+      "p": 2,
+      "status": "completed",
+      "cap": 100,
+      "objective_calls_reserved": 100,
+      "objective_calls_completed": 100,
+      "simulation_calls_reserved": 102,
+      "elapsed_seconds": 658.4550000999989,
+      "compiled_depth": 69,
+      "optimizer_stop": {
+        "status": 3,
+        "success": false,
+        "message": "Return from COBYLA because the objective function has been evaluated MAXFUN times.",
+        "nfev": 100
+      },
+      "mean_energy": 69.1394219601032,
+      "p_domain": 1.000000000000008,
+      "p_valid": 0.2561720267502276,
+      "p_opt": 0.015432838958326816,
+      "p_ground": 3.539664945083052e-05
+    }
+  ],
+  "primary_depth": 2,
+  "warning": "p2 includes its own p1 cost; cap exhaustion is not convergence."
+}

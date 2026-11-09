@@ -1,0 +1,12 @@
+{
+  "base_commit": "d9009b0",
+  "delivery_commit": "8db083b",
+  "scope": "T4b development only, fixed 5x3/25q; cap100 per stage",
+  "files": {
+    "src/domain_wall_training.py": "aacefd41e2630fdc52aa84cc1f0e236bb4abccfb0a66fcf7af7bef2753f9d9bc",
+    "tests/test_domain_wall_training.py": "ea9385337d486efe7453c6d531647803dc9082b5c636025e22c6ed4b5c5fdbb0",
+    "notebooks/27_domain_wall_training_development.ipynb": "9e80e627ad278a911843315c7bc72b8dde75ab4a5220a6428b4937d347fd3498",
+    "N27_README_FIRST.md": "4e05f56d92dc971800ef389fdacf4ee4031473cd08c130cb7b5495c9a65f9e95",
+    "N27_VALIDATION.md": "f3d12c224bc37e3e9a5d79ea7735545d56b03f2eb4e8dbde7db3ad90785f8459"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "package": "nt409_notebook21_branch_b_v1_1",
+  "base_commit": "d88b0af59cb29e058b86da21d3d88e121572e7db",
+  "prepared_commit": "91ebc35498e7a52364487574b17574bc0483e2ee",
+  "purpose": "Python 3.14 installation fix; source/documents only, no benchmark outputs",
+  "active_protocol": "data/benchmarks/nt409_classical_b_v1_1/protocol.json",
+  "ortools_version": "9.15.6755",
+  "files_sha256": {
+    "B21_INSTALL_FIX.md": "0337e0cefa4b56d62d4728300644ea5707b59964bdfb1a11583dc45415f9a999",
+    "B21_README_FIRST.md": "5827a67e79905f6700b19f429dd5b9967334f431266b3b8539066059418b410e",
+    "data/benchmarks/nt409_classical_b_v1/protocol.json": "e317d7d0f7871fd7842334181d17afbfb481a4b54c4fd91689c19b9bcf04ccba",
+    "data/benchmarks/nt409_classical_b_v1_1/protocol.json": "55610fd1a81757668fdf891b9c645c1b36546c0449f8ef690c7acb4d73b0b1f4",
+    "docs/branch_b_json_explained_vi.md": "fc48af428c07858db7bfbd2fc4c329283b34160f74bb18fc30330c2d37f8c691",
+    "docs/branch_b_notebook21_vi.md": "de1795b882328662be1d27e14430e75eddb6a4c07380a224ac0319cd3371aaf2",
+    "notebooks/21_classical_baselines_b.ipynb": "4dd25a6c6fd344fd89b8fec044add031410b4079cb14ea0e572459c328d4b66a",
+    "requirements-branch-b.txt": "dfffe8d3f1c8a20673c1962ccba7ca8a1fdc977e237655754b435d926c5503b8",
+    "src/classical_baselines.py": "e9a976fd4a75011f13df6b708a7ab76da5c0bcd40d0a819784af4418e1f83155",
+    "src/classical_campaign.py": "065be2931e8cea15bc0ea8a94f6c3e5718ed603703ea91234862501fd6482cc9",
+    "tests/test_classical_baselines.py": "4c25e827e190446506e41b0226dcb163837c5cb27aff7bae1594f02386e931c0",
+    "tests/test_classical_campaign.py": "c89ae325de8f3e0882ef6d5361c72a3ca97a0e50a98eaad0fad4914467f7c577"
+  }
+}

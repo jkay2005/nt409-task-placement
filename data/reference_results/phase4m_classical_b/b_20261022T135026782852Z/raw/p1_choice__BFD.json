@@ -1,0 +1,475 @@
+{
+  "instance_id": "p1_choice",
+  "input_canonical_sha256": "322810c4fd59bbc790119c3997cf4f4885a91e2c92eb0d83ce7c36034104943b",
+  "quality": {
+    "algorithm": "BFD",
+    "status": "feasible",
+    "found_valid": true,
+    "objective": 2,
+    "placement": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "x": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "y": [
+      1,
+      1
+    ],
+    "solver_certified_optimal": false,
+    "solver_certified_infeasible": false,
+    "solver_bound": null,
+    "solver_gap": null,
+    "solver_version": null,
+    "trace": [
+      {
+        "task_index": 1,
+        "host_index": 1
+      },
+      {
+        "task_index": 2,
+        "host_index": 1
+      },
+      {
+        "task_index": 0,
+        "host_index": 0
+      },
+      {
+        "task_index": 3,
+        "host_index": 0
+      }
+    ],
+    "task_processing_order": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "build_seconds": 2.789999962260481e-05,
+    "solve_seconds": 9.700000009615906e-05,
+    "check_seconds": 0.00016800000048533548,
+    "total_seconds": 0.0002930000009655487
+  },
+  "warmup": {
+    "algorithm": "BFD",
+    "status": "feasible",
+    "found_valid": true,
+    "objective": 2,
+    "placement": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "x": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "y": [
+      1,
+      1
+    ],
+    "solver_certified_optimal": false,
+    "solver_certified_infeasible": false,
+    "solver_bound": null,
+    "solver_gap": null,
+    "solver_version": null,
+    "trace": [
+      {
+        "task_index": 1,
+        "host_index": 1
+      },
+      {
+        "task_index": 2,
+        "host_index": 1
+      },
+      {
+        "task_index": 0,
+        "host_index": 0
+      },
+      {
+        "task_index": 3,
+        "host_index": 0
+      }
+    ],
+    "task_processing_order": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "build_seconds": 7.300001016119495e-06,
+    "solve_seconds": 5.2600000344682485e-05,
+    "check_seconds": 7.119999827409629e-05,
+    "total_seconds": 0.0001312000003963476
+  },
+  "timings": [
+    {
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": 0
+        }
+      ],
+      "task_processing_order": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "build_seconds": 6.399999620043673e-06,
+      "solve_seconds": 4.70000013592653e-05,
+      "check_seconds": 6.129999928816687e-05,
+      "total_seconds": 0.00011480000102892518
+    },
+    {
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": 0
+        }
+      ],
+      "task_processing_order": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "build_seconds": 6.199999916134402e-06,
+      "solve_seconds": 4.470000021683518e-05,
+      "check_seconds": 6.140000004961621e-05,
+      "total_seconds": 0.00011240000094403513
+    },
+    {
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": 0
+        }
+      ],
+      "task_processing_order": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "build_seconds": 6.299998858594336e-06,
+      "solve_seconds": 4.400000034365803e-05,
+      "check_seconds": 5.62999994144775e-05,
+      "total_seconds": 0.0001066999993781792
+    },
+    {
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": 0
+        }
+      ],
+      "task_processing_order": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "build_seconds": 6.199999916134402e-06,
+      "solve_seconds": 4.340000123193022e-05,
+      "check_seconds": 5.539999983739108e-05,
+      "total_seconds": 0.00010509999992791563
+    },
+    {
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "x": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": 0
+        }
+      ],
+      "task_processing_order": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "build_seconds": 6.000000212225132e-06,
+      "solve_seconds": 4.340000123193022e-05,
+      "check_seconds": 5.569999848376028e-05,
+      "total_seconds": 0.00010520000068936497
+    }
+  ]
+}

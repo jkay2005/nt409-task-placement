@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "study_id": "nt409_classical_b_v1",
+  "algorithms": [
+    "FirstFit",
+    "BFD",
+    "MILP"
+  ],
+  "instances": [
+    {
+      "instance_id": "p1_choice",
+      "family": "two_host",
+      "role": "benchmark",
+      "input_path": "data/instances/p1_choice.json",
+      "input_canonical_sha256": "322810c4fd59bbc790119c3997cf4f4885a91e2c92eb0d83ce7c36034104943b",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "p1_tight",
+      "family": "two_host",
+      "role": "benchmark",
+      "input_path": "data/instances/p1_tight.json",
+      "input_canonical_sha256": "303dae49db2b1c70bb774e3c0597fee1a99014211add31876244e3e219606c3a",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "p0_reference",
+      "family": "two_host",
+      "role": "benchmark",
+      "input_path": "data/instances/p0_reference.json",
+      "input_canonical_sha256": "28b1e170fd58c0f81035502d70a75ac4cb6c2951203836712cc399fbf32b5940",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "p1_infeasible",
+      "family": "two_host",
+      "role": "negative_control",
+      "input_path": "data/instances/p1_infeasible.json",
+      "input_canonical_sha256": "6a68773df0f2fd1800ee4770974c99c985898f75b7e084cf438e52af302e6b0c",
+      "include_in_main_comparison": false
+    },
+    {
+      "instance_id": "a3_test_n4_1",
+      "family": "three_host",
+      "role": "test",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_test_n4_1.json",
+      "input_canonical_sha256": "a97d31bcf5e36fbfb47c2f8dca4f0db20c2f7040a76a6aa04ad99099b9fa9b4f",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "a3_test_n4_2",
+      "family": "three_host",
+      "role": "test",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_test_n4_2.json",
+      "input_canonical_sha256": "b802b81eda240561125770f7da9f0376a3f80a05b1614bf935297ca497526a22",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "a3_test_n4_3",
+      "family": "three_host",
+      "role": "test",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_test_n4_3.json",
+      "input_canonical_sha256": "acfdb7c6e642f8b81a5b4fbcd411672916715d053992627fc9a3d1c77c8f5f4d",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "a3_test_n5_1",
+      "family": "three_host",
+      "role": "test",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_test_n5_1.json",
+      "input_canonical_sha256": "e7df3da96d629861c3dbd882966cb7f7cc75c8088193f004c66eb39f4b13a067",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "a3_test_n5_2",
+      "family": "three_host",
+      "role": "test",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_test_n5_2.json",
+      "input_canonical_sha256": "7ed78e13cbfa6bc7b27f680c8d814616c9c35b28e9768aff7eae9024d0b5a014",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "a3_test_n5_3",
+      "family": "three_host",
+      "role": "test",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_test_n5_3.json",
+      "input_canonical_sha256": "c30372c20a376d7193ceb9a413ae247f790cc937ad49fd3500bf44ad6a6117fd",
+      "include_in_main_comparison": true
+    },
+    {
+      "instance_id": "a3_one_host",
+      "family": "three_host",
+      "role": "functional_control",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_one_host.json",
+      "input_canonical_sha256": "1e0340b07eea144df5472fbcb5bbd9c562aff336515b3393d137cd290ead380f",
+      "include_in_main_comparison": false
+    },
+    {
+      "instance_id": "a3_infeasible",
+      "family": "three_host",
+      "role": "functional_control",
+      "input_path": "data/benchmarks/nt409_three_host_v2/instances/a3_infeasible.json",
+      "input_canonical_sha256": "7f0617c91f9115c884ac85b97668111787df4a34ea4fb60080f939d41e2254aa",
+      "include_in_main_comparison": false
+    }
+  ],
+  "ortools_version": "9.14.6206",
+  "solver": "SCIP",
+  "threads": 1,
+  "time_limit_seconds": 600,
+  "solver_options": "randomization/randomseedshift = 0\nlimits/gap = 0\nlimits/absgap = 0",
+  "heuristics": {
+    "FirstFit": "JSON task order; first fitting host in JSON order; both CPU/RAM",
+    "BFD": "Stable descending max(cpu/Cmax,ram/Rmax); active fitting hosts first, else inactive fitting; minimum sum of residual fractions of own capacities; ties by original host order"
+  },
+  "binary_tolerance": 1e-06,
+  "quality_repetitions": 1,
+  "timing_repetitions": 5,
+  "timing_warmups": 1,
+  "repeat_only_if_quality_total_below_seconds": 10,
+  "timing_scope": "warm in-process validation/setup + model construction + solve + result validation; excludes imports, file IO, reference enumeration, model LP export and analysis",
+  "timing_policy": "Only repeat terminal feasible heuristic / certified MILP outcomes; no quality selection across timing runs.",
+  "a_comparison_notebooks": [
+    17,
+    20
+  ],
+  "a_group_path": "handoff/nt409_branch_a_handoff_v1/tables/a_groups.csv",
+  "a_group_normalized_sha256": "b17fa523e2708686ceca103bce3436741d8a59d634d4c3dd160352f1da800ada",
+  "limitations": [
+    "A20 timing includes user-reported sleep; no matched end-to-end speedup claim.",
+    "Fixed known small instances; no independent holdout generalization claim.",
+    "Heuristic failure is not proof of infeasibility; timing repeats are not quality seeds."
+  ],
+  "a_groups_canonical_sha256": "996ab21daa217a523bd7749b411d16fe17a31ee14291cf3fe58d6f488d2b1d75",
+  "validator_normalized_sha256": "899206f239effdc5afaac5f15e9dcb0302c476e646d8b06426ff8ef5a78f1c8f"
+}

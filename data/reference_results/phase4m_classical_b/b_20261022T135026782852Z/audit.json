@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "quality_records": 36,
+  "main_records": 27,
+  "timing_records": 180,
+  "a_comparison_rows": 27,
+  "milp_certificates_complete": true
+}

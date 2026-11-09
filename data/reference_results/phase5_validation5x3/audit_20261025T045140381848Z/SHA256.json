@@ -1,0 +1,15 @@
+{
+  "audit.json": "685eb74ce26ee251d4a9d6e0a00c0043b9a22ed3ad1ac0a8e5ce8864a1233fea",
+  "dataset.json": "a65b5499bb5db17e239af4c66cdb6b670e0fa36f6becbb3abe0697bc1fb0a813",
+  "protocol.md": "99ddbb739b1c3498e0b687939a619d2224bcd91182461ef8f6bfa06abac0bf85",
+  "source/src/classical_baselines.py": "e9a976fd4a75011f13df6b708a7ab76da5c0bcd40d0a819784af4418e1f83155",
+  "source/src/independent_campaign.py": "af953f6f78b4fac9ff49522f3cb8f9677499eb3048401219bd7d411f7ac0c1eb",
+  "source/src/ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+  "source/src/placement.py": "7cfa397beb22fdf3feddedc0d889e104a619d6ef3e641ee72a62d82b087deb35",
+  "source/src/qaoa_experiment.py": "e6afa1ba317e312a4095c67d2ade43ac1964351753384f9c9f2d2c7ff38c58cf",
+  "source/src/qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+  "source/src/shot_noise_campaign.py": "ccd7222ffb12654ec7ca519f4c83ae9ab9a63e6416768ecf8797edfb62df19d4",
+  "source/src/three_host_benchmark.py": "fceb9fc761d906eec0e89d44da67fe6dd3dc17bb850fa19ad9e582e8687fd066",
+  "source/src/three_host_encoding.py": "9b6e9d1d18ab66d6b26439b72ae93437bfb9933925f7a912f626bd4538e9c836",
+  "source/src/validation5x3.py": "5edcc30083dd75b8c4b98ddd16ed67051f47980d66e1f5f1cae72d29aa097cf0"
+}

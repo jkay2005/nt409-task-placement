@@ -1,0 +1,13 @@
+{
+  "package": "nt409_notebook28_validation5x3_v1",
+  "base_n27_commit": "8db083b",
+  "delivery_commit": "9700f8fae29dfcbc33f0df4531d8bbdb3a520042",
+  "scope": "Three frozen validation cases, each 5 tasks x 3 hosts / 25 qubits; 18 stages; scientific objective cap1800",
+  "files": {
+    "experiments/domain_wall_validation.py": "8efe4507ed4e63a1775142cb6e1c4636b395a0bac6ec8aae04b042d89d15e559",
+    "tests/test_domain_wall_validation.py": "3211ff3fd57e29d25d20a44baad6099963b1487501317f9f1ffa311a12462680",
+    "notebooks/28_domain_wall_training_validation.ipynb": "842e2e93cb311fdc8e4bee4e994e28b3f68d539feb3de23be65c99a54d882e52",
+    "N28_README_FIRST.md": "71434b42bf8e604b987a7ee8c4f096abebc5b6eb60a0f87807609f5fbc2beac3",
+    "N28_VALIDATION.md": "47b64bc9c300dbc9765023ded3f9e4b81e1542fe8f66886b8cef804d34a58307"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "package": "nt409_notebook29_classical5x3_v1",
+  "created_date": "2026-10-27",
+  "base_revision": "9700f8fae29dfcbc33f0df4531d8bbdb3a520042",
+  "delivery_revision": "8edca238e18960b99690b29a2aa2aa823c07c4c4",
+  "scope": "four frozen inputs, five tasks and three hosts per input",
+  "files": {
+    "experiments/classical_validation.py": "413e8775831ea4ee61313617b8f9e01c9218f4c0eb2f9d4e62563646fc3e8be9",
+    "tests/test_classical_validation.py": "2f6d7c84e4f8db3909576e04f48a6b1873893852bc6a70eccc501ebeca0443c2",
+    "notebooks/29_classical_baselines_validation.ipynb": "a552e6df939e43095811de32d4bc0ad41c0324b225e1db9dd322f68bdfbdd042",
+    "requirements-n29.txt": "7fafa09ac816ab1d6e5bf957347233f4124a67b4997426fc4c3523bfa03b2bb4",
+    "N29_README_FIRST.md": "42737cbd76c5574e37f65ee6c44160f04b333dfb52a9529e4769459ea20c826a",
+    "N29_VALIDATION.md": "8eff626c6687f154c3b1f61d6a1db15fa814499d0148b474a1c7ee1a4ecb4f1e"
+  }
+}

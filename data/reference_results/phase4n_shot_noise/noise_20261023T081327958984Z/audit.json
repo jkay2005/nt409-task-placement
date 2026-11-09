@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "complete": true,
+  "checked_completed_attempts": 12,
+  "endpoint_replay": true,
+  "coverage": {
+    "planned": 12,
+    "completed": 12,
+    "pending": 0,
+    "failed": 0
+  },
+  "meaning": "Consistency checks only; not evidence that exact improves QAOA."
+}

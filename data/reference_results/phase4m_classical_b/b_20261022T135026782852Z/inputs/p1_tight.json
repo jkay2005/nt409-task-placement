@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "instance_id": "p1_tight",
+  "objective": "min_active_hosts",
+  "resource_units": {
+    "cpu": "unit",
+    "ram": "unit"
+  },
+  "tasks": [
+    {
+      "id": "T1",
+      "cpu": 2,
+      "ram": 1
+    },
+    {
+      "id": "T2",
+      "cpu": 2,
+      "ram": 1
+    },
+    {
+      "id": "T3",
+      "cpu": 1,
+      "ram": 2
+    },
+    {
+      "id": "T4",
+      "cpu": 1,
+      "ram": 2
+    }
+  ],
+  "hosts": [
+    {
+      "id": "H0",
+      "cpu": 3,
+      "ram": 3
+    },
+    {
+      "id": "H1",
+      "cpu": 3,
+      "ram": 3
+    }
+  ]
+}

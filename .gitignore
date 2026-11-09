@@ -11,3 +11,14 @@ venv/
 
 # Local VS Code settings
 .vscode/
+
+# Local environment files and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Local operating-system files
+Thumbs.db
+Desktop.ini
+.DS_Store

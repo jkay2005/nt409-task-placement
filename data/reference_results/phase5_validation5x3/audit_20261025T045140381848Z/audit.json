@@ -1,0 +1,1072 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-25T04:51:40.678399+00:00",
+  "dataset_sha256": "19bcd132aa4e240220611111dd81190fa21c84842f3c5f2bfb29de036c290758",
+  "selection_reproduced": true,
+  "training_evaluations": 0,
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.5.3",
+      "qiskit": "2.5.2",
+      "qiskit-optimization": "0.7.0"
+    }
+  },
+  "source_sha256": {
+    "validation5x3.py": "5edcc30083dd75b8c4b98ddd16ed67051f47980d66e1f5f1cae72d29aa097cf0",
+    "classical_baselines.py": "e9a976fd4a75011f13df6b708a7ab76da5c0bcd40d0a819784af4418e1f83155",
+    "three_host_encoding.py": "9b6e9d1d18ab66d6b26439b72ae93437bfb9933925f7a912f626bd4538e9c836",
+    "three_host_benchmark.py": "fceb9fc761d906eec0e89d44da67fe6dd3dc17bb850fa19ad9e582e8687fd066",
+    "independent_campaign.py": "af953f6f78b4fac9ff49522f3cb8f9677499eb3048401219bd7d411f7ac0c1eb",
+    "placement.py": "899206f239effdc5afaac5f15e9dcb0302c476e646d8b06426ff8ef5a78f1c8f",
+    "qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+    "ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+    "qaoa_experiment.py": "e6afa1ba317e312a4095c67d2ade43ac1964351753384f9c9f2d2c7ff38c58cf",
+    "shot_noise_campaign.py": "ccd7222ffb12654ec7ca519f4c83ae9ab9a63e6416768ecf8797edfb62df19d4"
+  },
+  "cases": [
+    {
+      "instance_id": "a3_dev_n5",
+      "role": "development",
+      "input_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+      "structural_signature": "51eb7af72dbcb79303ef2401370cf6ed764075cd4026c2aa7bf80efc1ed7529b",
+      "qubo_sha256": "8fa77f91e277724277e5aaf4c1a29b5cec345e91e3660f13a6a166efc44fc515",
+      "qubits": 25,
+      "truth": {
+        "assignments": 243,
+        "histogram": {
+          "1": 0,
+          "2": 8,
+          "3": 82
+        },
+        "optimum": 2,
+        "feasible_assignments": 90,
+        "optimal_assignments": 8,
+        "cpu_pass_ram_fail": 80,
+        "ram_pass_cpu_fail": 0,
+        "cpu_pass_ram_fail_witness": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "ram_pass_cpu_fail_witness": null,
+        "optimal_witness": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "certificate": {
+        "polynomial_identity": true,
+        "degree_two_basis_vectors": 326,
+        "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+        "num_qubits": 25,
+        "domain_and_capacity_penalty": 4
+      },
+      "max_ising_error": 0.0,
+      "offset": 248.5,
+      "scale": 65.5,
+      "reference": {
+        "minimum_energy": 2.0,
+        "original_best_objective": 2,
+        "instance_feasible": true,
+        "all_qubo_minimizers_feasible": true,
+        "example_minimizer_bits": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "minimizer_base_count": 8,
+        "uniform_baseline": {
+          "method": "exact_domain_wall_y_enumeration_slack_marginal",
+          "checked_base_vectors": 8192,
+          "total_bitstrings": 33554432,
+          "original_best_objective": 2,
+          "feasible_probability": 0.011962890625,
+          "optimal_placement_probability": 0.0009765625,
+          "invalid_domain_probability": 0.7626953125,
+          "ground_state_probability": 2.384185791015625e-07,
+          "mean_qubo_energy": 248.5
+        },
+        "structured_random": {
+          "assignments": 243,
+          "histogram": {
+            "2": 8,
+            "3": 82
+          },
+          "optimum": 2,
+          "feasible_probability": 0.37037037037037035,
+          "optimal_probability": 0.03292181069958848,
+          "method": "exact host-assignment enumeration; y inferred; no overload repair"
+        },
+        "placement_histogram": {
+          "2": 8,
+          "3": 82
+        }
+      },
+      "heuristics": [
+        {
+          "algorithm": "FirstFit",
+          "status": "feasible",
+          "found_valid": true,
+          "objective": 3,
+          "placement": [
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "x": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "y": [
+            1,
+            1,
+            1
+          ],
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 0,
+              "host_index": 0
+            },
+            {
+              "task_index": 1,
+              "host_index": 0
+            },
+            {
+              "task_index": 2,
+              "host_index": 1
+            },
+            {
+              "task_index": 3,
+              "host_index": 1
+            },
+            {
+              "task_index": 4,
+              "host_index": 2
+            }
+          ],
+          "task_processing_order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "build_seconds": 2.190000031987438e-05,
+          "solve_seconds": 2.1300000298651867e-05,
+          "check_seconds": 0.00013019999914831715,
+          "total_seconds": 0.00017360000038024737
+        },
+        {
+          "algorithm": "BFD",
+          "status": "feasible",
+          "found_valid": true,
+          "objective": 3,
+          "placement": [
+            1,
+            1,
+            1,
+            2,
+            0
+          ],
+          "x": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "y": [
+            1,
+            1,
+            1
+          ],
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 4,
+              "host_index": 0
+            },
+            {
+              "task_index": 0,
+              "host_index": 1
+            },
+            {
+              "task_index": 1,
+              "host_index": 1
+            },
+            {
+              "task_index": 2,
+              "host_index": 1
+            },
+            {
+              "task_index": 3,
+              "host_index": 2
+            }
+          ],
+          "task_processing_order": [
+            4,
+            0,
+            1,
+            2,
+            3
+          ],
+          "build_seconds": 1.2599999536178075e-05,
+          "solve_seconds": 0.00011340000037307618,
+          "check_seconds": 7.879999975557439e-05,
+          "total_seconds": 0.00020489999951678328
+        }
+      ]
+    },
+    {
+      "instance_id": "v5x3_1",
+      "role": "prospective_validation",
+      "input_sha256": "e3f4ba0ce5b66a51077619867d4f120603074a52043de9c980435f9d0b768a70",
+      "structural_signature": "4d7f5372107be9d29cacab55c75ce6ed02a0633b9470fc0f5becf1bbb6649512",
+      "qubo_sha256": "1d65fe4d459460fba939dd106111c6773490c18e4c5eaefc2dfb5cffb8a7719c",
+      "qubits": 25,
+      "truth": {
+        "assignments": 243,
+        "histogram": {
+          "1": 0,
+          "2": 4,
+          "3": 74
+        },
+        "optimum": 2,
+        "feasible_assignments": 78,
+        "optimal_assignments": 4,
+        "cpu_pass_ram_fail": 92,
+        "ram_pass_cpu_fail": 12,
+        "cpu_pass_ram_fail_witness": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "ram_pass_cpu_fail_witness": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "optimal_witness": [
+          0,
+          2,
+          2,
+          0,
+          2
+        ]
+      },
+      "certificate": {
+        "polynomial_identity": true,
+        "degree_two_basis_vectors": 326,
+        "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+        "num_qubits": 25,
+        "domain_and_capacity_penalty": 4
+      },
+      "max_ising_error": 0.0,
+      "offset": 248.5,
+      "scale": 65.5,
+      "reference": {
+        "minimum_energy": 2.0,
+        "original_best_objective": 2,
+        "instance_feasible": true,
+        "all_qubo_minimizers_feasible": true,
+        "example_minimizer_bits": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "minimizer_base_count": 4,
+        "uniform_baseline": {
+          "method": "exact_domain_wall_y_enumeration_slack_marginal",
+          "checked_base_vectors": 8192,
+          "total_bitstrings": 33554432,
+          "original_best_objective": 2,
+          "feasible_probability": 0.010009765625,
+          "optimal_placement_probability": 0.00048828125,
+          "invalid_domain_probability": 0.7626953125,
+          "ground_state_probability": 1.1920928955078125e-07,
+          "mean_qubo_energy": 248.5
+        },
+        "structured_random": {
+          "assignments": 243,
+          "histogram": {
+            "2": 4,
+            "3": 74
+          },
+          "optimum": 2,
+          "feasible_probability": 0.32098765432098764,
+          "optimal_probability": 0.01646090534979424,
+          "method": "exact host-assignment enumeration; y inferred; no overload repair"
+        },
+        "placement_histogram": {
+          "2": 4,
+          "3": 74
+        }
+      },
+      "heuristics": [
+        {
+          "algorithm": "FirstFit",
+          "status": "feasible",
+          "found_valid": true,
+          "objective": 3,
+          "placement": [
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "x": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "y": [
+            1,
+            1,
+            1
+          ],
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 0,
+              "host_index": 0
+            },
+            {
+              "task_index": 1,
+              "host_index": 0
+            },
+            {
+              "task_index": 2,
+              "host_index": 1
+            },
+            {
+              "task_index": 3,
+              "host_index": 2
+            },
+            {
+              "task_index": 4,
+              "host_index": 1
+            }
+          ],
+          "task_processing_order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "build_seconds": 4.540000009001233e-05,
+          "solve_seconds": 2.320000021427404e-05,
+          "check_seconds": 0.0001660999996602186,
+          "total_seconds": 0.0002348000007259543
+        },
+        {
+          "algorithm": "BFD",
+          "status": "feasible",
+          "found_valid": true,
+          "objective": 3,
+          "placement": [
+            0,
+            0,
+            2,
+            1,
+            2
+          ],
+          "x": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "y": [
+            1,
+            1,
+            1
+          ],
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 3,
+              "host_index": 1
+            },
+            {
+              "task_index": 0,
+              "host_index": 0
+            },
+            {
+              "task_index": 1,
+              "host_index": 0
+            },
+            {
+              "task_index": 2,
+              "host_index": 2
+            },
+            {
+              "task_index": 4,
+              "host_index": 2
+            }
+          ],
+          "task_processing_order": [
+            3,
+            0,
+            1,
+            2,
+            4
+          ],
+          "build_seconds": 1.2700000297627412e-05,
+          "solve_seconds": 9.039999986271141e-05,
+          "check_seconds": 6.639999992330559e-05,
+          "total_seconds": 0.00016959999993559904
+        }
+      ]
+    },
+    {
+      "instance_id": "v5x3_2",
+      "role": "prospective_validation",
+      "input_sha256": "6598feadf65a484d512329a6112944496771cec177fd4794bb54735a1b999a68",
+      "structural_signature": "306d4e1cc5a316ad08a27f1296dbd5b38f2e3f373139b716066f42253a40d795",
+      "qubo_sha256": "7e812b4deb77f5d378b585c85c0f50862d66a94e9857dc4b0e3d225a1c7f124c",
+      "qubits": 25,
+      "truth": {
+        "assignments": 243,
+        "histogram": {
+          "1": 0,
+          "2": 0,
+          "3": 1
+        },
+        "optimum": 3,
+        "feasible_assignments": 1,
+        "optimal_assignments": 1,
+        "cpu_pass_ram_fail": 49,
+        "ram_pass_cpu_fail": 7,
+        "cpu_pass_ram_fail_witness": [
+          0,
+          1,
+          0,
+          1,
+          2
+        ],
+        "ram_pass_cpu_fail_witness": [
+          1,
+          0,
+          2,
+          0,
+          2
+        ],
+        "optimal_witness": [
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "certificate": {
+        "polynomial_identity": true,
+        "degree_two_basis_vectors": 326,
+        "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+        "num_qubits": 25,
+        "domain_and_capacity_penalty": 4
+      },
+      "max_ising_error": 0.0,
+      "offset": 362.5,
+      "scale": 71.5,
+      "reference": {
+        "minimum_energy": 3.0,
+        "original_best_objective": 3,
+        "instance_feasible": true,
+        "all_qubo_minimizers_feasible": true,
+        "example_minimizer_bits": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "minimizer_base_count": 1,
+        "uniform_baseline": {
+          "method": "exact_domain_wall_y_enumeration_slack_marginal",
+          "checked_base_vectors": 8192,
+          "total_bitstrings": 33554432,
+          "original_best_objective": 3,
+          "feasible_probability": 0.0001220703125,
+          "optimal_placement_probability": 0.0001220703125,
+          "invalid_domain_probability": 0.7626953125,
+          "ground_state_probability": 5.960464477539063e-08,
+          "mean_qubo_energy": 362.5
+        },
+        "structured_random": {
+          "assignments": 243,
+          "histogram": {
+            "3": 1
+          },
+          "optimum": 3,
+          "feasible_probability": 0.00411522633744856,
+          "optimal_probability": 0.00411522633744856,
+          "method": "exact host-assignment enumeration; y inferred; no overload repair"
+        },
+        "placement_histogram": {
+          "3": 1
+        }
+      },
+      "heuristics": [
+        {
+          "algorithm": "FirstFit",
+          "status": "no_placement_found",
+          "found_valid": false,
+          "objective": null,
+          "placement": null,
+          "x": null,
+          "y": null,
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 0,
+              "host_index": 1
+            },
+            {
+              "task_index": 1,
+              "host_index": 0
+            },
+            {
+              "task_index": 2,
+              "host_index": 2
+            },
+            {
+              "task_index": 3,
+              "host_index": 2
+            },
+            {
+              "task_index": 4,
+              "host_index": null
+            }
+          ],
+          "task_processing_order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "build_seconds": 1.5800000255694613e-05,
+          "solve_seconds": 1.6999999388644937e-05,
+          "check_seconds": 3.4000004234258085e-06,
+          "total_seconds": 3.6299999919719994e-05
+        },
+        {
+          "algorithm": "BFD",
+          "status": "no_placement_found",
+          "found_valid": false,
+          "objective": null,
+          "placement": null,
+          "x": null,
+          "y": null,
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 0,
+              "host_index": 2
+            },
+            {
+              "task_index": 1,
+              "host_index": 0
+            },
+            {
+              "task_index": 2,
+              "host_index": 1
+            },
+            {
+              "task_index": 3,
+              "host_index": 1
+            },
+            {
+              "task_index": 4,
+              "host_index": null
+            }
+          ],
+          "task_processing_order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "build_seconds": 8.199999683711212e-06,
+          "solve_seconds": 6.940000002941815e-05,
+          "check_seconds": 1.3999997463542968e-06,
+          "total_seconds": 7.9100000220933e-05
+        }
+      ]
+    },
+    {
+      "instance_id": "v5x3_3",
+      "role": "prospective_validation",
+      "input_sha256": "dacf65f766d768c3b54db00d1e55b0254ff2b6575537b9fdecb9381d0f2d7847",
+      "structural_signature": "0dcf216ccd022056562b2557866af623a81f13fcd69027e422d43287a46ee5c7",
+      "qubo_sha256": "f1990a3d02a871f51e342d0a492fac7a7ec5e5827309fd3c922c5c21a51ca385",
+      "qubits": 25,
+      "truth": {
+        "assignments": 243,
+        "histogram": {
+          "1": 0,
+          "2": 0,
+          "3": 14
+        },
+        "optimum": 3,
+        "feasible_assignments": 14,
+        "optimal_assignments": 14,
+        "cpu_pass_ram_fail": 6,
+        "ram_pass_cpu_fail": 124,
+        "cpu_pass_ram_fail_witness": [
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        "ram_pass_cpu_fail_witness": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "optimal_witness": [
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "certificate": {
+        "polynomial_identity": true,
+        "degree_two_basis_vectors": 326,
+        "method": "complete binary degree-two basis; old affine energy plus domain penalty",
+        "num_qubits": 25,
+        "domain_and_capacity_penalty": 4
+      },
+      "max_ising_error": 0.0,
+      "offset": 336.5,
+      "scale": 77.5,
+      "reference": {
+        "minimum_energy": 3.0,
+        "original_best_objective": 3,
+        "instance_feasible": true,
+        "all_qubo_minimizers_feasible": true,
+        "example_minimizer_bits": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "minimizer_base_count": 14,
+        "uniform_baseline": {
+          "method": "exact_domain_wall_y_enumeration_slack_marginal",
+          "checked_base_vectors": 8192,
+          "total_bitstrings": 33554432,
+          "original_best_objective": 3,
+          "feasible_probability": 0.001708984375,
+          "optimal_placement_probability": 0.001708984375,
+          "invalid_domain_probability": 0.7626953125,
+          "ground_state_probability": 4.76837158203125e-07,
+          "mean_qubo_energy": 336.5
+        },
+        "structured_random": {
+          "assignments": 243,
+          "histogram": {
+            "3": 14
+          },
+          "optimum": 3,
+          "feasible_probability": 0.05761316872427984,
+          "optimal_probability": 0.05761316872427984,
+          "method": "exact host-assignment enumeration; y inferred; no overload repair"
+        },
+        "placement_histogram": {
+          "3": 14
+        }
+      },
+      "heuristics": [
+        {
+          "algorithm": "FirstFit",
+          "status": "feasible",
+          "found_valid": true,
+          "objective": 3,
+          "placement": [
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "x": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "y": [
+            1,
+            1,
+            1
+          ],
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 0,
+              "host_index": 0
+            },
+            {
+              "task_index": 1,
+              "host_index": 1
+            },
+            {
+              "task_index": 2,
+              "host_index": 1
+            },
+            {
+              "task_index": 3,
+              "host_index": 2
+            },
+            {
+              "task_index": 4,
+              "host_index": 2
+            }
+          ],
+          "task_processing_order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "build_seconds": 1.6599999980826396e-05,
+          "solve_seconds": 1.5900000107649248e-05,
+          "check_seconds": 9.859999954642262e-05,
+          "total_seconds": 0.00013129999933880754
+        },
+        {
+          "algorithm": "BFD",
+          "status": "feasible",
+          "found_valid": true,
+          "objective": 3,
+          "placement": [
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "x": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "y": [
+            1,
+            1,
+            1
+          ],
+          "solver_certified_optimal": false,
+          "solver_certified_infeasible": false,
+          "solver_bound": null,
+          "solver_gap": null,
+          "solver_version": null,
+          "trace": [
+            {
+              "task_index": 0,
+              "host_index": 0
+            },
+            {
+              "task_index": 2,
+              "host_index": 1
+            },
+            {
+              "task_index": 1,
+              "host_index": 1
+            },
+            {
+              "task_index": 3,
+              "host_index": 2
+            },
+            {
+              "task_index": 4,
+              "host_index": 2
+            }
+          ],
+          "task_processing_order": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "build_seconds": 8.400000297115184e-06,
+          "solve_seconds": 8.230000003095483e-05,
+          "check_seconds": 6.260000009206124e-05,
+          "total_seconds": 0.0001534000002720859
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Three conditioned synthetic validation cases, not a population sample.",
+    "No QAOA optimizer, statevector simulation, new MILP run or timing benchmark.",
+    "Heuristics use frozen task/host order; no permutation robustness claim."
+  ]
+}
