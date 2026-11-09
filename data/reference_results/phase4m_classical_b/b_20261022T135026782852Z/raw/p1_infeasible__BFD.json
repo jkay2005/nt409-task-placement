@@ -1,0 +1,300 @@
+{
+  "instance_id": "p1_infeasible",
+  "input_canonical_sha256": "6a68773df0f2fd1800ee4770974c99c985898f75b7e084cf438e52af302e6b0c",
+  "quality": {
+    "algorithm": "BFD",
+    "status": "no_placement_found",
+    "found_valid": false,
+    "objective": null,
+    "placement": null,
+    "x": null,
+    "y": null,
+    "solver_certified_optimal": false,
+    "solver_certified_infeasible": false,
+    "solver_bound": null,
+    "solver_gap": null,
+    "solver_version": null,
+    "trace": [
+      {
+        "task_index": 0,
+        "host_index": 1
+      },
+      {
+        "task_index": 1,
+        "host_index": 0
+      },
+      {
+        "task_index": 2,
+        "host_index": 0
+      },
+      {
+        "task_index": 3,
+        "host_index": null
+      }
+    ],
+    "task_processing_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "build_seconds": 2.9299999368959107e-05,
+    "solve_seconds": 6.969999958528206e-05,
+    "check_seconds": 4.0000013541430235e-06,
+    "total_seconds": 0.00010309999925084412
+  },
+  "warmup": {
+    "algorithm": "BFD",
+    "status": "no_placement_found",
+    "found_valid": false,
+    "objective": null,
+    "placement": null,
+    "x": null,
+    "y": null,
+    "solver_certified_optimal": false,
+    "solver_certified_infeasible": false,
+    "solver_bound": null,
+    "solver_gap": null,
+    "solver_version": null,
+    "trace": [
+      {
+        "task_index": 0,
+        "host_index": 1
+      },
+      {
+        "task_index": 1,
+        "host_index": 0
+      },
+      {
+        "task_index": 2,
+        "host_index": 0
+      },
+      {
+        "task_index": 3,
+        "host_index": null
+      }
+    ],
+    "task_processing_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "build_seconds": 9.700001101009548e-06,
+    "solve_seconds": 3.839999953925144e-05,
+    "check_seconds": 1.7000002117129043e-06,
+    "total_seconds": 4.9899999794433825e-05
+  },
+  "timings": [
+    {
+      "algorithm": "BFD",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 6.800000846851617e-06,
+      "solve_seconds": 3.549999928509351e-05,
+      "check_seconds": 1.0000003385357559e-06,
+      "total_seconds": 4.330000047048088e-05
+    },
+    {
+      "algorithm": "BFD",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 6.399999620043673e-06,
+      "solve_seconds": 3.459999970800709e-05,
+      "check_seconds": 8.000006346264854e-07,
+      "total_seconds": 4.1900000724126585e-05
+    },
+    {
+      "algorithm": "BFD",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 5.899999450775795e-06,
+      "solve_seconds": 3.429999924264848e-05,
+      "check_seconds": 8.999995770864189e-07,
+      "total_seconds": 4.1099998270510696e-05
+    },
+    {
+      "algorithm": "BFD",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 5.599998985417187e-06,
+      "solve_seconds": 3.4100001357728615e-05,
+      "check_seconds": 7.999988156370819e-07,
+      "total_seconds": 4.059999992023222e-05
+    },
+    {
+      "algorithm": "BFD",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 0
+        },
+        {
+          "task_index": 3,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 5.699999746866524e-06,
+      "solve_seconds": 3.409999953873921e-05,
+      "check_seconds": 8.000006346264854e-07,
+      "total_seconds": 4.070000068168156e-05
+    }
+  ]
+}

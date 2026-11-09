@@ -1,0 +1,833 @@
+{
+  "stage": {
+    "id": "valid_dw_p1",
+    "variant": "valid_dw",
+    "p": 1,
+    "cap": 100,
+    "depends_on": null
+  },
+  "status": "completed",
+  "phase": "done",
+  "initial_point": [
+    0.3,
+    1.0
+  ],
+  "history": [
+    {
+      "evaluation": 1,
+      "point": [
+        0.3,
+        1.0
+      ],
+      "status": "completed",
+      "mean_energy": 334.2500372785338,
+      "optimizer_value": 1.309160874481432,
+      "evaluation_seconds": 3.677060199999687
+    },
+    {
+      "evaluation": 2,
+      "point": [
+        1.3,
+        1.0
+      ],
+      "status": "completed",
+      "mean_energy": 218.5630402713254,
+      "optimizer_value": -0.4570528202851083,
+      "evaluation_seconds": 3.652566700000534
+    },
+    {
+      "evaluation": 3,
+      "point": [
+        1.3,
+        2.0
+      ],
+      "status": "completed",
+      "mean_energy": 203.77483331721123,
+      "optimizer_value": -0.682826972256317,
+      "evaluation_seconds": 3.633890999999494
+    },
+    {
+      "evaluation": 4,
+      "point": [
+        2.291928597600913,
+        2.1267977021143745
+      ],
+      "status": "completed",
+      "mean_energy": 161.59923987098568,
+      "optimizer_value": -1.3267291622750277,
+      "evaluation_seconds": 3.500787200000559
+    },
+    {
+      "evaluation": 5,
+      "point": [
+        3.231616203152477,
+        2.4688316243688337
+      ],
+      "status": "completed",
+      "mean_energy": 203.49927324931608,
+      "optimizer_value": -0.6870339961936477,
+      "evaluation_seconds": 3.7358473999993294
+    },
+    {
+      "evaluation": 6,
+      "point": [
+        2.0048121391808538,
+        2.5361436918398415
+      ],
+      "status": "completed",
+      "mean_energy": 182.02924582196857,
+      "optimizer_value": -1.0148206744737622,
+      "evaluation_seconds": 3.5525065999991057
+    },
+    {
+      "evaluation": 7,
+      "point": [
+        2.1895921001695466,
+        2.0550185875093594
+      ],
+      "status": "completed",
+      "mean_energy": 168.10661930015624,
+      "optimizer_value": -1.2273798580128819,
+      "evaluation_seconds": 3.6082484999988083
+    },
+    {
+      "evaluation": 8,
+      "point": [
+        2.5415670772130188,
+        2.113357854758237
+      ],
+      "status": "completed",
+      "mean_energy": 143.6653800914802,
+      "optimizer_value": -1.6005285482216765,
+      "evaluation_seconds": 3.677661400000943
+    },
+    {
+      "evaluation": 9,
+      "point": [
+        3.0415550619557226,
+        2.1168241370504925
+      ],
+      "status": "completed",
+      "mean_energy": 167.03782891769703,
+      "optimizer_value": -1.2436972684321064,
+      "evaluation_seconds": 3.751429400001143
+    },
+    {
+      "evaluation": 10,
+      "point": [
+        2.4681386237536733,
+        1.8743845043139482
+      ],
+      "status": "completed",
+      "mean_energy": 144.75891737394136,
+      "optimizer_value": -1.5838333225352463,
+      "evaluation_seconds": 3.6242531000007148
+    },
+    {
+      "evaluation": 11,
+      "point": [
+        2.493772407124161,
+        2.128043545450106
+      ],
+      "status": "completed",
+      "mean_energy": 146.63320309949535,
+      "optimizer_value": -1.5552182732901474,
+      "evaluation_seconds": 3.566028899998855
+    },
+    {
+      "evaluation": 12,
+      "point": [
+        2.639056522663763,
+        2.091091107674157
+      ],
+      "status": "completed",
+      "mean_energy": 139.6229906204505,
+      "optimizer_value": -1.6622444180083893,
+      "evaluation_seconds": 3.5546360999996978
+    },
+    {
+      "evaluation": 13,
+      "point": [
+        2.7372615460672223,
+        2.0722291518284344
+      ],
+      "status": "completed",
+      "mean_energy": 139.05587203394603,
+      "optimizer_value": -1.6709027170389918,
+      "evaluation_seconds": 3.6748435000008612
+    },
+    {
+      "evaluation": 14,
+      "point": [
+        2.7847350724154265,
+        2.1602420162066966
+      ],
+      "status": "completed",
+      "mean_energy": 141.06317192657286,
+      "optimizer_value": -1.6402569171515593,
+      "evaluation_seconds": 3.6549261000000115
+    },
+    {
+      "evaluation": 15,
+      "point": [
+        2.7426329931860622,
+        1.9723735182575162
+      ],
+      "status": "completed",
+      "mean_energy": 138.24934385281367,
+      "optimizer_value": -1.6832161243845243,
+      "evaluation_seconds": 3.5616849999987608
+    },
+    {
+      "evaluation": 16,
+      "point": [
+        2.7904080066483523,
+        1.8845239417720374
+      ],
+      "status": "completed",
+      "mean_energy": 138.94261297214172,
+      "optimizer_value": -1.672631863020737,
+      "evaluation_seconds": 3.63360609999836
+    },
+    {
+      "evaluation": 17,
+      "point": [
+        2.694763531735174,
+        1.9579334815400449
+      ],
+      "status": "completed",
+      "mean_energy": 137.59116276534655,
+      "optimizer_value": -1.693264690605396,
+      "evaluation_seconds": 3.588543599998957
+    },
+    {
+      "evaluation": 18,
+      "point": [
+        2.644780008054732,
+        1.9592169769575194
+      ],
+      "status": "completed",
+      "mean_energy": 138.07106469509068,
+      "optimizer_value": -1.6859379435864017,
+      "evaluation_seconds": 3.6526309000000765
+    },
+    {
+      "evaluation": 19,
+      "point": [
+        2.6944426578808054,
+        1.9454376006199343
+      ],
+      "status": "completed",
+      "mean_energy": 137.45462847985434,
+      "optimizer_value": -1.6953491835136743,
+      "evaluation_seconds": 3.589259599999423
+    },
+    {
+      "evaluation": 20,
+      "point": [
+        2.7104572972747576,
+        1.9262404309045393
+      ],
+      "status": "completed",
+      "mean_energy": 137.3091667523265,
+      "optimizer_value": -1.6975699732469238,
+      "evaluation_seconds": 3.469843899998523
+    },
+    {
+      "evaluation": 21,
+      "point": [
+        2.701994538189454,
+        1.902716364320207
+      ],
+      "status": "completed",
+      "mean_energy": 136.98601988615707,
+      "optimizer_value": -1.7025035131884418,
+      "evaluation_seconds": 3.5568445999997493
+    },
+    {
+      "evaluation": 22,
+      "point": [
+        2.682079921680994,
+        1.8568534375784367
+      ],
+      "status": "completed",
+      "mean_energy": 136.38459625869498,
+      "optimizer_value": -1.7116855533023667,
+      "evaluation_seconds": 3.676979099998789
+    },
+    {
+      "evaluation": 23,
+      "point": [
+        2.653094694440066,
+        1.76114629781451
+      ],
+      "status": "completed",
+      "mean_energy": 135.1124278075983,
+      "optimizer_value": -1.7311079724030796,
+      "evaluation_seconds": 3.617443099999946
+    },
+    {
+      "evaluation": 24,
+      "point": [
+        2.5837484403020214,
+        1.5735533953980763
+      ],
+      "status": "completed",
+      "mean_energy": 132.4575561330697,
+      "optimizer_value": -1.7716403643806156,
+      "evaluation_seconds": 3.680072499999369
+    },
+    {
+      "evaluation": 25,
+      "point": [
+        2.308617893800031,
+        1.2832032922785563
+      ],
+      "status": "completed",
+      "mean_energy": 142.62348168560416,
+      "optimizer_value": -1.6164353941129135,
+      "evaluation_seconds": 3.6540468000002875
+    },
+    {
+      "evaluation": 26,
+      "point": [
+        2.7600220414791963,
+        1.4790673248478077
+      ],
+      "status": "completed",
+      "mean_energy": 129.67590896299333,
+      "optimizer_value": -1.814108260106972,
+      "evaluation_seconds": 3.784849600000598
+    },
+    {
+      "evaluation": 27,
+      "point": [
+        2.8358945738708745,
+        1.2940177130447192
+      ],
+      "status": "completed",
+      "mean_energy": 128.66633290190452,
+      "optimizer_value": -1.829521635085427,
+      "evaluation_seconds": 3.6179148999999597
+    },
+    {
+      "evaluation": 28,
+      "point": [
+        3.0352748643686303,
+        1.309749838172318
+      ],
+      "status": "completed",
+      "mean_energy": 160.19621117389886,
+      "optimizer_value": -1.348149447726735,
+      "evaluation_seconds": 3.735561100000268
+    },
+    {
+      "evaluation": 29,
+      "point": [
+        2.7445568639741684,
+        1.2533062558020072
+      ],
+      "status": "completed",
+      "mean_energy": 120.71499914510245,
+      "optimizer_value": -1.950916043586222,
+      "evaluation_seconds": 3.6643280000007508
+    },
+    {
+      "evaluation": 30,
+      "point": [
+        2.654625527537927,
+        1.2095757775655243
+      ],
+      "status": "completed",
+      "mean_energy": 117.08694627520113,
+      "optimizer_value": -2.0063061637373876,
+      "evaluation_seconds": 3.5954304999995657
+    },
+    {
+      "evaluation": 31,
+      "point": [
+        2.6051186850486716,
+        1.1226903786382934
+      ],
+      "status": "completed",
+      "mean_energy": 114.04994289782307,
+      "optimizer_value": -2.052672627514151,
+      "evaluation_seconds": 3.6708650999989914
+    },
+    {
+      "evaluation": 32,
+      "point": [
+        2.5161294264577085,
+        1.0770733658532508
+      ],
+      "status": "completed",
+      "mean_energy": 116.57194646507894,
+      "optimizer_value": -2.0141687562583366,
+      "evaluation_seconds": 3.6585234999984095
+    },
+    {
+      "evaluation": 33,
+      "point": [
+        2.6386735016641,
+        1.0856218706847087
+      ],
+      "status": "completed",
+      "mean_energy": 111.75392843785436,
+      "optimizer_value": -2.0877262833915364,
+      "evaluation_seconds": 3.743071000000782
+    },
+    {
+      "evaluation": 34,
+      "point": [
+        2.681475510193052,
+        1.0597764055914376
+      ],
+      "status": "completed",
+      "mean_energy": 110.72348451151153,
+      "optimizer_value": -2.1034582517326488,
+      "evaluation_seconds": 3.5679646999997203
+    },
+    {
+      "evaluation": 35,
+      "point": [
+        2.724357753167852,
+        1.0854885279746682
+      ],
+      "status": "completed",
+      "mean_energy": 112.90390529721411,
+      "optimizer_value": -2.070169384775357,
+      "evaluation_seconds": 3.6330226000009134
+    },
+    {
+      "evaluation": 36,
+      "point": [
+        2.68790354078886,
+        1.0490558448477376
+      ],
+      "status": "completed",
+      "mean_energy": 110.40092836560247,
+      "optimizer_value": -2.1083827730442373,
+      "evaluation_seconds": 3.5588229000004503
+    },
+    {
+      "evaluation": 37,
+      "point": [
+        2.675997965651859,
+        1.0270727313135444
+      ],
+      "status": "completed",
+      "mean_energy": 109.37514547185914,
+      "optimizer_value": -2.1240435805823035,
+      "evaluation_seconds": 3.64916009999979
+    },
+    {
+      "evaluation": 38,
+      "point": [
+        2.658467619308545,
+        0.9802465959073053
+      ],
+      "status": "completed",
+      "mean_energy": 107.568415785981,
+      "optimizer_value": -2.1516272399086867,
+      "evaluation_seconds": 3.5888426000001346
+    },
+    {
+      "evaluation": 39,
+      "point": [
+        2.6301758959730135,
+        0.884332163256605
+      ],
+      "status": "completed",
+      "mean_energy": 105.03632721539122,
+      "optimizer_value": -2.19028508068105,
+      "evaluation_seconds": 3.665578200001619
+    },
+    {
+      "evaluation": 40,
+      "point": [
+        2.5303407443570656,
+        0.8900717191471518
+      ],
+      "status": "completed",
+      "mean_energy": 109.44969453079884,
+      "optimizer_value": -2.122905427010705,
+      "evaluation_seconds": 3.582680100000289
+    },
+    {
+      "evaluation": 41,
+      "point": [
+        2.666901525393588,
+        0.850402410182605
+      ],
+      "status": "completed",
+      "mean_energy": 104.32336385286625,
+      "optimizer_value": -2.2011700175134927,
+      "evaluation_seconds": 3.605560799998784
+    },
+    {
+      "evaluation": 42,
+      "point": [
+        2.659247531648707,
+        0.800991719236684
+      ],
+      "status": "completed",
+      "mean_energy": 103.75846917220309,
+      "optimizer_value": -2.2097943637831587,
+      "evaluation_seconds": 3.5450421999994433
+    },
+    {
+      "evaluation": 43,
+      "point": [
+        2.685377163112384,
+        0.7583625935176124
+      ],
+      "status": "completed",
+      "mean_energy": 104.13381529346994,
+      "optimizer_value": -2.2040638886493142,
+      "evaluation_seconds": 3.578282999998919
+    },
+    {
+      "evaluation": 44,
+      "point": [
+        2.635166405314957,
+        0.7942761139402147
+      ],
+      "status": "completed",
+      "mean_energy": 103.78423490468478,
+      "optimizer_value": -2.2094009938216064,
+      "evaluation_seconds": 3.5784405000013066
+    },
+    {
+      "evaluation": 45,
+      "point": [
+        2.657904410589413,
+        0.8058079445034341
+      ],
+      "status": "completed",
+      "mean_energy": 103.77942340771456,
+      "optimizer_value": -2.2094744517906175,
+      "evaluation_seconds": 3.5910082000009425
+    },
+    {
+      "evaluation": 46,
+      "point": [
+        2.664156362656718,
+        0.7922794647560809
+      ],
+      "status": "completed",
+      "mean_energy": 103.75717689759624,
+      "optimizer_value": -2.2098140931664694,
+      "evaluation_seconds": 3.63855219999823
+    },
+    {
+      "evaluation": 47,
+      "point": [
+        2.6734121356261724,
+        0.7960650514659481
+      ],
+      "status": "completed",
+      "mean_energy": 103.88335885565081,
+      "optimizer_value": -2.2078876510587664,
+      "evaluation_seconds": 3.634418600002391
+    },
+    {
+      "evaluation": 48,
+      "point": [
+        2.655494372394452,
+        0.7872824731915085
+      ],
+      "status": "completed",
+      "mean_energy": 103.69004523160031,
+      "optimizer_value": -2.210839004097705,
+      "evaluation_seconds": 3.7216447000027983
+    },
+    {
+      "evaluation": 49,
+      "point": [
+        2.6468782224763663,
+        0.7822068490339226
+      ],
+      "status": "completed",
+      "mean_energy": 103.67736393736301,
+      "optimizer_value": -2.211032611643313,
+      "evaluation_seconds": 3.6198191000003135
+    },
+    {
+      "evaluation": 50,
+      "point": [
+        2.6499262555098686,
+        0.772682695810319
+      ],
+      "status": "completed",
+      "mean_energy": 103.67163963537214,
+      "optimizer_value": -2.2111200055668374,
+      "evaluation_seconds": 3.6605320000016945
+    },
+    {
+      "evaluation": 51,
+      "point": [
+        2.6427092081800576,
+        0.7657606854203189
+      ],
+      "status": "completed",
+      "mean_energy": 103.70238512255997,
+      "optimizer_value": -2.2106506088158784,
+      "evaluation_seconds": 3.6755111000020406
+    },
+    {
+      "evaluation": 52,
+      "point": [
+        2.6548652787794986,
+        0.773461187391553
+      ],
+      "status": "completed",
+      "mean_energy": 103.6777629560676,
+      "optimizer_value": -2.211026519754693,
+      "evaluation_seconds": 3.61109590000342
+    },
+    {
+      "evaluation": 53,
+      "point": [
+        2.6501208784051773,
+        0.7714479399929115
+      ],
+      "status": "completed",
+      "mean_energy": 103.67294438118806,
+      "optimizer_value": -2.211100085783388,
+      "evaluation_seconds": 3.5130594999973255
+    },
+    {
+      "evaluation": 54,
+      "point": [
+        2.6477942920961044,
+        0.7739883496704103
+      ],
+      "status": "completed",
+      "mean_energy": 103.6727260452353,
+      "optimizer_value": -2.211103419156713,
+      "evaluation_seconds": 3.6404427000015858
+    },
+    {
+      "evaluation": 55,
+      "point": [
+        2.6504201578368316,
+        0.7727605449684424
+      ],
+      "status": "completed",
+      "mean_energy": 103.6715156279071,
+      "optimizer_value": -2.2111218988105787,
+      "evaluation_seconds": 3.5752830999990692
+    },
+    {
+      "evaluation": 56,
+      "point": [
+        2.6504970300530206,
+        0.7737575859216526
+      ],
+      "status": "completed",
+      "mean_energy": 103.67070779115454,
+      "optimizer_value": -2.211134232196114,
+      "evaluation_seconds": 3.574451399999816
+    },
+    {
+      "evaluation": 57,
+      "point": [
+        2.6508052787341128,
+        0.7757336888416961
+      ],
+      "status": "completed",
+      "mean_energy": 103.6698260515882,
+      "optimizer_value": -2.2111476938688828,
+      "evaluation_seconds": 2.834453499999654
+    },
+    {
+      "evaluation": 58,
+      "point": [
+        2.6527492808520314,
+        0.7762036417813916
+      ],
+      "status": "completed",
+      "mean_energy": 103.67152865864503,
+      "optimizer_value": -2.211121699868015,
+      "evaluation_seconds": 2.879781499999808
+    },
+    {
+      "evaluation": 59,
+      "point": [
+        2.6499449452773747,
+        0.7762434204801271
+      ],
+      "status": "completed",
+      "mean_energy": 103.66974035265456,
+      "optimizer_value": -2.2111490022495484,
+      "evaluation_seconds": 3.505067499998404
+    },
+    {
+      "evaluation": 60,
+      "point": [
+        2.6502810062050823,
+        0.7771852607281884
+      ],
+      "status": "completed",
+      "mean_energy": 103.66965960743337,
+      "optimizer_value": -2.2111502350010173,
+      "evaluation_seconds": 3.745856999998068
+    },
+    {
+      "evaluation": 61,
+      "point": [
+        2.649907588738669,
+        0.7781129241346983
+      ],
+      "status": "completed",
+      "mean_energy": 103.66992549659152,
+      "optimizer_value": -2.211146175624557,
+      "evaluation_seconds": 3.537989899999957
+    },
+    {
+      "evaluation": 62,
+      "point": [
+        2.6507729271923326,
+        0.7770957412202434
+      ],
+      "status": "completed",
+      "mean_energy": 103.66968998474911,
+      "optimizer_value": -2.2111497712252044,
+      "evaluation_seconds": 3.43874599999981
+    },
+    {
+      "evaluation": 63,
+      "point": [
+        2.6501825877959555,
+        0.7774150732969155
+      ],
+      "status": "completed",
+      "mean_energy": 103.66969854131935,
+      "optimizer_value": -2.2111496405905444,
+      "evaluation_seconds": 3.5491480000018782
+    },
+    {
+      "evaluation": 64,
+      "point": [
+        2.650235043691337,
+        0.777165577046363
+      ],
+      "status": "completed",
+      "mean_energy": 103.66966267437839,
+      "optimizer_value": -2.211150188177429,
+      "evaluation_seconds": 3.5197729999999865
+    },
+    {
+      "evaluation": 65,
+      "point": [
+        2.650351322175651,
+        0.777114157533584
+      ],
+      "status": "completed",
+      "mean_energy": 103.6696492656063,
+      "optimizer_value": -2.211150392891507,
+      "evaluation_seconds": 3.567107399998349
+    },
+    {
+      "evaluation": 66,
+      "point": [
+        2.6504364687507995,
+        0.7770617165120408
+      ],
+      "status": "completed",
+      "mean_energy": 103.66964474840059,
+      "optimizer_value": -2.2111504618564797,
+      "evaluation_seconds": 3.387986499998078
+    },
+    {
+      "evaluation": 67,
+      "point": [
+        2.650399904453989,
+        0.7769686409932468
+      ],
+      "status": "completed",
+      "mean_energy": 103.66964003041338,
+      "optimizer_value": -2.2111505338868187,
+      "evaluation_seconds": 3.4185285000021395
+    },
+    {
+      "evaluation": 68,
+      "point": [
+        2.650429096855008,
+        0.7768729968417123
+      ],
+      "status": "completed",
+      "mean_energy": 103.66963752109574,
+      "optimizer_value": -2.2111505721970115,
+      "evaluation_seconds": 3.547484800001257
+    },
+    {
+      "evaluation": 69,
+      "point": [
+        2.6503602742593095,
+        0.7768004472013182
+      ],
+      "status": "completed",
+      "mean_energy": 103.66963751968592,
+      "optimizer_value": -2.2111505722185356,
+      "evaluation_seconds": 3.456174299997656
+    },
+    {
+      "evaluation": 70,
+      "point": [
+        2.6504327902398463,
+        0.7767315891403032
+      ],
+      "status": "completed",
+      "mean_energy": 103.66963759442142,
+      "optimizer_value": -2.2111505710775354,
+      "evaluation_seconds": 3.4798320999980206
+    }
+  ],
+  "dependency_sha256": null,
+  "calls": {
+    "objective": 70,
+    "final_exact": 1,
+    "final_sampling": 0
+  },
+  "selection": "lowest observed mean energy only; no placement metric in optimizer",
+  "elapsed_seconds": 298.8746364999988,
+  "setup_seconds": 41.43425220000063,
+  "compiled_depth": 39,
+  "compiled_ops": {
+    "rzz": 163,
+    "rz": 21,
+    "h": 15,
+    "rx": 15,
+    "x": 10,
+    "crx": 10,
+    "ry": 5,
+    "cry": 5
+  },
+  "offset": 248.5,
+  "scale": 65.5,
+  "point": [
+    2.6503602742593095,
+    0.7768004472013182
+  ],
+  "optimizer_returned_point": [
+    2.6503602742593095,
+    0.7768004472013182
+  ],
+  "optimizer_stop": {
+    "status": 0,
+    "success": true,
+    "message": "Return from COBYLA because the trust region radius reaches its lower bound.",
+    "nfev": 70
+  },
+  "best_mean_energy": 103.66963751968592,
+  "optimization_seconds": 253.7876914999979,
+  "final_exact": {
+    "mean_energy": 103.66963751968592,
+    "p_domain": 1.0000000000000042,
+    "p_valid": 0.11577191300957014,
+    "p_opt": 0.004473070461558336,
+    "p_ground": 4.5895249370386925e-06
+  },
+  "completed_objective_calls": 70
+}

@@ -1,0 +1,258 @@
+{
+  "instance_id": "v5x3_2",
+  "input_sha256": "6598feadf65a484d512329a6112944496771cec177fd4794bb54735a1b999a68",
+  "status": "completed",
+  "reference": {
+    "assignments": 243,
+    "histogram": {
+      "1": 0,
+      "2": 0,
+      "3": 1
+    },
+    "optimum": 3,
+    "feasible_assignments": 1,
+    "optimal_assignments": 1,
+    "cpu_pass_ram_fail": 49,
+    "ram_pass_cpu_fail": 7,
+    "cpu_pass_ram_fail_witness": [
+      0,
+      1,
+      0,
+      1,
+      2
+    ],
+    "ram_pass_cpu_fail_witness": [
+      1,
+      0,
+      2,
+      0,
+      2
+    ],
+    "optimal_witness": [
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "uniform_encoded": {
+      "method": "exact_domain_wall_y_enumeration_slack_marginal",
+      "checked_base_vectors": 8192,
+      "total_bitstrings": 33554432,
+      "original_best_objective": 3,
+      "feasible_probability": 0.0001220703125,
+      "optimal_placement_probability": 0.0001220703125,
+      "invalid_domain_probability": 0.7626953125,
+      "ground_state_probability": 5.960464477539063e-08,
+      "mean_qubo_energy": 362.5
+    },
+    "random_host_inferred_y": {
+      "assignments": 243,
+      "histogram": {
+        "3": 1
+      },
+      "optimum": 3,
+      "feasible_probability": 0.00411522633744856,
+      "optimal_probability": 0.00411522633744856,
+      "method": "exact host-assignment enumeration; y inferred; no overload repair"
+    }
+  },
+  "results": [
+    {
+      "algorithm": "FirstFit",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 2
+        },
+        {
+          "task_index": 3,
+          "host_index": 2
+        },
+        {
+          "task_index": 4,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build_seconds": 3.169999945384916e-05,
+      "solve_seconds": 2.0900000890833326e-05,
+      "check_seconds": 3.7999998312443495e-06,
+      "total_seconds": 5.649999911838677e-05,
+      "matches_oracle": false,
+      "oracle_objective_gap": null
+    },
+    {
+      "algorithm": "BFD",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 2
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        },
+        {
+          "task_index": 4,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build_seconds": 3.699999979289714e-05,
+      "solve_seconds": 9.069999941857532e-05,
+      "check_seconds": 3.600000127335079e-06,
+      "total_seconds": 0.00013140000010025688,
+      "matches_oracle": false,
+      "oracle_objective_gap": null
+    },
+    {
+      "algorithm": "MILP",
+      "status": "optimal",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "x": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": true,
+      "solver_certified_infeasible": false,
+      "solver_bound": 3.0,
+      "solver_gap": 0.0,
+      "solver_version": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+      "solver_status_code": 0,
+      "ortools_version": "9.15.6755",
+      "time_limit_seconds": 600,
+      "threads": 1,
+      "options": "randomization/randomseedshift = 0\nlimits/gap = 0\nlimits/absgap = 0",
+      "raw_variable_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "build_seconds": 0.001696399998763809,
+      "solve_seconds": 0.002357200000915327,
+      "check_seconds": 0.0003298999999969965,
+      "total_seconds": 0.004383499999676133,
+      "model_lp_file": "models/v5x3_2.lp",
+      "model_lp_sha256": "97441f34319185bdd95e1986434a419a61ce32df5679b60a59252abb71e3891c",
+      "matches_oracle": true,
+      "oracle_objective_gap": 0
+    }
+  ],
+  "attempts": [
+    {
+      "algorithm": "FirstFit",
+      "status": "completed"
+    },
+    {
+      "algorithm": "BFD",
+      "status": "completed"
+    },
+    {
+      "algorithm": "MILP",
+      "status": "completed"
+    }
+  ],
+  "case_wall_seconds": 0.21618239999952493
+}

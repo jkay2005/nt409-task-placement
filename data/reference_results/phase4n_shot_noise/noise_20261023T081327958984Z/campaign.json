@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "created_utc": "20261023T081327958984Z",
+  "identity": {
+    "protocol": {
+      "schema_version": 1,
+      "study_id": "nt409_shot_noise_single_reference_v2",
+      "software_validation": false,
+      "instances": [
+        {
+          "instance_id": "a3_dev_n5",
+          "path": "data/benchmarks/nt409_shot_noise_v2/instance.json",
+          "input_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+          "qubo_sha256": "8fa77f91e277724277e5aaf4c1a29b5cec345e91e3660f13a6a166efc44fc515"
+        }
+      ],
+      "depths": [
+        1,
+        2
+      ],
+      "seeds": [
+        300,
+        301,
+        302,
+        303,
+        304
+      ],
+      "shots": 1024,
+      "final_shots": 1024,
+      "noise_batches": 20,
+      "maxiter": 200,
+      "rhobeg": 1.0,
+      "tol": 0.0001,
+      "threads": 4,
+      "max_seconds": 7200.0,
+      "min_available_gib": 4.0,
+      "encoding": "three_host_domain_wall_v2",
+      "capacity_penalty": 4,
+      "scaling": "max_abs",
+      "mixer": "X",
+      "initial_rule": "beta=[0.3,0,...]; gamma_execution=[1.0,0,...]",
+      "primary_metric": "exact endpoint P_opt; P_valid separately; no postselection/bit repair",
+      "comparison": "one fixed five-task three-host input; one exact and five shots optimizations per depth; same evaluation cap, not matched wall time",
+      "scope": "single previously observed reference instance; no generalization or QPU speed claims",
+      "historical_note": "Supersedes unexecuted Notebook22 v1; no pooling with two-host or historical runs",
+      "domain_penalty": 4
+    },
+    "inputs": {
+      "a3_dev_n5": {
+        "schema_version": 1,
+        "instance_id": "a3_dev_n5",
+        "objective": "min_active_hosts",
+        "tasks": [
+          {
+            "id": "t0",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t1",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t2",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t3",
+            "cpu": 1,
+            "ram": 1
+          },
+          {
+            "id": "t4",
+            "cpu": 1,
+            "ram": 2
+          }
+        ],
+        "hosts": [
+          {
+            "id": "h0",
+            "cpu": 2,
+            "ram": 2
+          },
+          {
+            "id": "h1",
+            "cpu": 3,
+            "ram": 3
+          },
+          {
+            "id": "h2",
+            "cpu": 3,
+            "ram": 3
+          }
+        ]
+      }
+    },
+    "source_sha256": {
+      "placement.py": "899206f239effdc5afaac5f15e9dcb0302c476e646d8b06426ff8ef5a78f1c8f",
+      "qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+      "ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+      "qaoa_experiment.py": "e6afa1ba317e312a4095c67d2ade43ac1964351753384f9c9f2d2c7ff38c58cf",
+      "qaoa_optimizer.py": "1dfd9da488ffe1723d538e2bb05b6785bfb087cc897b483e81d0c8390894deda",
+      "three_host_encoding.py": "9b6e9d1d18ab66d6b26439b72ae93437bfb9933925f7a912f626bd4538e9c836",
+      "shot_noise_diagnostic.py": "5e7e225000cab04e56ad174b029c65593e723b27a862e5c38a1f37e701ee8ec2",
+      "shot_noise_campaign.py": "ccd7222ffb12654ec7ca519f4c83ae9ab9a63e6416768ecf8797edfb62df19d4"
+    },
+    "runtime": {
+      "python_version": "3.12.14",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "numpy_version": "2.5.3",
+      "scipy_version": "1.18.1",
+      "qiskit_version": "2.5.2",
+      "qiskit_optimization_version": "0.7.0",
+      "qiskit_aer_version": "0.17.2"
+    }
+  },
+  "identity_sha256": "32eba18602413ed81e0a6cdffd9b1f3855bfb39e2202c484c7b5d9361aa23451",
+  "plan": [
+    {
+      "id": "a3_dev_n5__p1__exact_0",
+      "group": "a3_dev_n5__p1",
+      "instance_id": "a3_dev_n5",
+      "p": 1,
+      "mode": "exact",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 0,
+        "final_seed": 40000000
+      },
+      "calibration_seed_base": 20000000
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_1",
+      "group": "a3_dev_n5__p1",
+      "instance_id": "a3_dev_n5",
+      "p": 1,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 300,
+        "final_seed": 40000001
+      },
+      "calibration_seed_base": 20000000
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_2",
+      "group": "a3_dev_n5__p1",
+      "instance_id": "a3_dev_n5",
+      "p": 1,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 301,
+        "final_seed": 40000002
+      },
+      "calibration_seed_base": 20000000
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_3",
+      "group": "a3_dev_n5__p1",
+      "instance_id": "a3_dev_n5",
+      "p": 1,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 302,
+        "final_seed": 40000003
+      },
+      "calibration_seed_base": 20000000
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_4",
+      "group": "a3_dev_n5__p1",
+      "instance_id": "a3_dev_n5",
+      "p": 1,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 303,
+        "final_seed": 40000004
+      },
+      "calibration_seed_base": 20000000
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_5",
+      "group": "a3_dev_n5__p1",
+      "instance_id": "a3_dev_n5",
+      "p": 1,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 304,
+        "final_seed": 40000005
+      },
+      "calibration_seed_base": 20000000
+    },
+    {
+      "id": "a3_dev_n5__p2__exact_0",
+      "group": "a3_dev_n5__p2",
+      "instance_id": "a3_dev_n5",
+      "p": 2,
+      "mode": "exact",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 0,
+        "final_seed": 40000100
+      },
+      "calibration_seed_base": 20000100
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_1",
+      "group": "a3_dev_n5__p2",
+      "instance_id": "a3_dev_n5",
+      "p": 2,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 300,
+        "final_seed": 40000101
+      },
+      "calibration_seed_base": 20000100
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_2",
+      "group": "a3_dev_n5__p2",
+      "instance_id": "a3_dev_n5",
+      "p": 2,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 301,
+        "final_seed": 40000102
+      },
+      "calibration_seed_base": 20000100
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_3",
+      "group": "a3_dev_n5__p2",
+      "instance_id": "a3_dev_n5",
+      "p": 2,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 302,
+        "final_seed": 40000103
+      },
+      "calibration_seed_base": 20000100
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_4",
+      "group": "a3_dev_n5__p2",
+      "instance_id": "a3_dev_n5",
+      "p": 2,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 303,
+        "final_seed": 40000104
+      },
+      "calibration_seed_base": 20000100
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_5",
+      "group": "a3_dev_n5__p2",
+      "instance_id": "a3_dev_n5",
+      "p": 2,
+      "mode": "shots",
+      "config": {
+        "shots": 1024,
+        "final_shots": 1024,
+        "maxiter": 200,
+        "rhobeg": 1.0,
+        "tol": 0.0001,
+        "max_seconds": 7200.0,
+        "min_available_gib": 4.0,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 304,
+        "final_seed": 40000105
+      },
+      "calibration_seed_base": 20000100
+    }
+  ],
+  "attempts": [
+    {
+      "id": "a3_dev_n5__p1__exact_0",
+      "path": "raw/0001_a3_dev_n5__p1__exact_0.json",
+      "sha256": "b34381e9591d5a9cb45bb5465a64a88e58468acfc4e3442c6c0d0715f1612ffb",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_1",
+      "path": "raw/0002_a3_dev_n5__p1__shots_1.json",
+      "sha256": "e2693d31aecaf9fbe14796087d85144032716c3d4e96b5c067ff08fb1ce86445",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_2",
+      "path": "raw/0003_a3_dev_n5__p1__shots_2.json",
+      "sha256": "2378777b873121aef35ccf72657e993ff4278ff7e4f243285638a2a6a62c2c27",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_3",
+      "path": "raw/0004_a3_dev_n5__p1__shots_3.json",
+      "sha256": "dd896f58d55fe078a0b24e48e8bf496664dc9e248c5f56695086e90fdebbfd26",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_4",
+      "path": "raw/0005_a3_dev_n5__p1__shots_4.json",
+      "sha256": "b6d36788a69d8b177fa8396f5392653d5e5f73d3fe4ae7ff40c1ebe70a39e2d6",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p1__shots_5",
+      "path": "raw/0006_a3_dev_n5__p1__shots_5.json",
+      "sha256": "821e6570a130554458350c23379da1133dbc0d340a0de8bbe0de3c3f3b142b9b",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p2__exact_0",
+      "path": "raw/0007_a3_dev_n5__p2__exact_0.json",
+      "sha256": "b9e0d14eaf5fea7b393c1a14e27d8c12a74d044575c6efe450b0b868de8ed7d2",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_1",
+      "path": "raw/0008_a3_dev_n5__p2__shots_1.json",
+      "sha256": "6dcedcfd92e54273347114cdff308739ba10e719a2ec7ba7796b80fe04e03962",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_2",
+      "path": "raw/0009_a3_dev_n5__p2__shots_2.json",
+      "sha256": "37ae4a2081927881ad99160d080c877b243f6d912d90e007ee1645469e8bf172",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_3",
+      "path": "raw/0010_a3_dev_n5__p2__shots_3.json",
+      "sha256": "1f1b7ba9d97d79a2fc73ad4e6faf0597a473c6d4ce32e1c42c3ad364bcaeb33b",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_4",
+      "path": "raw/0011_a3_dev_n5__p2__shots_4.json",
+      "sha256": "bb21b40203aca73ae04c707085e84a259c61ca85306fd5f520046621f6586d2b",
+      "status": "completed"
+    },
+    {
+      "id": "a3_dev_n5__p2__shots_5",
+      "path": "raw/0012_a3_dev_n5__p2__shots_5.json",
+      "sha256": "367cfd66e7492eca84100e720a729d097c0c2d91168980297039ee8a49b616e0",
+      "status": "completed"
+    }
+  ],
+  "calibrations": {
+    "a3_dev_n5__p1": {
+      "path": "calibration/a3_dev_n5__p1.json",
+      "sha256": "69457119c8ee2c4f0761264a9e08b13133007ac59014bc9d529dee422a903cc8"
+    },
+    "a3_dev_n5__p2": {
+      "path": "calibration/a3_dev_n5__p2.json",
+      "sha256": "e268e3bf2dfe9b20b1c48bcd1ee80930db24a6534e6ee0a3c327727db5042d3e"
+    }
+  }
+}

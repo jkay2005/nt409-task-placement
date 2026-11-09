@@ -1,0 +1,230 @@
+[
+  {
+    "instance_id": "a3_test_n4_1",
+    "method": "exact_enumeration",
+    "calls_per_block": 256,
+    "block_seconds": [
+      0.03505610000138404,
+      0.03438269999969634,
+      0.034411399999953574,
+      0.03404880000016419,
+      0.03440010000122129,
+      0.03665739999996731,
+      0.03436209999927087
+    ],
+    "seconds_median": 0.00013437539062977066,
+    "seconds_min": 0.00013300312500064138,
+    "seconds_max": 0.0001431929687498723,
+    "calibration_seconds": 0.07278059999953257,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n4_1",
+    "method": "random_assignment",
+    "calls_per_block": 8,
+    "block_seconds": [
+      0.025344799996673828,
+      0.02643799999714247,
+      0.025855199997749878,
+      0.025297000000136904,
+      0.02537329999904614,
+      0.02528349999920465,
+      0.02477260000159731
+    ],
+    "seconds_median": 0.0031680999995842285,
+    "seconds_min": 0.003096575000199664,
+    "seconds_max": 0.0033047499996428087,
+    "calibration_seconds": 0.04661169999963022,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n4_2",
+    "method": "exact_enumeration",
+    "calls_per_block": 256,
+    "block_seconds": [
+      0.035833999998430954,
+      0.03522599999996601,
+      0.03518890000123065,
+      0.0349181999990833,
+      0.035572799999499694,
+      0.035259800002677366,
+      0.03584730000147829
+    ],
+    "seconds_median": 0.00013773359376045846,
+    "seconds_min": 0.00013639921874641914,
+    "seconds_max": 0.00014002851563077456,
+    "calibration_seconds": 0.07095719999779249,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n4_2",
+    "method": "random_assignment",
+    "calls_per_block": 8,
+    "block_seconds": [
+      0.025406299999303883,
+      0.025723300001118332,
+      0.02576970000154688,
+      0.025147000000288244,
+      0.026337499999499414,
+      0.02588090000062948,
+      0.02611840000099619
+    ],
+    "seconds_median": 0.00322121250019336,
+    "seconds_min": 0.0031433750000360305,
+    "seconds_max": 0.0032921874999374268,
+    "calibration_seconds": 0.048049200002424186,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n4_3",
+    "method": "exact_enumeration",
+    "calls_per_block": 256,
+    "block_seconds": [
+      0.03472690000126022,
+      0.03460260000065318,
+      0.03436069999952451,
+      0.03417089999857126,
+      0.03392750000057276,
+      0.0350295999996888,
+      0.03460579999955371
+    ],
+    "seconds_median": 0.0001351664062525515,
+    "seconds_min": 0.00013252929687723736,
+    "seconds_max": 0.00013683437499878437,
+    "calibration_seconds": 0.068583000000217,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n4_3",
+    "method": "random_assignment",
+    "calls_per_block": 8,
+    "block_seconds": [
+      0.0258350000003702,
+      0.02550580000024638,
+      0.025783699999010423,
+      0.02516049999758252,
+      0.025374299999384675,
+      0.02556420000109938,
+      0.02512129999740864
+    ],
+    "seconds_median": 0.0031882250000307977,
+    "seconds_min": 0.00314016249967608,
+    "seconds_max": 0.003229375000046275,
+    "calibration_seconds": 0.04842500000086147,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n5_1",
+    "method": "exact_enumeration",
+    "calls_per_block": 64,
+    "block_seconds": [
+      0.02611619999879622,
+      0.025049399999261368,
+      0.025289899997005705,
+      0.025659200000518467,
+      0.025541300001350464,
+      0.02749989999938407,
+      0.02545040000040899
+    ],
+    "seconds_median": 0.000399082812521101,
+    "seconds_min": 0.0003913968749884589,
+    "seconds_max": 0.0004296859374903761,
+    "calibration_seconds": 0.052869300001475494,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n5_1",
+    "method": "random_assignment",
+    "calls_per_block": 8,
+    "block_seconds": [
+      0.027403699998103548,
+      0.027663300003041513,
+      0.03166440000131843,
+      0.03335400000287336,
+      0.028495000002294546,
+      0.027841800001624506,
+      0.03415289999975357
+    ],
+    "seconds_median": 0.0035618750002868182,
+    "seconds_min": 0.0034254624997629435,
+    "seconds_max": 0.0042691124999691965,
+    "calibration_seconds": 0.05336389999865787,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n5_2",
+    "method": "exact_enumeration",
+    "calls_per_block": 64,
+    "block_seconds": [
+      0.026514699999097502,
+      0.026376899997558212,
+      0.026874700000917073,
+      0.026682400002755458,
+      0.025979100002587074,
+      0.025448800002777716,
+      0.02575049999722978
+    ],
+    "seconds_median": 0.00041213906246184706,
+    "seconds_min": 0.0003976375000434018,
+    "seconds_max": 0.00041991718751432927,
+    "calibration_seconds": 0.055818299999373266,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n5_2",
+    "method": "random_assignment",
+    "calls_per_block": 8,
+    "block_seconds": [
+      0.028101200001401594,
+      0.027979700000287266,
+      0.027941500000451924,
+      0.028178900000057183,
+      0.027856700002303114,
+      0.028609899996808963,
+      0.029013999999733642
+    ],
+    "seconds_median": 0.0035126500001751992,
+    "seconds_min": 0.0034820875002878893,
+    "seconds_max": 0.0036267499999667052,
+    "calibration_seconds": 0.0567856000016036,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n5_3",
+    "method": "exact_enumeration",
+    "calls_per_block": 64,
+    "block_seconds": [
+      0.02942379999876721,
+      0.032054299997980706,
+      0.028417700003046775,
+      0.028706299999612384,
+      0.02867350000087754,
+      0.02831489999880432,
+      0.02837820000058855
+    ],
+    "seconds_median": 0.00044802343751371154,
+    "seconds_min": 0.0004424203124813175,
+    "seconds_max": 0.0005008484374684485,
+    "calibration_seconds": 0.056435600003169384,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  },
+  {
+    "instance_id": "a3_test_n5_3",
+    "method": "random_assignment",
+    "calls_per_block": 8,
+    "block_seconds": [
+      0.029511399996408727,
+      0.02978400000210968,
+      0.03012270000181161,
+      0.02989930000330787,
+      0.030181899997842265,
+      0.029957300001115073,
+      0.030335800001921598
+    ],
+    "seconds_median": 0.003744662500139384,
+    "seconds_min": 0.003688924999551091,
+    "seconds_max": 0.0037919750002401997,
+    "calibration_seconds": 0.05661890000192216,
+    "measurement": "warm process; validation, RNG, checks and output included; imports/calibration/reference preparation excluded"
+  }
+]

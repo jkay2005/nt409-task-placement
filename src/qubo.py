@@ -27,13 +27,29 @@ def slack_weights(capacity):
     ]
 
 
-def build_qubo(instance, penalty=None):
-    """Build a binary equality model, then move equalities into its objective."""
+def build_qubo(instance, penalty=None, *, assignment_penalty=None, capacity_penalty=None):
+    """Build binary equalities with either a shared P or two explicit weights.
+
+    Both explicit weights are required; mixing them with `penalty` is ambiguous.
+    Equal weights reproduce the original converter coefficients exactly.
+    """
     demand, capacity = _arrays(instance)
     n, m = len(demand), len(capacity)
-    penalty = float(m + 1 if penalty is None else penalty)
-    if not np.isfinite(penalty) or penalty <= 0:
-        raise ValueError("penalty must be positive and finite.")
+    independent = assignment_penalty is not None or capacity_penalty is not None
+    if independent:
+        if penalty is not None or assignment_penalty is None or capacity_penalty is None:
+            raise ValueError("Provide both explicit weights, without a shared penalty.")
+    else:
+        assignment_penalty = capacity_penalty = m + 1 if penalty is None else penalty
+    penalties = {}
+    for name, value in (("assignment", assignment_penalty), ("capacity", capacity_penalty)):
+        if isinstance(value, (bool, np.bool_)):
+            raise ValueError(f"{name} penalty must be positive and finite.")
+        value = float(value)
+        if not np.isfinite(value) or value <= 0:
+            raise ValueError(f"{name} penalty must be positive and finite.")
+        penalties[name] = value
+    penalty = penalties["assignment"] if penalties["assignment"] == penalties["capacity"] else None
 
     model = QuadraticProgram(name=instance["instance_id"])
     for i in range(n):
@@ -78,8 +94,23 @@ def build_qubo(instance, penalty=None):
             name=f"capacity_{h}_{group['resource']}",
         )
 
-    converter = LinearEqualityToPenalty(penalty=penalty)
+    # Qiskit Optimization 0.7 uses a single multiplier for all equalities:
+    # https://qiskit-community.github.io/qiskit-optimization/stubs/qiskit_optimization.converters.LinearEqualityToPenalty.html
+    converter = LinearEqualityToPenalty(penalty=penalties["capacity"])
     qubo = converter.convert(model)
+    delta = penalties["assignment"] - penalties["capacity"]
+    if delta:
+        constant = qubo.objective.constant
+        linear = qubo.objective.linear.to_array()
+        quadratic = qubo.objective.quadratic.to_array()
+        for constraint in model.linear_constraints[:n]:
+            row = constraint.linear.to_array()
+            constant += delta * constraint.rhs**2
+            linear -= 2 * delta * constraint.rhs * row
+            quadratic += delta * np.outer(row, row)
+        # Arrays are a documented objective input; off-diagonal terms are combined.
+        # https://qiskit-community.github.io/qiskit-optimization/stubs/qiskit_optimization.QuadraticProgram.html#qiskit_optimization.QuadraticProgram.minimize
+        qubo.minimize(constant=constant, linear=linear, quadratic=quadratic)
     assert [v.name for v in model.variables] == [v.name for v in qubo.variables]
     assert qubo.get_num_vars() == qubo.get_num_binary_vars()
     assert qubo.get_num_linear_constraints() == 0
@@ -90,6 +121,9 @@ def build_qubo(instance, penalty=None):
         "model": model,
         "qubo": qubo,
         "penalty": penalty,
+        "penalties": penalties,
+        "penalty_mode": "independent" if independent else "common",
+        "model_version": "weighted_equalities_v2",
         "n": n,
         "m": m,
         "base_count": base_count,
@@ -135,9 +169,8 @@ def energy_parts(bundle, bits):
         "active_hosts": active_hosts,
         "assignment_error": assignment_error,
         "capacity_error": capacity_error,
-        "energy": active_hosts + bundle["penalty"] * (
-            assignment_error + capacity_error
-        ),
+        "energy": active_hosts + bundle["penalties"]["assignment"] * assignment_error
+        + bundle["penalties"]["capacity"] * capacity_error,
     }
 
 

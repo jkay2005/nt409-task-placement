@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "scope": "phase4e_convergence_diagnostics",
+  "campaign_id": "20261010T022352464276Z",
+  "design": {
+    "instance_id": "p0_reference",
+    "instance_sha256": "28b1e170fd58c0f81035502d70a75ac4cb6c2951203836712cc399fbf32b5940",
+    "model_version": "weighted_equalities_v2",
+    "qubo_sha256": "432dc1364739bc735b6fd6878506bfbb36a3846c69ce3592c955738693e089bb",
+    "penalties": {
+      "assignment": 3.0,
+      "capacity": 3.0
+    },
+    "normalization": {
+      "method": "max_abs",
+      "scale": 257.5,
+      "raw_max_abs_coefficient": 257.5,
+      "execution_max_abs_coefficient": 1.0
+    },
+    "base_config": {
+      "shots": 1024,
+      "evaluation_shots": 1024,
+      "maxiter": 200,
+      "max_seconds": 600.0,
+      "max_qubits": 23,
+      "aer_threads": 4,
+      "aer_memory_mb": 2048,
+      "min_available_gib": 2.0,
+      "hamiltonian_scaling": "max_abs",
+      "cobyla_rhobeg": 1.0,
+      "cobyla_tol": 0.0001
+    },
+    "seeds": [
+      60
+    ],
+    "starts": {
+      "common": [
+        0.3,
+        1.0
+      ],
+      "alternative": [
+        0.8,
+        1.2
+      ]
+    },
+    "environment": {
+      "runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      },
+      "source_sha256": {
+        "placement.py": "7cfa397beb22fdf3feddedc0d889e104a619d6ef3e641ee72a62d82b087deb35",
+        "qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+        "ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+        "qaoa_experiment.py": "e6afa1ba317e312a4095c67d2ade43ac1964351753384f9c9f2d2c7ff38c58cf",
+        "penalty_analysis.py": "1ee33001b1ac723df6d2c9bb541ecac27221e30fa77c1dc9fb9777d3d87363ba",
+        "independent_campaign.py": "af953f6f78b4fac9ff49522f3cb8f9677499eb3048401219bd7d411f7ac0c1eb",
+        "scaling_campaign.py": "dce7f8c22d56b1cd7341b269b7ecb55ab9269d025e2ab0d8087f8c0c8ba5810f",
+        "depth_campaign.py": "443c1019e9cb70da3b2df3cd500520d31534489a32c62869323ca5c3c5129b74",
+        "qaoa_optimizer.py": "1dfd9da488ffe1723d538e2bb05b6785bfb087cc897b483e81d0c8390894deda",
+        "convergence_diagnostics.py": "5664e4f5e045bc3fff4e2ff5231a88ee312eefbec3b5a4673a1e69c196bbb6da",
+        "convergence_campaign.py": "a2299a93d070057dd66b0eca21ab3e092cb5e25cd15a9f307a95c12e3f9ec89c"
+      }
+    },
+    "study": {
+      "stage": "reference_mean_cvar_control",
+      "protocol_version": 1,
+      "depth": 1,
+      "sampling_protocol": "independent_final_v1",
+      "primary_diagnostic": "optimizer_estimate_vs_independent_measurement_vs_ideal_expectation",
+      "quality_metric": "ideal_optimal_placement_probability",
+      "budget_rule": "same_max_function_evaluations_and_final_shots; runtime_reported_separately",
+      "exact_repetition_rule": "one_deterministic_optimization_per_start_no_seed_pseudoreplication",
+      "output_rule": "observed_bits_only_with_frequency_ties_disclosed"
+    },
+    "objective_modes": [
+      "exact"
+    ]
+  },
+  "design_hash": "66c87ac5ae22125bfd6655c887fe55cfb0bf24bc28420b138c2ff4299962c394",
+  "planned_runs": [
+    {
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "common",
+      "objective_mode": "exact",
+      "arm_id": "exact_common",
+      "seed": 60,
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 600.0,
+        "max_qubits": 23,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 60,
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "evaluation_seed": 100060
+      },
+      "run_key": "e7f2403a4f470efb22f2e10723c472e7a3ab57e8b3097aa467511d840c398892"
+    },
+    {
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "alternative",
+      "objective_mode": "exact",
+      "arm_id": "exact_alternative",
+      "seed": 60,
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 600.0,
+        "max_qubits": 23,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 60,
+        "reps": 1,
+        "initial_point": [
+          0.8,
+          1.2
+        ],
+        "evaluation_seed": 100060
+      },
+      "run_key": "c6e0a2117c1578adea2766c6f33043cafaa59fa019afbb3486d9b3014684baaa"
+    }
+  ],
+  "completed_runs": [
+    {
+      "run_key": "e7f2403a4f470efb22f2e10723c472e7a3ab57e8b3097aa467511d840c398892",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "common",
+      "seed": 60,
+      "report": "data/reference_results/phase4e_convergence_runs/p0_reference_exact_common_seed60_20261010T022515165263Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 200,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.0009765625,
+      "optimal_placement_probability": 0.0009765625,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 170.896484375,
+      "mean_active_hosts": 1.548828125,
+      "mean_assignment_error": 2.30859375,
+      "mean_capacity_equation_error": 54.140625,
+      "mean_total_squared_error": 56.44921875,
+      "reconstructed_mean_energy": 170.896484375,
+      "dominant_bitstring_count": 1024,
+      "dominant_valid_bitstring_count": 1,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.03515625,
+      "elapsed_seconds": 41.46854459999997,
+      "postprocessing_seconds": 1.7845513000000892,
+      "penalty_analysis_seconds": 0.1646322000000282,
+      "cost_function_evals": 72,
+      "process_peak_rss_mib": 655.83203125,
+      "arm_id": "exact_common",
+      "objective_mode": "exact",
+      "evaluation_seed": 100060,
+      "evaluation_shots": 1024,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "optimizer_message": "Return from COBYLA because the trust region radius reaches its lower bound.",
+      "optimizer_estimated_energy": 170.54779041859535,
+      "exact_mean_qubo_energy": 170.54779041859538,
+      "exact_feasible_probability": 0.0020463678740295084,
+      "exact_optimal_probability": 0.0020463678740295084,
+      "exact_ground_probability": 1.4042534295963415e-06,
+      "exact_onehot_probability": 0.0283457659005006,
+      "exact_mean_assignment_error": 2.3069615354282407,
+      "exact_energy_std": 184.18143763638392,
+      "standard_error_at_training_shots": 5.7556699261369975,
+      "simulation_seconds": 0.5126981999999316,
+      "training_minus_exact_energy": -2.842170943040401e-14,
+      "evaluation_minus_exact_energy": 0.34869395640461676,
+      "evaluation_standard_error_exact": 5.7556699261369975,
+      "evaluation_standard_error_sample": 5.157863023728417,
+      "optimization_seconds": 40.9914976,
+      "evaluation_sampling_seconds": 0.4768528999999262,
+      "exact_audit_seconds": 2.0599999970727367e-05,
+      "optimal_point": [
+        2.672374935975821,
+        0.6710566455422342
+      ],
+      "initial_point": [
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "run_key": "c6e0a2117c1578adea2766c6f33043cafaa59fa019afbb3486d9b3014684baaa",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "alternative",
+      "seed": 60,
+      "report": "data/reference_results/phase4e_convergence_runs/p0_reference_exact_alternative_seed60_20261010T022538536107Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 200,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.0009765625,
+      "optimal_placement_probability": 0.0009765625,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 162.009765625,
+      "mean_active_hosts": 1.556640625,
+      "mean_assignment_error": 2.3076171875,
+      "mean_capacity_equation_error": 51.1767578125,
+      "mean_total_squared_error": 53.484375,
+      "reconstructed_mean_energy": 162.009765625,
+      "dominant_bitstring_count": 1,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": false,
+      "one_hot_probability": 0.0400390625,
+      "elapsed_seconds": 21.380715599999917,
+      "postprocessing_seconds": 1.7887736000000132,
+      "penalty_analysis_seconds": 0.15854969999998048,
+      "cost_function_evals": 41,
+      "process_peak_rss_mib": 655.83203125,
+      "arm_id": "exact_alternative",
+      "objective_mode": "exact",
+      "evaluation_seed": 100060,
+      "evaluation_shots": 1024,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "optimizer_message": "Return from COBYLA because the trust region radius reaches its lower bound.",
+      "optimizer_estimated_energy": 170.5477905906905,
+      "exact_mean_qubo_energy": 170.54779059069054,
+      "exact_feasible_probability": 0.0020463097824036723,
+      "exact_optimal_probability": 0.0020463097824036723,
+      "exact_ground_probability": 1.404259588690547e-06,
+      "exact_onehot_probability": 0.028345293525167667,
+      "exact_mean_assignment_error": 2.3069693274520944,
+      "exact_energy_std": 184.18287463296886,
+      "standard_error_at_training_shots": 5.755714832280277,
+      "simulation_seconds": 0.4809237999999141,
+      "training_minus_exact_energy": -2.842170943040401e-14,
+      "evaluation_minus_exact_energy": -8.53802496569054,
+      "evaluation_standard_error_exact": 5.755714832280277,
+      "evaluation_standard_error_sample": 4.813176151381775,
+      "optimization_seconds": 20.897712499999898,
+      "evaluation_sampling_seconds": 0.4827957999999626,
+      "exact_audit_seconds": 1.2300000094001007e-05,
+      "optimal_point": [
+        2.672366936202103,
+        0.6710570253680248
+      ],
+      "initial_point": [
+        0.8,
+        1.2
+      ]
+    }
+  ],
+  "updated_at_utc": "2026-10-10T02:25:38.577656+00:00",
+  "planned_run_count": 2,
+  "completed_run_count": 2,
+  "remaining_run_keys": []
+}

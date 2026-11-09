@@ -1,0 +1,1429 @@
+{
+  "study": "nt409_classical_t5_v1",
+  "cases": [
+    {
+      "instance_id": "a3_dev_n5",
+      "status": "completed"
+    },
+    {
+      "instance_id": "v5x3_1",
+      "status": "completed"
+    },
+    {
+      "instance_id": "v5x3_2",
+      "status": "completed"
+    },
+    {
+      "instance_id": "v5x3_3",
+      "status": "completed"
+    }
+  ],
+  "completed_cases": 4,
+  "complete": true,
+  "solver_attempts": 12,
+  "expected_solver_attempts": 12,
+  "all_milp_certified": true,
+  "classical_rows": [
+    {
+      "instance_id": "a3_dev_n5",
+      "oracle_optimum": 2,
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "x": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        },
+        {
+          "task_index": 4,
+          "host_index": 2
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build_seconds": 3.0299999707494862e-05,
+      "solve_seconds": 2.1300000298651867e-05,
+      "check_seconds": 0.00017219999972439837,
+      "total_seconds": 0.00022399999943445437,
+      "matches_oracle": false,
+      "oracle_objective_gap": 1
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "oracle_optimum": 2,
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "x": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 4,
+          "host_index": 0
+        },
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 2
+        }
+      ],
+      "task_processing_order": [
+        4,
+        0,
+        1,
+        2,
+        3
+      ],
+      "build_seconds": 5.289999899105169e-05,
+      "solve_seconds": 0.00013610000132757705,
+      "check_seconds": 0.00022429999989981297,
+      "total_seconds": 0.00041339999916090164,
+      "matches_oracle": false,
+      "oracle_objective_gap": 1
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "oracle_optimum": 2,
+      "algorithm": "MILP",
+      "status": "optimal",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "x": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "y": [
+        0,
+        1,
+        1
+      ],
+      "solver_certified_optimal": true,
+      "solver_certified_infeasible": false,
+      "solver_bound": 2.0,
+      "solver_gap": 0.0,
+      "solver_version": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+      "solver_status_code": 0,
+      "ortools_version": "9.15.6755",
+      "time_limit_seconds": 600,
+      "threads": 1,
+      "options": "randomization/randomseedshift = 0\nlimits/gap = 0\nlimits/absgap = 0",
+      "raw_variable_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "build_seconds": 0.002073999999993248,
+      "solve_seconds": 0.015996100000847946,
+      "check_seconds": 0.0009812999996938743,
+      "total_seconds": 0.019051400000535068,
+      "model_lp_file": "models/a3_dev_n5.lp",
+      "model_lp_sha256": "4fb08589d45ad08554824b0b6da22ccce75eb2e9e203313f6ccef1ef31fc9ec0",
+      "matches_oracle": true,
+      "oracle_objective_gap": 0
+    },
+    {
+      "instance_id": "v5x3_1",
+      "oracle_optimum": 2,
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      "x": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 2
+        },
+        {
+          "task_index": 4,
+          "host_index": 1
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build_seconds": 3.5400000342633575e-05,
+      "solve_seconds": 2.049999966402538e-05,
+      "check_seconds": 0.00018079999972542282,
+      "total_seconds": 0.00023680000049353112,
+      "matches_oracle": false,
+      "oracle_objective_gap": 1
+    },
+    {
+      "instance_id": "v5x3_1",
+      "oracle_optimum": 2,
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        0,
+        0,
+        2,
+        1,
+        2
+      ],
+      "x": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 3,
+          "host_index": 1
+        },
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 2
+        },
+        {
+          "task_index": 4,
+          "host_index": 2
+        }
+      ],
+      "task_processing_order": [
+        3,
+        0,
+        1,
+        2,
+        4
+      ],
+      "build_seconds": 3.170000127283856e-05,
+      "solve_seconds": 0.00010130000009667128,
+      "check_seconds": 0.00020399999993969686,
+      "total_seconds": 0.0003372999999555759,
+      "matches_oracle": false,
+      "oracle_objective_gap": 1
+    },
+    {
+      "instance_id": "v5x3_1",
+      "oracle_optimum": 2,
+      "algorithm": "MILP",
+      "status": "optimal",
+      "found_valid": true,
+      "objective": 2,
+      "placement": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "x": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        0,
+        1
+      ],
+      "solver_certified_optimal": true,
+      "solver_certified_infeasible": false,
+      "solver_bound": 2.0,
+      "solver_gap": 0.0,
+      "solver_version": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+      "solver_status_code": 0,
+      "ortools_version": "9.15.6755",
+      "time_limit_seconds": 600,
+      "threads": 1,
+      "options": "randomization/randomseedshift = 0\nlimits/gap = 0\nlimits/absgap = 0",
+      "raw_variable_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "build_seconds": 0.0018548999996710336,
+      "solve_seconds": 0.005058599999756552,
+      "check_seconds": 0.00029969999923196156,
+      "total_seconds": 0.007213199998659547,
+      "model_lp_file": "models/v5x3_1.lp",
+      "model_lp_sha256": "73d14398091e9e253dff35d9d71ee9426080a6125a1019b482735af17c5fc0ab",
+      "matches_oracle": true,
+      "oracle_objective_gap": 0
+    },
+    {
+      "instance_id": "v5x3_2",
+      "oracle_optimum": 3,
+      "algorithm": "FirstFit",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 2
+        },
+        {
+          "task_index": 3,
+          "host_index": 2
+        },
+        {
+          "task_index": 4,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build_seconds": 3.169999945384916e-05,
+      "solve_seconds": 2.0900000890833326e-05,
+      "check_seconds": 3.7999998312443495e-06,
+      "total_seconds": 5.649999911838677e-05,
+      "matches_oracle": false,
+      "oracle_objective_gap": null
+    },
+    {
+      "instance_id": "v5x3_2",
+      "oracle_optimum": 3,
+      "algorithm": "BFD",
+      "status": "no_placement_found",
+      "found_valid": false,
+      "objective": null,
+      "placement": null,
+      "x": null,
+      "y": null,
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 2
+        },
+        {
+          "task_index": 1,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 1
+        },
+        {
+          "task_index": 4,
+          "host_index": null
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build_seconds": 3.699999979289714e-05,
+      "solve_seconds": 9.069999941857532e-05,
+      "check_seconds": 3.600000127335079e-06,
+      "total_seconds": 0.00013140000010025688,
+      "matches_oracle": false,
+      "oracle_objective_gap": null
+    },
+    {
+      "instance_id": "v5x3_2",
+      "oracle_optimum": 3,
+      "algorithm": "MILP",
+      "status": "optimal",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "x": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": true,
+      "solver_certified_infeasible": false,
+      "solver_bound": 3.0,
+      "solver_gap": 0.0,
+      "solver_version": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+      "solver_status_code": 0,
+      "ortools_version": "9.15.6755",
+      "time_limit_seconds": 600,
+      "threads": 1,
+      "options": "randomization/randomseedshift = 0\nlimits/gap = 0\nlimits/absgap = 0",
+      "raw_variable_values": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "build_seconds": 0.001696399998763809,
+      "solve_seconds": 0.002357200000915327,
+      "check_seconds": 0.0003298999999969965,
+      "total_seconds": 0.004383499999676133,
+      "model_lp_file": "models/v5x3_2.lp",
+      "model_lp_sha256": "97441f34319185bdd95e1986434a419a61ce32df5679b60a59252abb71e3891c",
+      "matches_oracle": true,
+      "oracle_objective_gap": 0
+    },
+    {
+      "instance_id": "v5x3_3",
+      "oracle_optimum": 3,
+      "algorithm": "FirstFit",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "x": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 2
+        },
+        {
+          "task_index": 4,
+          "host_index": 2
+        }
+      ],
+      "task_processing_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build_seconds": 3.110000034212135e-05,
+      "solve_seconds": 1.8400000044493936e-05,
+      "check_seconds": 0.00018079999972542282,
+      "total_seconds": 0.0002305999987584073,
+      "matches_oracle": true,
+      "oracle_objective_gap": 0
+    },
+    {
+      "instance_id": "v5x3_3",
+      "oracle_optimum": 3,
+      "algorithm": "BFD",
+      "status": "feasible",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "x": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": false,
+      "solver_certified_infeasible": false,
+      "solver_bound": null,
+      "solver_gap": null,
+      "solver_version": null,
+      "trace": [
+        {
+          "task_index": 0,
+          "host_index": 0
+        },
+        {
+          "task_index": 2,
+          "host_index": 1
+        },
+        {
+          "task_index": 1,
+          "host_index": 1
+        },
+        {
+          "task_index": 3,
+          "host_index": 2
+        },
+        {
+          "task_index": 4,
+          "host_index": 2
+        }
+      ],
+      "task_processing_order": [
+        0,
+        2,
+        1,
+        3,
+        4
+      ],
+      "build_seconds": 4.980000085197389e-05,
+      "solve_seconds": 0.00015320000056817662,
+      "check_seconds": 0.0002696999999898253,
+      "total_seconds": 0.0004738000006909715,
+      "matches_oracle": true,
+      "oracle_objective_gap": 0
+    },
+    {
+      "instance_id": "v5x3_3",
+      "oracle_optimum": 3,
+      "algorithm": "MILP",
+      "status": "optimal",
+      "found_valid": true,
+      "objective": 3,
+      "placement": [
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "x": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "y": [
+        1,
+        1,
+        1
+      ],
+      "solver_certified_optimal": true,
+      "solver_certified_infeasible": false,
+      "solver_bound": 3.0,
+      "solver_gap": 0.0,
+      "solver_version": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+      "solver_status_code": 0,
+      "ortools_version": "9.15.6755",
+      "time_limit_seconds": 600,
+      "threads": 1,
+      "options": "randomization/randomseedshift = 0\nlimits/gap = 0\nlimits/absgap = 0",
+      "raw_variable_values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "build_seconds": 0.0015868999998929212,
+      "solve_seconds": 0.0015727999998489395,
+      "check_seconds": 0.00034270000105607323,
+      "total_seconds": 0.003502400000797934,
+      "model_lp_file": "models/v5x3_3.lp",
+      "model_lp_sha256": "dfcf54a129353f6a86593d257e05b16eded1f2efbb064ef623d2e1a94b348068",
+      "matches_oracle": true,
+      "oracle_objective_gap": 0
+    }
+  ],
+  "quantum_rows": [
+    {
+      "instance_id": "a3_dev_n5",
+      "variant": "standard_x",
+      "p": 2,
+      "mean_energy": 62.823613460388856,
+      "p_domain": 0.5271655740590127,
+      "p_valid": 0.16336144274386027,
+      "p_opt": 0.00836107863450173,
+      "p_ground": 3.1476055993741065e-05,
+      "final_measured": {
+        "mean_energy": 61.048828125,
+        "valid_count": 180,
+        "optimal_count": 3,
+        "ground_count": 0,
+        "best_valid_objective": 2
+      },
+      "training_objective_calls": 200,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 1165.4331473000002,
+      "source_campaign": "N27",
+      "source_stage": "standard_x_p2",
+      "source_raw_sha256": "a3e22ccec05d2f81204c771acab4fe00c740be86fe43070702d955929b2f6de7",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "variant": "valid_x",
+      "p": 2,
+      "mean_energy": 68.6465923878754,
+      "p_domain": 0.2886412523384022,
+      "p_valid": 0.07330221545615527,
+      "p_opt": 0.008113817661442101,
+      "p_ground": 3.0484833366085275e-05,
+      "final_measured": {
+        "mean_energy": 67.234375,
+        "valid_count": 63,
+        "optimal_count": 5,
+        "ground_count": 0,
+        "best_valid_objective": 2
+      },
+      "training_objective_calls": 200,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 957.4347615000006,
+      "source_campaign": "N27",
+      "source_stage": "valid_x_p2",
+      "source_raw_sha256": "d0672f1ea05757c84caff0c7ea14bc2b2d51b301a8cfe5c9aeb72dabaebf8fc4",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "variant": "valid_dw",
+      "p": 2,
+      "mean_energy": 69.1394219601032,
+      "p_domain": 1.000000000000008,
+      "p_valid": 0.2561720267502276,
+      "p_opt": 0.015432838958326816,
+      "p_ground": 3.539664945083052e-05,
+      "final_measured": {
+        "mean_energy": 68.4375,
+        "valid_count": 257,
+        "optimal_count": 16,
+        "ground_count": 0,
+        "best_valid_objective": 2
+      },
+      "training_objective_calls": 170,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 957.3296365999977,
+      "source_campaign": "N27",
+      "source_stage": "valid_dw_p2",
+      "source_raw_sha256": "59dff57d77444b1c184d894711271946088dcc8624a13078612fd92d0658d579",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_1",
+      "variant": "standard_x",
+      "p": 2,
+      "mean_energy": 59.08762221371192,
+      "p_domain": 0.4851806308515678,
+      "p_valid": 0.11566711119239859,
+      "p_opt": 0.002783488590097428,
+      "p_ground": 1.2236004939487639e-05,
+      "final_measured": {
+        "mean_energy": 58.3388671875,
+        "valid_count": 132,
+        "optimal_count": 4,
+        "ground_count": 0,
+        "best_valid_objective": 2
+      },
+      "training_objective_calls": 166,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 942.9496063000006,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_1__standard_x_p2",
+      "source_raw_sha256": "6830766bdfb345c3506c57006a719c44f80c6f281b0ef8955c0a06d3beffa41d",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_1",
+      "variant": "valid_x",
+      "p": 2,
+      "mean_energy": 77.44033155440506,
+      "p_domain": 0.43550876171172737,
+      "p_valid": 0.07296463463778056,
+      "p_opt": 0.0026011776935724647,
+      "p_ground": 1.8738679628583577e-05,
+      "final_measured": {
+        "mean_energy": 76.8896484375,
+        "valid_count": 72,
+        "optimal_count": 2,
+        "ground_count": 1,
+        "best_valid_objective": 2
+      },
+      "training_objective_calls": 200,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 869.0929973999991,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_1__valid_x_p2",
+      "source_raw_sha256": "04b4fb542b62f0832e74e41990d75d5739eefa10f0aeb40a7faed9a59fe629af",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_1",
+      "variant": "valid_dw",
+      "p": 2,
+      "mean_energy": 68.63664828202336,
+      "p_domain": 0.9999999999999956,
+      "p_valid": 0.21618601582914115,
+      "p_opt": 0.008487177171898543,
+      "p_ground": 2.7981142803918473e-05,
+      "final_measured": {
+        "mean_energy": 71.634765625,
+        "valid_count": 206,
+        "optimal_count": 13,
+        "ground_count": 0,
+        "best_valid_objective": 2
+      },
+      "training_objective_calls": 153,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 773.7749933999985,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_1__valid_dw_p2",
+      "source_raw_sha256": "c88fea8d3d4cb5235fe29396c4ad316c5bf3399086d4d082a084e058531cd31e",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_2",
+      "variant": "standard_x",
+      "p": 2,
+      "mean_energy": 286.11001887857304,
+      "p_domain": 0.3537491260575449,
+      "p_valid": 0.00036670031125121856,
+      "p_opt": 0.00036670031125121856,
+      "p_ground": 7.318436053925017e-06,
+      "final_measured": {
+        "mean_energy": 273.353515625,
+        "valid_count": 0,
+        "optimal_count": 0,
+        "ground_count": 0,
+        "best_valid_objective": null
+      },
+      "training_objective_calls": 200,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 1331.479163600001,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_2__standard_x_p2",
+      "source_raw_sha256": "d7c5f300466da00bde3dbdda85d885be13afb54f2ed48321bc09a0e6dc81b699",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_2",
+      "variant": "valid_x",
+      "p": 2,
+      "mean_energy": 105.40684677999249,
+      "p_domain": 0.2059453270337288,
+      "p_valid": 0.0006733402112052221,
+      "p_opt": 0.0006733402112052221,
+      "p_ground": 3.872646789957336e-06,
+      "final_measured": {
+        "mean_energy": 107.0498046875,
+        "valid_count": 1,
+        "optimal_count": 1,
+        "ground_count": 0,
+        "best_valid_objective": 3
+      },
+      "training_objective_calls": 162,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 1045.5414238999983,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_2__valid_x_p2",
+      "source_raw_sha256": "61023225ccc3815aa2087673875fc8cf95680264da62feb5de77e8a329c0bb55",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_2",
+      "variant": "valid_dw",
+      "p": 2,
+      "mean_energy": 110.02679696616657,
+      "p_domain": 1.0000000000000002,
+      "p_valid": 0.0021001019635823607,
+      "p_opt": 0.0021001019635823607,
+      "p_ground": 9.713916528765117e-06,
+      "final_measured": {
+        "mean_energy": 108.6181640625,
+        "valid_count": 1,
+        "optimal_count": 1,
+        "ground_count": 0,
+        "best_valid_objective": 3
+      },
+      "training_objective_calls": 155,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 1513.7764940000015,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_2__valid_dw_p2",
+      "source_raw_sha256": "2848aff4ad023d4da1f62982a1d42c66a3ac8ebedef466f843956236a489089d",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_3",
+      "variant": "standard_x",
+      "p": 2,
+      "mean_energy": 84.49857383400352,
+      "p_domain": 0.4876161990162673,
+      "p_valid": 0.03045077458998992,
+      "p_opt": 0.03045077458998992,
+      "p_ground": 4.300359994842285e-05,
+      "final_measured": {
+        "mean_energy": 86.58203125,
+        "valid_count": 30,
+        "optimal_count": 30,
+        "ground_count": 0,
+        "best_valid_objective": 3
+      },
+      "training_objective_calls": 161,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 983.4892359000005,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_3__standard_x_p2",
+      "source_raw_sha256": "1c9ba814e333cfc5cc3a3d1c625d82fc27c2223449ba8f9ac43dc4c323b8c172",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_3",
+      "variant": "valid_x",
+      "p": 2,
+      "mean_energy": 94.68410889961329,
+      "p_domain": 0.24944772281414074,
+      "p_valid": 0.013983490568580365,
+      "p_opt": 0.013983490568580365,
+      "p_ground": 2.9902889936398153e-05,
+      "final_measured": {
+        "mean_energy": 91.6943359375,
+        "valid_count": 15,
+        "optimal_count": 15,
+        "ground_count": 0,
+        "best_valid_objective": 3
+      },
+      "training_objective_calls": 200,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 1142.615530199997,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_3__valid_x_p2",
+      "source_raw_sha256": "4a38636b1fa9c53bc619691f99936d2358dab524e8a605e9134ca3ea316678e0",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    },
+    {
+      "instance_id": "v5x3_3",
+      "variant": "valid_dw",
+      "p": 2,
+      "mean_energy": 97.72384249742605,
+      "p_domain": 1.0000000000000009,
+      "p_valid": 0.04209420308671752,
+      "p_opt": 0.04209420308671752,
+      "p_ground": 5.295255265912737e-05,
+      "final_measured": {
+        "mean_energy": 96.3037109375,
+        "valid_count": 53,
+        "optimal_count": 53,
+        "ground_count": 0,
+        "best_valid_objective": 3
+      },
+      "training_objective_calls": 167,
+      "training_cap": 200,
+      "elapsed_stage_seconds": 1043.3577497999977,
+      "source_campaign": "N28",
+      "source_stage": "v5x3_3__valid_dw_p2",
+      "source_raw_sha256": "30b07dc7610b9d1137eebb5b9af0cc790a329a8a4cc091b8c99daa406867fd5c",
+      "original_runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      }
+    }
+  ],
+  "control_rows": [
+    {
+      "instance_id": "a3_dev_n5",
+      "method": "uniform_encoded",
+      "p_valid": 0.011962890625,
+      "p_opt": 0.0009765625
+    },
+    {
+      "instance_id": "a3_dev_n5",
+      "method": "random_host_inferred_y",
+      "p_valid": 0.37037037037037035,
+      "p_opt": 0.03292181069958848
+    },
+    {
+      "instance_id": "v5x3_1",
+      "method": "uniform_encoded",
+      "p_valid": 0.010009765625,
+      "p_opt": 0.00048828125
+    },
+    {
+      "instance_id": "v5x3_1",
+      "method": "random_host_inferred_y",
+      "p_valid": 0.32098765432098764,
+      "p_opt": 0.01646090534979424
+    },
+    {
+      "instance_id": "v5x3_2",
+      "method": "uniform_encoded",
+      "p_valid": 0.0001220703125,
+      "p_opt": 0.0001220703125
+    },
+    {
+      "instance_id": "v5x3_2",
+      "method": "random_host_inferred_y",
+      "p_valid": 0.00411522633744856,
+      "p_opt": 0.00411522633744856
+    },
+    {
+      "instance_id": "v5x3_3",
+      "method": "uniform_encoded",
+      "p_valid": 0.001708984375,
+      "p_opt": 0.001708984375
+    },
+    {
+      "instance_id": "v5x3_3",
+      "method": "random_host_inferred_y",
+      "p_valid": 0.05761316872427984,
+      "p_opt": 0.05761316872427984
+    }
+  ],
+  "warning": "Four fixed 5x3 inputs: one development and three conditioned validation cases. One classical solve per algorithm/case; timings are descriptive, not a speed benchmark. QAOA probabilities describe samples, not classical solver certificates. Random-host control infers y; uniform-encoded control does not. QAOA p2 is primary and its training cost includes p1. No quantum retraining."
+}

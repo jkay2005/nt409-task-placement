@@ -50,6 +50,15 @@ def brute_uniform(bundle):
 
 
 class ReferenceTests(unittest.TestCase):
+    def test_weighted_uniform_matches_exhaustive_bits(self):
+        instance = {"schema_version": 1, "instance_id": "weighted_uniform",
+                    "objective": "min_active_hosts",
+                    "tasks": [{"id": "T1", "cpu": 1, "ram": 1}],
+                    "hosts": [{"id": "H0", "cpu": 2, "ram": 2}]}
+        for a, c in ((12, 3), (3, 12), (0.5, 2.5)):
+            self.compare_with_brute(build_qubo(
+                instance, assignment_penalty=a, capacity_penalty=c))
+
     def compare_with_brute(self, bundle):
         factored = exact_uniform_baseline(bundle)
         brute = brute_uniform(bundle)
@@ -118,6 +127,21 @@ class ReferenceTests(unittest.TestCase):
 
 
 class AerRegressionTests(unittest.TestCase):
+    def test_independent_report_keeps_both_weights_and_separate_directory(self):
+        instance = json.loads((ROOT / "data/instances/p3_demo.json").read_text())
+        bundle = build_qubo(instance, assignment_penalty=12, capacity_penalty=3)
+        report = run_qaoa_experiment(bundle, dict(seed=42, shots=64, reps=1,
+                    maxiter=4, max_qubits=23, max_seconds=300), progress=False)
+        self.assertEqual(report["schema_version"], 3)
+        self.assertEqual(report["penalties"], {"assignment": 12, "capacity": 3})
+        self.assertIsNone(report["penalty"])
+        self.assertIn("qubo", report["provenance"])
+        self.assertIn("qiskit_aer_version", report["environment"]["runtime"])
+        with TemporaryDirectory() as root:
+            path = save_experiment_report(root, report)
+            self.assertEqual(path.parent.name, "phase4b_independent_runs")
+            self.assertEqual(json.loads(path.read_text())["penalties"], report["penalties"])
+
     def test_transpilation_preserves_qaoa_state_and_bit_order(self):
         tiny = build_qubo({
             "schema_version": 1, "instance_id": "aer_equivalence_test",

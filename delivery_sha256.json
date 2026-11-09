@@ -1,0 +1,24 @@
+{
+  "delivery": "nt409_notebook20_three_host_test_campaign_v1",
+  "git_commit": "d8dd2536c1d7df014454f93fdd4ff1f263228129",
+  "baseline": "GitHub Notebook18 backup plus released Notebook19; existing project required",
+  "official_test_quantum_runs": 0,
+  "tests": "128 tests OK",
+  "validation": "IPython sequential9cells; tiny11q/32shots/cap8;90trial/18probe; no native Jupyter kernel startup verification",
+  "files_sha256": {
+    "README_BRANCH_A_NOTEBOOK20.md": "905944ab8d4d24b69973c4cd55caa83945acde62464d164b001f08778bcf3bba",
+    "data/benchmarks/nt409_three_host_test_v1/protocol.json": "c36f9aa667075d129d415a62c3212c0a0bf7c95dd9642f3466b499c66d35f8a3",
+    "docs/three_host_test_protocol.md": "4e337e253c99120886ec9e4154c8f94606d7e36a14041433313adfa44fba02d4",
+    "notebooks/20_three_host_frozen_test_campaign.ipynb": "942316cb0c2cbb22ef0b630bcac772bc9d1ba234bc87fd059c53222690dfc010",
+    "src/three_host_test_analysis.py": "bac26533a2244e4083bfacd5a29be7a2fa6654fe2a797269279ca190f33cd117",
+    "src/three_host_test_campaign.py": "3e73a91fb0fae5bc37dd71049753dfca07f3fe668a3b2cf8193c386727c5adaa",
+    "tests/test_three_host_test_analysis.py": "ab0fae5b29a04776da7b56a7cc92a160162d36943b812eb976d8f9daee075821",
+    "tests/test_three_host_test_campaign.py": "4683b866863a05d8669bd11dd7853446ce61fa16f565187555e91e8af0866551",
+    "validation/notebook20/20_executed_tiny_software_validation.ipynb": "c5ca22669d881ce9d3994a3809f75a2ca9cb26ad7fb3967416b147e63424da77",
+    "validation/notebook20/c2_audit.json": "3eb230715ac3960ee08012d1c26c6fdc5ac9d141a3ce1d4b1ac9e009cd6b3a98",
+    "validation/notebook20/full_tests.log": "4ead49a898e4b39c9b10910973c8df626597c55752941c52befcc02fcf4369b7",
+    "validation/notebook20/notebook_validation.json": "642f38ac691bf222fba1e647972f95bc8322fe08ec8136219cb785eb9d9f5b7e",
+    "validation/notebook20/review.md": "5486fb3052f4e1afd400a6186539ac63cd6850841308f7e742e66539cea6fd68",
+    "validation/notebook20/tiny_software_validation_results.zip": "da5b74baf3a0913a8e68f69131ba768e1b9ed5b647a668aef9f8dc97c3132d3b"
+  }
+}

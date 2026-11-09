@@ -1,0 +1,103 @@
+{
+  "p1_choice": {
+    "optimum": 1,
+    "objective_histogram": {
+      "1": 1,
+      "2": 10
+    },
+    "total_assignments": 16,
+    "feasible_assignments": 11
+  },
+  "p1_tight": {
+    "optimum": 2,
+    "objective_histogram": {
+      "2": 4
+    },
+    "total_assignments": 16,
+    "feasible_assignments": 4
+  },
+  "p0_reference": {
+    "optimum": 2,
+    "objective_histogram": {
+      "2": 1
+    },
+    "total_assignments": 16,
+    "feasible_assignments": 1
+  },
+  "p1_infeasible": {
+    "optimum": null,
+    "objective_histogram": {},
+    "total_assignments": 16,
+    "feasible_assignments": 0
+  },
+  "a3_test_n4_1": {
+    "optimum": 2,
+    "objective_histogram": {
+      "3": 3,
+      "2": 1
+    },
+    "total_assignments": 81,
+    "feasible_assignments": 4
+  },
+  "a3_test_n4_2": {
+    "optimum": 2,
+    "objective_histogram": {
+      "3": 6,
+      "2": 2
+    },
+    "total_assignments": 81,
+    "feasible_assignments": 8
+  },
+  "a3_test_n4_3": {
+    "optimum": 2,
+    "objective_histogram": {
+      "3": 8,
+      "2": 2
+    },
+    "total_assignments": 81,
+    "feasible_assignments": 10
+  },
+  "a3_test_n5_1": {
+    "optimum": 2,
+    "objective_histogram": {
+      "3": 26,
+      "2": 2
+    },
+    "total_assignments": 243,
+    "feasible_assignments": 28
+  },
+  "a3_test_n5_2": {
+    "optimum": 2,
+    "objective_histogram": {
+      "3": 38,
+      "2": 4
+    },
+    "total_assignments": 243,
+    "feasible_assignments": 42
+  },
+  "a3_test_n5_3": {
+    "optimum": 2,
+    "objective_histogram": {
+      "3": 98,
+      "2": 8
+    },
+    "total_assignments": 243,
+    "feasible_assignments": 106
+  },
+  "a3_one_host": {
+    "optimum": 1,
+    "objective_histogram": {
+      "1": 1,
+      "2": 8,
+      "3": 12
+    },
+    "total_assignments": 81,
+    "feasible_assignments": 21
+  },
+  "a3_infeasible": {
+    "optimum": null,
+    "objective_histogram": {},
+    "total_assignments": 81,
+    "feasible_assignments": 0
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "handoff_id": "nt409_branch_a_handoff_v1",
+  "prepared_local_date": "2026-10-14",
+  "timezone": "Asia/Saigon",
+  "branch_scope": "A only",
+  "reference_repository": "https://github.com/jkay2005/nt409-task-placement",
+  "local_source_snapshot_commit": "b806f82d6a8a2a092d6838d2446d07bbeb19c73a",
+  "source_commit_note": "identifies local preparation snapshot; not asserted to equal user Windows backup commit",
+  "user_reported_github_backup_complete": true,
+  "main_comparison_instances": [
+    "p1_choice",
+    "p1_tight",
+    "p0_reference",
+    "a3_test_n4_1",
+    "a3_test_n4_2",
+    "a3_test_n4_3",
+    "a3_test_n5_1",
+    "a3_test_n5_2",
+    "a3_test_n5_3"
+  ],
+  "development_instances": [
+    "a3_dev_n4",
+    "a3_dev_n5"
+  ],
+  "controls_excluded_from_ranking": [
+    "p1_infeasible",
+    "a3_one_host",
+    "a3_infeasible"
+  ],
+  "result_runs": 196,
+  "aggregate_groups": 42,
+  "main_comparison_groups": 36,
+  "classical_results_template_is_pending_not_evidence": true,
+  "work_performed": "assembly, exact placement reference enumeration and record/hash consistency checks; no QAOA retraining",
+  "timing_note": "Notebook20 recorded timing retained unchanged. User reported sleep; exact downtime not independently measured.",
+  "limits": [
+    "no confirmed FF/BFD/MILP result supplied",
+    "no quantum advantage established",
+    "25 qubits is largest tested under protocol, not proven laptop ceiling",
+    "Notebook06-15 exploratory records are not pooled with final campaigns"
+  ]
+}

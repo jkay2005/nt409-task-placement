@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "complete": true,
+  "coverage": {
+    "planned": 3,
+    "completed": 3,
+    "failed": 0,
+    "pending": 0
+  },
+  "completed_trials_checked": 6,
+  "endpoint_replay": true,
+  "common_p2_start": true,
+  "meaning": "Consistency, objective and budget checks; not proof of QAOA improvement."
+}

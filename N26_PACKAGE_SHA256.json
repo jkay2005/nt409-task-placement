@@ -1,0 +1,14 @@
+{
+  "base_commit": "e81ada4",
+  "delivery_commit": "d9009b0",
+  "files": {
+    "src/validation5x3.py": "5edcc30083dd75b8c4b98ddd16ed67051f47980d66e1f5f1cae72d29aa097cf0",
+    "src/classical_baselines.py": "e9a976fd4a75011f13df6b708a7ab76da5c0bcd40d0a819784af4418e1f83155",
+    "tests/test_validation5x3.py": "9151c577732a0a0795addc7d20de0eb560b47eba2a44854b5fac7af0d04f3a51",
+    "docs/validation5x3_protocol_vi.md": "ff21c0e78f4e64bbd3ab5a2ac9c22e6b05cf8f4d3ffd31a14e38f5ce7b57aa18",
+    "data/benchmarks/nt409_validation5x3_v1/dataset.json": "1d170a702fbea630066e2fc5064913f11a6d5e150827b81d4115d44c80af687a",
+    "notebooks/26_validation_dataset_5x3.ipynb": "405f39f4d683dc087bed5f323ea282778e926a0aff6bab436e6e9b65027b82de",
+    "N26_README_FIRST.md": "448b55c9167ac01449f0b9a6b0450e35aa3c0e2fb150e946ade3332bb1c937b1",
+    "N26_VALIDATION.md": "b5798d285292c0a248fd4067b6407bc295b6600019d6f6ed854eab2c058f17cd"
+  }
+}

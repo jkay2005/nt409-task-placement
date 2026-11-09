@@ -1,0 +1,122 @@
+[
+  {
+    "instance_id": "a3_test_n4_1",
+    "role": "test",
+    "method": "uniform_encoded_domain_wall_y",
+    "feasible_probability": 0.00244140625,
+    "optimal_probability": 0.00048828125,
+    "optimal_batch_1024_probability": 0.39354339926296605,
+    "required_lift_for_80pct_batch": 3.216347569146055,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n4_1",
+    "role": "test",
+    "method": "random_assignment_y_inferred",
+    "feasible_probability": 0.04938271604938271,
+    "optimal_probability": 0.012345679012345678,
+    "optimal_batch_1024_probability": 0.999997011265423,
+    "required_lift_for_80pct_batch": 0.12720905913126487,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n4_2",
+    "role": "test",
+    "method": "uniform_encoded_domain_wall_y",
+    "feasible_probability": 0.0048828125,
+    "optimal_probability": 0.0009765625,
+    "optimal_batch_1024_probability": 0.6323002605887288,
+    "required_lift_for_80pct_batch": 1.6081737845730275,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n4_2",
+    "role": "test",
+    "method": "random_assignment_y_inferred",
+    "feasible_probability": 0.09876543209876543,
+    "optimal_probability": 0.024691358024691357,
+    "optimal_batch_1024_probability": 0.9999999999923883,
+    "required_lift_for_80pct_batch": 0.06360452956563244,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n4_3",
+    "role": "test",
+    "method": "uniform_encoded_domain_wall_y",
+    "feasible_probability": 0.005859375,
+    "optimal_probability": 0.0009765625,
+    "optimal_batch_1024_probability": 0.6323002605887288,
+    "required_lift_for_80pct_batch": 1.6081737845730275,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n4_3",
+    "role": "test",
+    "method": "random_assignment_y_inferred",
+    "feasible_probability": 0.12345679012345678,
+    "optimal_probability": 0.024691358024691357,
+    "optimal_batch_1024_probability": 0.9999999999923883,
+    "required_lift_for_80pct_batch": 0.06360452956563244,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n5_1",
+    "role": "test",
+    "method": "uniform_encoded_domain_wall_y",
+    "feasible_probability": 0.003662109375,
+    "optimal_probability": 0.000244140625,
+    "optimal_batch_1024_probability": 0.22122298754861838,
+    "required_lift_for_80pct_batch": 6.43269513829211,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n5_1",
+    "role": "test",
+    "method": "random_assignment_y_inferred",
+    "feasible_probability": 0.11522633744855967,
+    "optimal_probability": 0.00823045267489712,
+    "optimal_batch_1024_probability": 0.999788832328055,
+    "required_lift_for_80pct_batch": 0.1908135886968973,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n5_2",
+    "role": "test",
+    "method": "uniform_encoded_domain_wall_y",
+    "feasible_probability": 0.005615234375,
+    "optimal_probability": 0.00048828125,
+    "optimal_batch_1024_probability": 0.39354339926296605,
+    "required_lift_for_80pct_batch": 3.216347569146055,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n5_2",
+    "role": "test",
+    "method": "random_assignment_y_inferred",
+    "feasible_probability": 0.1728395061728395,
+    "optimal_probability": 0.01646090534979424,
+    "optimal_batch_1024_probability": 0.9999999584447015,
+    "required_lift_for_80pct_batch": 0.09540679434844865,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n5_3",
+    "role": "test",
+    "method": "uniform_encoded_domain_wall_y",
+    "feasible_probability": 0.013916015625,
+    "optimal_probability": 0.0009765625,
+    "optimal_batch_1024_probability": 0.6323002605887288,
+    "required_lift_for_80pct_batch": 1.6081737845730275,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  },
+  {
+    "instance_id": "a3_test_n5_3",
+    "role": "test",
+    "method": "random_assignment_y_inferred",
+    "feasible_probability": 0.43621399176954734,
+    "optimal_probability": 0.03292181069958848,
+    "optimal_batch_1024_probability": 0.9999999999999987,
+    "required_lift_for_80pct_batch": 0.047703397174224324,
+    "note": "IID analytical control; lift target is diagnostic, not an acceptance threshold"
+  }
+]

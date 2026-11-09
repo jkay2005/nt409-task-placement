@@ -1,0 +1,759 @@
+{
+  "manifest": {
+    "schema_version": 1,
+    "scope": "nt409_three_host_benchmark_v2",
+    "protocol_path": "protocol.json",
+    "protocol_canonical_sha256": "f655cbcb5e7f8b37a1168d4be1fe765553ced12576846a682ddc0fe0b0167e68",
+    "pool_statistics": {
+      "4": {
+        "raw_candidates": 508,
+        "informative_candidates": 146,
+        "informative_heterogeneous_cpu_ram_swap_unique": 77
+      },
+      "5": {
+        "raw_candidates": 82,
+        "informative_candidates": 47,
+        "informative_heterogeneous_cpu_ram_swap_unique": 25
+      }
+    },
+    "instances": [
+      {
+        "instance_id": "a3_dev_n4",
+        "role": "development",
+        "path": "instances/a3_dev_n4.json",
+        "canonical_sha256": "ecee2ce0d65ee5be4cc1c057c3286ecd331ffb54f72c4b0bfca94b269945747e",
+        "structural_signature": "0edd6a89e387298d3722f97dd5fc4b80dfe441811268d2da0db2a9a940958940",
+        "num_tasks": 4,
+        "num_qubits": 23,
+        "optimum": 2,
+        "uniform_batch_success": 0.6323002605887288,
+        "uniform_optimal_probability": 0.0009765625
+      },
+      {
+        "instance_id": "a3_test_n4_1",
+        "role": "test",
+        "path": "instances/a3_test_n4_1.json",
+        "canonical_sha256": "a97d31bcf5e36fbfb47c2f8dca4f0db20c2f7040a76a6aa04ad99099b9fa9b4f",
+        "structural_signature": "965d9140b80c259e7ef119685fcb07622930841eefd402fe31bb14b56e565d73",
+        "num_tasks": 4,
+        "num_qubits": 20,
+        "optimum": 2,
+        "uniform_batch_success": 0.39354339926296605,
+        "uniform_optimal_probability": 0.00048828125
+      },
+      {
+        "instance_id": "a3_test_n4_2",
+        "role": "test",
+        "path": "instances/a3_test_n4_2.json",
+        "canonical_sha256": "b802b81eda240561125770f7da9f0376a3f80a05b1614bf935297ca497526a22",
+        "structural_signature": "624b56444550330264e474a62aad9f32fe686fe7fe6e5b6f9d4a2047315e7a18",
+        "num_tasks": 4,
+        "num_qubits": 22,
+        "optimum": 2,
+        "uniform_batch_success": 0.6323002605887288,
+        "uniform_optimal_probability": 0.0009765625
+      },
+      {
+        "instance_id": "a3_test_n4_3",
+        "role": "test",
+        "path": "instances/a3_test_n4_3.json",
+        "canonical_sha256": "acfdb7c6e642f8b81a5b4fbcd411672916715d053992627fc9a3d1c77c8f5f4d",
+        "structural_signature": "be5b2cd0403fe0b20d05e68277240dbd9bf3e025ac3e408bc6aa653d23bd1f7c",
+        "num_tasks": 4,
+        "num_qubits": 22,
+        "optimum": 2,
+        "uniform_batch_success": 0.6323002605887288,
+        "uniform_optimal_probability": 0.0009765625
+      },
+      {
+        "instance_id": "a3_dev_n5",
+        "role": "development",
+        "path": "instances/a3_dev_n5.json",
+        "canonical_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+        "structural_signature": "51eb7af72dbcb79303ef2401370cf6ed764075cd4026c2aa7bf80efc1ed7529b",
+        "num_tasks": 5,
+        "num_qubits": 25,
+        "optimum": 2,
+        "uniform_batch_success": 0.6323002605887288,
+        "uniform_optimal_probability": 0.0009765625
+      },
+      {
+        "instance_id": "a3_test_n5_1",
+        "role": "test",
+        "path": "instances/a3_test_n5_1.json",
+        "canonical_sha256": "e7df3da96d629861c3dbd882966cb7f7cc75c8088193f004c66eb39f4b13a067",
+        "structural_signature": "57844c5eff6256bd310cdb32c62e69dbc3a3f8d7703400654c646aa2217c5bf3",
+        "num_tasks": 5,
+        "num_qubits": 24,
+        "optimum": 2,
+        "uniform_batch_success": 0.22122298754861836,
+        "uniform_optimal_probability": 0.000244140625
+      },
+      {
+        "instance_id": "a3_test_n5_2",
+        "role": "test",
+        "path": "instances/a3_test_n5_2.json",
+        "canonical_sha256": "7ed78e13cbfa6bc7b27f680c8d814616c9c35b28e9768aff7eae9024d0b5a014",
+        "structural_signature": "606e7cfe77019fe1ac5c7f4d98bc8b0e2c43d22f6b29997caee950f5697d3f77",
+        "num_tasks": 5,
+        "num_qubits": 24,
+        "optimum": 2,
+        "uniform_batch_success": 0.39354339926296605,
+        "uniform_optimal_probability": 0.00048828125
+      },
+      {
+        "instance_id": "a3_test_n5_3",
+        "role": "test",
+        "path": "instances/a3_test_n5_3.json",
+        "canonical_sha256": "c30372c20a376d7193ceb9a413ae247f790cc937ad49fd3500bf44ad6a6117fd",
+        "structural_signature": "bb6cff369612011ec28b0743226bd74ea2f5b7646144a09bef284217ff82bf29",
+        "num_tasks": 5,
+        "num_qubits": 25,
+        "optimum": 2,
+        "uniform_batch_success": 0.6323002605887288,
+        "uniform_optimal_probability": 0.0009765625
+      },
+      {
+        "instance_id": "a3_one_host",
+        "role": "functional_control",
+        "path": "instances/a3_one_host.json",
+        "canonical_sha256": "1e0340b07eea144df5472fbcb5bbd9c562aff336515b3393d137cd290ead380f",
+        "structural_signature": "1fecc09fbb6f2733dd3f4c5e9a2785cb9184f3bb9e5da982b13ab080e27dc897",
+        "num_tasks": 4,
+        "num_qubits": 21,
+        "optimum": 1,
+        "uniform_batch_success": null,
+        "uniform_optimal_probability": null
+      },
+      {
+        "instance_id": "a3_infeasible",
+        "role": "functional_control",
+        "path": "instances/a3_infeasible.json",
+        "canonical_sha256": "7f0617c91f9115c884ac85b97668111787df4a34ea4fb60080f939d41e2254aa",
+        "structural_signature": "e03928b9f09fdc46093dc991f3d5b95a9541031206ed3bdb54b55a7f6a8f22f1",
+        "num_tasks": 4,
+        "num_qubits": 23,
+        "optimum": null,
+        "uniform_batch_success": null,
+        "uniform_optimal_probability": null
+      }
+    ],
+    "selection": "seeded heterogeneous informative pool; CPU/RAM swap and task/host permutations excluded; three strata by baseline probability",
+    "capacity_domain": "pool 1..3; functional optimum1 includes capacity5; model regression verifies capacity4",
+    "design_sha256": "0df7ad1f683eb2ae696422d15833e55a73ff5a552e47cf6b33f965bd9fdb8aad"
+  },
+  "protocol": {
+    "scope": "phase4k_three_host_pilot_v2",
+    "selection_seed": 190019,
+    "qaoa": {
+      "depths": [
+        1,
+        2,
+        3
+      ],
+      "optimization_seeds": [
+        190,
+        191
+      ],
+      "evaluation_seeds": [
+        100190,
+        100191
+      ],
+      "shots": 1024,
+      "evaluation_shots": 1024,
+      "maxiter": 200,
+      "max_seconds": 2400,
+      "hamiltonian_scaling": "max_abs",
+      "cobyla_rhobeg": 1.0,
+      "cobyla_tol": 0.0001,
+      "initial_points_beta_then_gamma": {
+        "1": [
+          0.3,
+          1.0
+        ],
+        "2": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "3": [
+          0.3,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "functional_smoke": {
+      "reps": 1,
+      "seed": 192,
+      "evaluation_seed": 100192,
+      "maxiter": 35
+    },
+    "resource_policy": {
+      "max_qubits": 25,
+      "aer_threads": 4,
+      "aer_memory_mb": 2048,
+      "start_available_min_gib": 8.0,
+      "remaining_available_min_gib": 4.0,
+      "process_rss_stop_gib": 4.0
+    },
+    "analysis": {
+      "depth_selection": "none; p1/p2/p3 reported equally",
+      "absolute_success_threshold": null,
+      "controls": [
+        "uniform_encoded_domain_wall_y",
+        "random_assignment_y_inferred",
+        "exact_enumeration"
+      ],
+      "unit": "instance; seeds nested; no IID plug-in for pooled quantum P_opt",
+      "test_runs_draft": 90,
+      "test_campaign_started": false
+    }
+  },
+  "instances": {
+    "a3_dev_n4": {
+      "schema_version": 1,
+      "instance_id": "a3_dev_n4",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t2",
+          "cpu": 2,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 2,
+          "ram": 2
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 2,
+          "ram": 2
+        },
+        {
+          "id": "h1",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    "a3_test_n4_1": {
+      "schema_version": 1,
+      "instance_id": "a3_test_n4_1",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 3
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "h1",
+          "cpu": 1,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    "a3_test_n4_2": {
+      "schema_version": 1,
+      "instance_id": "a3_test_n4_2",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t3",
+          "cpu": 2,
+          "ram": 1
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 2,
+          "ram": 3
+        },
+        {
+          "id": "h1",
+          "cpu": 3,
+          "ram": 1
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    "a3_test_n4_3": {
+      "schema_version": 1,
+      "instance_id": "a3_test_n4_3",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t3",
+          "cpu": 2,
+          "ram": 1
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "h1",
+          "cpu": 2,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 2
+        }
+      ]
+    },
+    "a3_dev_n5": {
+      "schema_version": 1,
+      "instance_id": "a3_dev_n5",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t4",
+          "cpu": 1,
+          "ram": 2
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 2,
+          "ram": 2
+        },
+        {
+          "id": "h1",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    "a3_test_n5_1": {
+      "schema_version": 1,
+      "instance_id": "a3_test_n5_1",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 2
+        },
+        {
+          "id": "t4",
+          "cpu": 2,
+          "ram": 1
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 1,
+          "ram": 3
+        },
+        {
+          "id": "h1",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    "a3_test_n5_2": {
+      "schema_version": 1,
+      "instance_id": "a3_test_n5_2",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t4",
+          "cpu": 1,
+          "ram": 2
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 1,
+          "ram": 3
+        },
+        {
+          "id": "h1",
+          "cpu": 2,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    "a3_test_n5_3": {
+      "schema_version": 1,
+      "instance_id": "a3_test_n5_3",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t4",
+          "cpu": 1,
+          "ram": 2
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 2,
+          "ram": 3
+        },
+        {
+          "id": "h1",
+          "cpu": 2,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    },
+    "a3_one_host": {
+      "schema_version": 1,
+      "instance_id": "a3_one_host",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t2",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "t3",
+          "cpu": 1,
+          "ram": 1
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 5,
+          "ram": 5
+        },
+        {
+          "id": "h1",
+          "cpu": 1,
+          "ram": 1
+        },
+        {
+          "id": "h2",
+          "cpu": 1,
+          "ram": 1
+        }
+      ]
+    },
+    "a3_infeasible": {
+      "schema_version": 1,
+      "instance_id": "a3_infeasible",
+      "objective": "min_active_hosts",
+      "tasks": [
+        {
+          "id": "t0",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "t1",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "t2",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "t3",
+          "cpu": 3,
+          "ram": 3
+        }
+      ],
+      "hosts": [
+        {
+          "id": "h0",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "h1",
+          "cpu": 3,
+          "ram": 3
+        },
+        {
+          "id": "h2",
+          "cpu": 3,
+          "ram": 3
+        }
+      ]
+    }
+  },
+  "test_protocol": {
+    "schema_version": 1,
+    "scope": "phase4l_three_host_test_v1",
+    "parent_design": "0df7ad1f683eb2ae696422d15833e55a73ff5a552e47cf6b33f965bd9fdb8aad",
+    "qaoa": {
+      "depths": [
+        1,
+        2,
+        3
+      ],
+      "optimization_seeds": [
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "evaluation_seeds": [
+        100200,
+        100201,
+        100202,
+        100203,
+        100204
+      ],
+      "shots": 1024,
+      "evaluation_shots": 1024,
+      "maxiter": 200,
+      "max_seconds": 2400,
+      "hamiltonian_scaling": "max_abs",
+      "cobyla_rhobeg": 1.0,
+      "cobyla_tol": 0.0001,
+      "initial_points_beta_then_gamma": {
+        "1": [
+          0.3,
+          1.0
+        ],
+        "2": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "3": [
+          0.3,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "resource_policy": {
+      "max_qubits": 25,
+      "aer_threads": 4,
+      "aer_memory_mb": 2048,
+      "start_available_min_gib": 8.0,
+      "remaining_available_min_gib": 4.0,
+      "process_rss_stop_gib": 4.0
+    },
+    "budget": {
+      "limit_seconds": 21600.0,
+      "export_reserve_seconds": 60.0,
+      "probe_admission_seconds": 60.0,
+      "admission_rule": "trial: min(per_trial_limit, probe_cap200_estimate); stop at next planned row if budget cannot admit it",
+      "crash_accounting": "conservative wall gap since last checkpoint; may include downtime; never reset budget"
+    },
+    "order": "seed rounds; paired n4/n5 instances; Latin depth rotation by pair and seed; no data-dependent reorder",
+    "analysis": {
+      "depth_selection": "none; p1/p2/p3 reported equally",
+      "absolute_success_threshold": null,
+      "controls": [
+        "uniform_encoded_domain_wall_y",
+        "random_assignment_y_inferred",
+        "exact_enumeration"
+      ],
+      "unit": "instance; seeds nested; no IID plug-in for pooled quantum P_opt",
+      "planned_test_trials": 90
+    }
+  }
+}

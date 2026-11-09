@@ -1,0 +1,11 @@
+{
+  "code_cells_passed": 7,
+  "run_directory": "/workspace/scratch/5e8f9a5e7776/tmp/nt409-branch-b/data/reference_results/phase4m_classical_b/b_20261021T154834900718Z",
+  "archive": "/workspace/scratch/5e8f9a5e7776/tmp/nt409-branch-b/data/reference_results/phase4m_classical_b/b_20261021T154834900718Z.zip",
+  "execution": {
+    "execution": "Seven unmodified code cells executed sequentially with IPython in one process; kernel launch blocked by socket permissions in QA environment.",
+    "machine": "Linux QA, not Windows benchmark"
+  },
+  "relocated_run_directory": "/workspace/scratch/5e8f9a5e7776/tmp/branch_b_qa_run",
+  "relocated_archive": "verification/branch_b_linux_qa/classical_b_linux_qa.zip"
+}

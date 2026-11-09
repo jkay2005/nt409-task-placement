@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "instance_id": "a3_test_n4_1",
+  "objective": "min_active_hosts",
+  "tasks": [
+    {
+      "id": "t0",
+      "cpu": 1,
+      "ram": 1
+    },
+    {
+      "id": "t1",
+      "cpu": 1,
+      "ram": 1
+    },
+    {
+      "id": "t2",
+      "cpu": 1,
+      "ram": 1
+    },
+    {
+      "id": "t3",
+      "cpu": 1,
+      "ram": 3
+    }
+  ],
+  "hosts": [
+    {
+      "id": "h0",
+      "cpu": 1,
+      "ram": 1
+    },
+    {
+      "id": "h1",
+      "cpu": 1,
+      "ram": 3
+    },
+    {
+      "id": "h2",
+      "cpu": 3,
+      "ram": 3
+    }
+  ]
+}

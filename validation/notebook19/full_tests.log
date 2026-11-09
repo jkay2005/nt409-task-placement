@@ -1,0 +1,45 @@
+....Probe benchmark_a_test p=3
+passed 0.2717751434975071
+Run benchmark_a_test p=3 seed=70 (benchmark)
+completed {'status': 3, 'success': False, 'message': 'Return from COBYLA because the objective function has been evaluated MAXFUN times.', 'nfev': 12}
+Run benchmark_a_test p=3 seed=71 (benchmark)
+completed {'status': 3, 'success': False, 'message': 'Return from COBYLA because the objective function has been evaluated MAXFUN times.', 'nfev': 12}
+..../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py:606: SparseEfficiencyWarning: splu converted its input to CSC format
+  return splu(A).solve
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/linalg/_matfuncs.py:707: SparseEfficiencyWarning: spsolve is more efficient when sparse b is in the CSC matrix format
+  return spsolve(Q, P)
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/_index.py:174: SparseEfficiencyWarning: Changing the sparsity structure of a csr_matrix is expensive. lil and dok are more efficient.
+  self._set_intXint(row, col, x.flat[0])
+........................./opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py:606: SparseEfficiencyWarning: splu converted its input to CSC format
+  return splu(A).solve
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/linalg/_matfuncs.py:707: SparseEfficiencyWarning: spsolve is more efficient when sparse b is in the CSC matrix format
+  return spsolve(Q, P)
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/_index.py:174: SparseEfficiencyWarning: Changing the sparsity structure of a csr_matrix is expensive. lil and dok are more efficient.
+  self._set_intXint(row, col, x.flat[0])
+.........................................................................File chỉ khác LF/CRLF: ['placement.py']
+File chỉ khác LF/CRLF: []
+probe: tiny3 p=1 seed=190
+passed
+trial: tiny3 p=1 seed=190
+completed
+trial: tiny3 p=1 seed=191
+completed
+...Probe two_host_test p=1
+passed 0.2544701790002364
+Run two_host_test p=1 seed=70 (benchmark)
+completed {'status': 3, 'success': False, 'message': 'Return from COBYLA because the objective function has been evaluated MAXFUN times.', 'nfev': 8}
+Run two_host_test p=1 seed=71 (benchmark)
+completed {'status': 3, 'success': False, 'message': 'Return from COBYLA because the objective function has been evaluated MAXFUN times.', 'nfev': 8}
+Audit Notebook16: 1/3 attempts
+Audit Notebook16: 1/3 attempts
+.Compact probe two_host_test p=1
+passed
+Compact two_host_test p=1 seed=70
+completed
+Compact two_host_test p=1 seed=71
+completed
+.........
+----------------------------------------------------------------------
+Ran 119 tests in 33.751s
+
+OK

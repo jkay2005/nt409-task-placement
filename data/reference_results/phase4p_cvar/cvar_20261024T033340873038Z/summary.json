@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "software_validation": false,
+  "coverage": {
+    "planned": 3,
+    "completed": 3,
+    "failed": 0,
+    "pending": 0
+  },
+  "optimizer_trials_planned": 6,
+  "rows": [
+    {
+      "group": "p2__mean",
+      "objective_alpha": 1.0,
+      "trials_completed": 2,
+      "status": "completed",
+      "budget_cap": 200,
+      "nfev": 200,
+      "diagnostic_exact_calls": 4,
+      "final_measurement_shots": 2048,
+      "selected_trial": "p2__mean__stage2",
+      "selected_point": [
+        2.665266451485739,
+        2.872341303436726,
+        0.5371122997545245,
+        1.3552496355378532
+      ],
+      "mean_energy": 62.823613460388856,
+      "cvar_025": 22.525427809189168,
+      "cvar_010": 15.850448482306447,
+      "raw_objective": 62.823613460388856,
+      "p_opt": 0.00836107863450173,
+      "p_valid": 0.16336144274386027,
+      "p_ground": 3.1476055993741065e-05,
+      "optimal_count": 5,
+      "seconds": 1041.9079647999997
+    },
+    {
+      "group": "p2__cvar_025",
+      "objective_alpha": 0.25,
+      "trials_completed": 2,
+      "status": "completed",
+      "budget_cap": 200,
+      "nfev": 200,
+      "diagnostic_exact_calls": 4,
+      "final_measurement_shots": 2048,
+      "selected_trial": "p2__cvar_025__stage2",
+      "selected_point": [
+        2.693436496138451,
+        2.8625881898289576,
+        0.7318182917000678,
+        1.5491295923397115
+      ],
+      "mean_energy": 70.15459702086818,
+      "cvar_025": 21.79248283246484,
+      "cvar_010": 15.332956140059261,
+      "raw_objective": 21.79248283246484,
+      "p_opt": 0.00783044893071254,
+      "p_valid": 0.15079442350773978,
+      "p_ground": 5.654851920140888e-05,
+      "optimal_count": 9,
+      "seconds": 1095.0097750000004
+    },
+    {
+      "group": "p2__cvar_010",
+      "objective_alpha": 0.1,
+      "trials_completed": 2,
+      "status": "completed",
+      "budget_cap": 200,
+      "nfev": 200,
+      "diagnostic_exact_calls": 4,
+      "final_measurement_shots": 2048,
+      "selected_trial": "p2__cvar_010__stage2",
+      "selected_point": [
+        2.7205262384903177,
+        2.8640951957928213,
+        0.8026256323604632,
+        1.725411285349365
+      ],
+      "mean_energy": 75.53330960008927,
+      "cvar_025": 21.93322104789203,
+      "cvar_010": 15.299828684660946,
+      "raw_objective": 15.299828684660946,
+      "p_opt": 0.008180689369114324,
+      "p_valid": 0.13931579936950847,
+      "p_ground": 6.761649637294341e-05,
+      "optimal_count": 9,
+      "seconds": 4085.7661381000016
+    }
+  ]
+}

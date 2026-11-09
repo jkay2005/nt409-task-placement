@@ -1,0 +1,5 @@
+﻿notebook,role,formal_runs,valid_batches,optimal_batches,formal_trial_seconds,total_algorithm_shots,raw_archive_path
+16,benchmark,45,29,24,1108.5338324999757,2115584,data/reference_results/phase4h_benchmark_a/benchmark_a_20261010T081035000606Z/benchmark_a_20261010T081035000606Z.zip
+17,benchmark,45,45,45,199.45625939999854,2142208,data/reference_results/phase4i_encoding/encoding_20261011T034920393465Z/encoding_20261011T034920393465Z.zip
+19,development,12,12,8,2106.6864295000014,573440,data/reference_results/phase4k_three_host_pilot/pilot_20261012T073256184704Z/pilot_20261012T073256184704Z.zip
+20,test,90,90,63,12212.190747199988,4224000,data/reference_results/phase4l_three_host_test/test_20261012T112947210418Z/test_20261012T112947210418Z.zip

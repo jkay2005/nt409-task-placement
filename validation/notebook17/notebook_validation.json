@@ -1,0 +1,9 @@
+{
+  "elapsed_seconds": 551.3263825409999,
+  "campaign": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4i_encoding/encoding_20261010T155454118713Z",
+  "complete": true,
+  "trials": 46,
+  "completed": 46,
+  "archive": "/workspace/scratch/5e8f9a5e7776/nt409-task-placement/data/reference_results/phase4i_encoding/encoding_20261010T155454118713Z/encoding_20261010T155454118713Z.zip",
+  "note": "Linux software validation, not user Windows campaign. IPython display replaced with text; code cells executed sequentially without a Jupyter kernel."
+}

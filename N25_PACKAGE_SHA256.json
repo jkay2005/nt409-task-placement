@@ -1,0 +1,10 @@
+{
+  "src/domain_wall_mixer.py": "4d98155690aaa8dada20079d2e3d265e0c66e3e5ad3413dc2cae0132052c82da",
+  "src/domain_wall_probe.py": "309de3b95344ac750ecf1325b355a5894f131ee2dec551964db1e9c03c1e5529",
+  "src/shot_noise_diagnostic.py": "86b9a29fb8bcb967812f6210feaba7f7b1307f395b164c129d9016aa2b4e1f4b",
+  "tests/test_domain_wall_mixer.py": "fbf27706115605bcd6232d44281c976947c21ec9152fbdbcf369ed4ff5652c9e",
+  "notebooks/25_domain_wall_mixer_validation.ipynb": "d27f15ed7c1f028f272807c1ec6c1fce96934db678d87670d4d9a8e0457d66d0",
+  "N25_README_FIRST.md": "82890ff8f5e3e385d005e9ce2ac3ae77b7e6b7011403c989d28af3ae5a0f0d0c",
+  "N25_VALIDATION.md": "49d75d2e096af65241c56acc668b41c0ce5056412eb72127d9c28e60de24a4ae",
+  "docs/domain_wall_t3_vi.md": "0e3d9822a1353c52d95e0fb20d740517727821ef9f3989a2eeea2c3ffb871712"
+}

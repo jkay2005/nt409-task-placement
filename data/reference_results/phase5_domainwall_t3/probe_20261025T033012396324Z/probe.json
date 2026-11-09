@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "stage": "T3 qualification, not T4 training",
+  "status": "PASS",
+  "created_utc": "2026-10-25T03:30:12.453535+00:00",
+  "shape": [
+    5,
+    3
+  ],
+  "qubits": 25,
+  "input_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+  "qubo_sha256": "8fa77f91e277724277e5aaf4c1a29b5cec345e91e3660f13a6a166efc44fc515",
+  "source_sha256": {
+    "domain_wall_mixer.py": "4d98155690aaa8dada20079d2e3d265e0c66e3e5ad3413dc2cae0132052c82da",
+    "domain_wall_probe.py": "309de3b95344ac750ecf1325b355a5894f131ee2dec551964db1e9c03c1e5529",
+    "shot_noise_diagnostic.py": "86b9a29fb8bcb967812f6210feaba7f7b1307f395b164c129d9016aa2b4e1f4b",
+    "three_host_encoding.py": "9b6e9d1d18ab66d6b26439b72ae93437bfb9933925f7a912f626bd4538e9c836",
+    "ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+    "qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+    "placement.py": "7cfa397beb22fdf3feddedc0d889e104a619d6ef3e641ee72a62d82b087deb35",
+    "qaoa_experiment.py": "e6afa1ba317e312a4095c67d2ade43ac1964351753384f9c9f2d2c7ff38c58cf",
+    "qaoa_optimizer.py": "1dfd9da488ffe1723d538e2bb05b6785bfb087cc897b483e81d0c8390894deda",
+    "shot_noise_campaign.py": "ccd7222ffb12654ec7ca519f4c83ae9ab9a63e6416768ecf8797edfb62df19d4"
+  },
+  "training_evaluations": 0,
+  "threads": 4,
+  "min_available_gib": 4.0,
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "qiskit": "2.5.2",
+      "qiskit-aer": "0.17.2",
+      "qiskit-optimization": "0.7.0",
+      "psutil": "7.2.2"
+    }
+  },
+  "pair_certificate": {
+    "max_matrix_error": 4.440892098500626e-16,
+    "max_leakage": 0.0,
+    "connected": true,
+    "circuit_order": "A then B; U=B(beta)A(beta)",
+    "warning": "Product of exponentials, not a single exponential of A+B."
+  },
+  "initial_checks": [
+    {
+      "variant": "standard_x",
+      "p_domain": 0.23730468750000003,
+      "p_valid": 0.011962890625000002,
+      "p_opt": 0.0009765625000000002,
+      "p_ground": 2.384185791015626e-07,
+      "mean_energy": 248.50000000000003,
+      "probability_sum": 1.0000000000000002
+    },
+    {
+      "variant": "valid_x",
+      "p_domain": 0.9999999999998689,
+      "p_valid": 0.050411522633744946,
+      "p_opt": 0.004115226337448567,
+      "p_ground": 1.0046939300411538e-06,
+      "mean_energy": 185.49999999999687,
+      "probability_sum": 1.0000000000000016
+    },
+    {
+      "variant": "valid_dw",
+      "p_domain": 0.9999999999998689,
+      "p_valid": 0.050411522633744946,
+      "p_opt": 0.004115226337448567,
+      "p_ground": 1.0046939300411538e-06,
+      "mean_energy": 185.49999999999687,
+      "probability_sum": 1.0000000000000016
+    }
+  ],
+  "records": [
+    {
+      "variant": "standard_x",
+      "p": 1,
+      "point": [
+        0.3,
+        1.0
+      ],
+      "setup_seconds": 44.77997729999993,
+      "evaluation_seconds": 3.9399515999998584,
+      "rss_after_evaluation_mib": 560.93359375,
+      "compiled_depth": 37,
+      "compiled_ops": {
+        "rzz": 163,
+        "h": 25,
+        "rx": 25,
+        "rz": 21
+      },
+      "p_domain": 0.1942375683693085,
+      "p_valid": 0.0008702607177613288,
+      "p_opt": 4.360606677515847e-05,
+      "p_ground": 1.2132478651904327e-08,
+      "mean_energy": 548.9774726215262,
+      "probability_sum": 1.000000000000005
+    },
+    {
+      "variant": "valid_x",
+      "p": 1,
+      "point": [
+        0.3,
+        1.0
+      ],
+      "setup_seconds": 41.48092769999994,
+      "evaluation_seconds": 3.5095157000000654,
+      "rss_after_evaluation_mib": 566.94140625,
+      "compiled_depth": 38,
+      "compiled_ops": {
+        "rzz": 163,
+        "rx": 25,
+        "rz": 21,
+        "h": 15,
+        "ry": 5,
+        "cry": 5
+      },
+      "p_domain": 0.6111088408177323,
+      "p_valid": 0.0034448257597675088,
+      "p_opt": 0.0002617273547200976,
+      "p_ground": 5.371468836698291e-08,
+      "mean_energy": 351.3754175941982,
+      "probability_sum": 1.0000000000000058
+    },
+    {
+      "variant": "valid_dw",
+      "p": 1,
+      "point": [
+        0.3,
+        1.0
+      ],
+      "setup_seconds": 41.47858670000005,
+      "evaluation_seconds": 3.716934300000048,
+      "rss_after_evaluation_mib": 568.01171875,
+      "compiled_depth": 39,
+      "compiled_ops": {
+        "rzz": 163,
+        "rz": 21,
+        "h": 15,
+        "rx": 15,
+        "x": 10,
+        "crx": 10,
+        "ry": 5,
+        "cry": 5
+      },
+      "p_domain": 1.0000000000000078,
+      "p_valid": 0.005987924627326946,
+      "p_opt": 0.00033019257855434423,
+      "p_ground": 6.884648287279147e-08,
+      "mean_energy": 334.2500372785338,
+      "probability_sum": 1.000000000000006
+    },
+    {
+      "variant": "standard_x",
+      "p": 2,
+      "point": [
+        0.3,
+        0.2,
+        1.0,
+        0.5
+      ],
+      "setup_seconds": 42.009416599999895,
+      "evaluation_seconds": 6.974785800000063,
+      "rss_after_evaluation_mib": 567.34765625,
+      "compiled_depth": 63,
+      "compiled_ops": {
+        "rzz": 326,
+        "rx": 50,
+        "rz": 42,
+        "h": 25
+      },
+      "p_domain": 0.19673041744210665,
+      "p_valid": 0.0002491765571706453,
+      "p_opt": 6.628784533094702e-05,
+      "p_ground": 2.623718072068745e-09,
+      "mean_energy": 637.8309054491293,
+      "probability_sum": 1.0000000000000047
+    },
+    {
+      "variant": "valid_x",
+      "p": 2,
+      "point": [
+        0.3,
+        0.2,
+        1.0,
+        0.5
+      ],
+      "setup_seconds": 46.005578300000025,
+      "evaluation_seconds": 6.369782799999939,
+      "rss_after_evaluation_mib": 568.765625,
+      "compiled_depth": 64,
+      "compiled_ops": {
+        "rzz": 326,
+        "rx": 50,
+        "rz": 42,
+        "h": 15,
+        "ry": 5,
+        "cry": 5
+      },
+      "p_domain": 0.3766281537778349,
+      "p_valid": 0.000666826347525649,
+      "p_opt": 0.00020951807096896986,
+      "p_ground": 7.791331041109731e-09,
+      "mean_energy": 433.8731434921483,
+      "probability_sum": 1.0000000000000056
+    },
+    {
+      "variant": "valid_dw",
+      "p": 2,
+      "point": [
+        0.3,
+        0.2,
+        1.0,
+        0.5
+      ],
+      "setup_seconds": 44.956402700000126,
+      "evaluation_seconds": 6.648709699999927,
+      "rss_after_evaluation_mib": 571.15625,
+      "compiled_depth": 69,
+      "compiled_ops": {
+        "rzz": 326,
+        "rz": 42,
+        "rx": 30,
+        "x": 20,
+        "crx": 20,
+        "h": 15,
+        "ry": 5,
+        "cry": 5
+      },
+      "p_domain": 1.0000000000000067,
+      "p_valid": 0.002347772266441516,
+      "p_opt": 0.0003425247117663018,
+      "p_ground": 2.5226121986641486e-08,
+      "mean_energy": 395.0078730598714,
+      "probability_sum": 1.0000000000000064
+    }
+  ],
+  "limitations": [
+    "Fixed untrained angles: no ranking or improvement conclusion.",
+    "One timed evaluation per circuit; not a matched runtime benchmark.",
+    "RSS is measured after evaluation, not peak; null means unavailable.",
+    "Available-RAM guard is checked between native calls; not an interrupt.",
+    "Preserves domain-wall codes only; capacity/slack may still be invalid."
+  ]
+}

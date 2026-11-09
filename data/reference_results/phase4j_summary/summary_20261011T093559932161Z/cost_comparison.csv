@@ -1,0 +1,25 @@
+﻿instance_id,method,p,median_solver_seconds,batch_success,success_kind,timing_kind
+p1_choice,one_hot_slack_v1_1,1.0,4.468237999997655,0.6,observed across 5 training seeds,historical QAOA trial
+p1_choice,one_hot_slack_v1_1,2.0,10.238855099996726,0.8,observed across 5 training seeds,historical QAOA trial
+p1_choice,one_hot_slack_v1_1,3.0,17.084653899997647,0.6,observed across 5 training seeds,historical QAOA trial
+p1_tight,one_hot_slack_v1_1,1.0,4.670508100000006,0.8,observed across 5 training seeds,historical QAOA trial
+p1_tight,one_hot_slack_v1_1,2.0,5.072076299999026,1.0,observed across 5 training seeds,historical QAOA trial
+p1_tight,one_hot_slack_v1_1,3.0,6.170870599999034,0.0,observed across 5 training seeds,historical QAOA trial
+p0_reference,one_hot_slack_v1_1,1.0,20.68083420000039,0.4,observed across 5 training seeds,historical QAOA trial
+p0_reference,one_hot_slack_v1_1,2.0,58.13885879999725,0.6,observed across 5 training seeds,historical QAOA trial
+p0_reference,one_hot_slack_v1_1,3.0,89.66640010000265,0.0,observed across 5 training seeds,historical QAOA trial
+p1_choice,two_host_binary_v1,1.0,2.6148072999999386,1.0,observed across 5 training seeds,historical QAOA trial
+p1_choice,two_host_binary_v1,2.0,5.438038500000403,1.0,observed across 5 training seeds,historical QAOA trial
+p1_choice,two_host_binary_v1,3.0,5.850141299999905,1.0,observed across 5 training seeds,historical QAOA trial
+p1_tight,two_host_binary_v1,1.0,2.4585032999998475,1.0,observed across 5 training seeds,historical QAOA trial
+p1_tight,two_host_binary_v1,2.0,2.6463200999996843,1.0,observed across 5 training seeds,historical QAOA trial
+p1_tight,two_host_binary_v1,3.0,3.4114644999999655,1.0,observed across 5 training seeds,historical QAOA trial
+p0_reference,two_host_binary_v1,1.0,3.95392129999982,1.0,observed across 5 training seeds,historical QAOA trial
+p0_reference,two_host_binary_v1,2.0,5.477088999999978,1.0,observed across 5 training seeds,historical QAOA trial
+p0_reference,two_host_binary_v1,3.0,8.527463800000078,1.0,observed across 5 training seeds,historical QAOA trial
+p1_choice,exact_enumeration,,3.397382812408978e-05,1.0,deterministic exact,current-session classical blocks
+p1_choice,random_assignment,,0.0035774250000031316,1.0,analytic IID 1024 draws,current-session classical blocks
+p1_tight,exact_enumeration,,3.273994140684522e-05,1.0,deterministic exact,current-session classical blocks
+p1_tight,random_assignment,,0.003587187500215805,1.0,analytic IID 1024 draws,current-session classical blocks
+p0_reference,exact_enumeration,,3.2609863282573315e-05,1.0,deterministic exact,current-session classical blocks
+p0_reference,random_assignment,,0.003503987499698269,1.0,analytic IID 1024 draws,current-session classical blocks

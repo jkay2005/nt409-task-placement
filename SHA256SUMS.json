@@ -1,0 +1,9 @@
+{
+  "N24_README_FIRST.md": "9527259364e2b9da61543a3ded57872e3830d731192833c55880351ab342d375",
+  "N24_VALIDATION.md": "94e4775c896a275298a39bb7b8b0f2be6dc6775449df230bee88561a0b050ba4",
+  "docs/notebook24_cvar_vi.md": "ba4b9163eac341cfcca542c675b614cd8036b9f4a25cccdb890cab2b483765f2",
+  "notebooks/24_qaoa_mean_vs_cvar.ipynb": "93ec21b5f55a00844168b41cc9176eab6159a2b9874ca1b11e60bf9de76c96df",
+  "src/cvar_campaign.py": "afbef64b7287987d0151d425f8e3dd141188ac298bdd43d4f268990a950566bb",
+  "tests/test_cvar_campaign.py": "226ef4b57266f9c8e6a5ef417029cfdf17eee8ea1555e06d9cab62d18e63da7c",
+  "data/benchmarks/nt409_cvar_v1/protocol.json": "b613a52110a7e91c60740389008683910837a4ce0e7bd669d5bcc0a3f0c949af"
+}

@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "design_hash": "230de8022c1bec59b918088345607a3eb985472927fe67b8e17bc27bfded75d8",
+  "campaign_id": "20261011T034920393465Z",
+  "attempt": {
+    "number": 2,
+    "kind": "probe",
+    "trial": {
+      "instance_id": "p1_choice",
+      "role": "benchmark",
+      "config": {
+        "shots": 1024,
+        "evaluation_shots": 1024,
+        "maxiter": 200,
+        "max_seconds": 2400.0,
+        "max_qubits": 23,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 8.0,
+        "hamiltonian_scaling": "max_abs",
+        "cobyla_rhobeg": 1.0,
+        "cobyla_tol": 0.0001,
+        "seed": 70,
+        "evaluation_seed": 100070,
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "run_key": "da713938808d0f6d59a5e3fdd8dd5e476bca779a4bbed5b4bc2b9df788a40a4d"
+    },
+    "started_at_utc": "2026-10-11T03:54:19.488126+00:00",
+    "report": "attempts/0002_probe_da713938808d.json"
+  },
+  "result": {
+    "config": {
+      "shots": 1024,
+      "evaluation_shots": 1024,
+      "maxiter": 200,
+      "max_seconds": 2400.0,
+      "max_qubits": 23,
+      "aer_threads": 4,
+      "aer_memory_mb": 2048,
+      "min_available_gib": 8.0,
+      "hamiltonian_scaling": "max_abs",
+      "cobyla_rhobeg": 1.0,
+      "cobyla_tol": 0.0001,
+      "seed": 70,
+      "evaluation_seed": 100070,
+      "reps": 2,
+      "initial_point": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "instance_id": "p1_choice",
+    "encoding": "two_host_binary_v1",
+    "status": "passed",
+    "active_points": [
+      [
+        0.31,
+        0.33,
+        0.9,
+        0.97
+      ],
+      [
+        0.33999999999999997,
+        0.36,
+        0.9500000000000001,
+        1.02
+      ],
+      [
+        0.37,
+        0.39,
+        1.0,
+        1.07
+      ]
+    ],
+    "evaluation_seconds": [
+      0.018948599999930593,
+      0.01749610000024404,
+      0.017105500000070606
+    ],
+    "setup_seconds": 0.07021350000013626,
+    "final_sampling_seconds": 0.028479000000061205,
+    "postprocessing_seconds": 0.7836739000003945,
+    "estimated_solver_seconds": 7.008129599980066,
+    "num_qubits": 16,
+    "compiled_depth": 42,
+    "compiled_ops": {
+      "rzz": 144,
+      "rx": 32,
+      "rz": 24,
+      "h": 16,
+      "measure": 16,
+      "barrier": 1
+    },
+    "probe_final_output": {
+      "rule": "best_valid_no_bit_repair",
+      "selected": {
+        "bits": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "probability": 0.005859375,
+        "energy": 205.0,
+        "decoded": {
+          "feasible": true,
+          "objective": 1,
+          "one_hot_ok": true,
+          "capacity_ok": true,
+          "x": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "y": [
+            1,
+            0
+          ],
+          "usage": [
+            [
+              5,
+              5
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "found_valid": true,
+      "selected_objective": 1,
+      "optimality_gap": 0,
+      "found_optimal": true,
+      "mode_count": 34,
+      "mode_tie_count": 1,
+      "mode_bits": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "mode_valid_count": 0,
+      "unique_mode_valid": false
+    },
+    "resources": {
+      "measurement": "OS_process_lifetime_peak_RSS_includes_earlier_kernel_activity",
+      "process_start_rss_mib": 250.125,
+      "process_end_rss_mib": 251.078125,
+      "process_peak_rss_mib": 264.98828125,
+      "system_available_before_gib": 13.8284912109375,
+      "system_available_after_gib": 13.83563232421875
+    },
+    "resource_guard": {
+      "policy": {
+        "max_qubits": 23,
+        "method": "statevector",
+        "device": "CPU",
+        "precision": "double",
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "max_parallel_experiments": 1,
+        "max_parallel_shots": 1,
+        "start_available_min_gib": 8.0,
+        "remaining_available_min_gib": 4.0,
+        "process_rss_stop_gib": 4.0,
+        "enforcement": "preflight_and_evaluation_boundaries_not_OS_hard_cap",
+        "status": "requires_new_runner_implementation"
+      },
+      "measurement": "evaluation_boundary_samples_not_native_allocation_peak",
+      "minimum_available_gib": 13.8284912109375,
+      "maximum_observed_rss_gib": 0.2451934814453125,
+      "observations": [
+        {
+          "stage": "before_probe",
+          "available_gib": 13.8284912109375,
+          "rss_gib": 0.2442626953125
+        },
+        {
+          "stage": "before_probe_evaluation",
+          "available_gib": 13.830402374267578,
+          "rss_gib": 0.2446136474609375
+        },
+        {
+          "stage": "after_probe_evaluation",
+          "available_gib": 13.831466674804688,
+          "rss_gib": 0.24467086791992188
+        },
+        {
+          "stage": "before_probe_evaluation",
+          "available_gib": 13.831466674804688,
+          "rss_gib": 0.24467086791992188
+        },
+        {
+          "stage": "after_probe_evaluation",
+          "available_gib": 13.82955551147461,
+          "rss_gib": 0.24467849731445312
+        },
+        {
+          "stage": "before_probe_evaluation",
+          "available_gib": 13.82955551147461,
+          "rss_gib": 0.24467849731445312
+        },
+        {
+          "stage": "after_probe_evaluation",
+          "available_gib": 13.830268859863281,
+          "rss_gib": 0.24473953247070312
+        },
+        {
+          "stage": "after_probe_decode",
+          "available_gib": 13.8358154296875,
+          "rss_gib": 0.2451934814453125
+        }
+      ]
+    },
+    "total_seconds": 0.9391821999997774
+  }
+}

@@ -1,0 +1,8 @@
+# Add solver dependencies to the existing nt409-khiem environment.
+# Use: python -m pip install --no-deps -r requirements-n29.txt
+# Existing numpy/pandas are checked by Notebook 29; do not upgrade the QAOA stack.
+ortools==9.15.6755
+absl-py>=2.0.0
+protobuf>=6.33.1,<6.34
+immutabledict>=3.0.0
+typing-extensions>=4.12

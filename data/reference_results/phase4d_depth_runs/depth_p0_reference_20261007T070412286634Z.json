@@ -1,0 +1,954 @@
+{
+  "schema_version": 1,
+  "scope": "phase4d_depth_comparison",
+  "campaign_id": "20261007T070412286634Z",
+  "design": {
+    "instance_id": "p0_reference",
+    "instance_sha256": "28b1e170fd58c0f81035502d70a75ac4cb6c2951203836712cc399fbf32b5940",
+    "penalties": {
+      "assignment": 3.0,
+      "capacity": 3.0
+    },
+    "model_version": "weighted_equalities_v2",
+    "qubo_sha256": "432dc1364739bc735b6fd6878506bfbb36a3846c69ce3592c955738693e089bb",
+    "normalization": {
+      "method": "max_abs",
+      "scale": 257.5,
+      "raw_max_abs_coefficient": 257.5,
+      "execution_max_abs_coefficient": 1.0
+    },
+    "base_config": {
+      "shots": 1024,
+      "maxiter": 80,
+      "max_qubits": 23,
+      "max_seconds": 300,
+      "aer_threads": 4,
+      "aer_memory_mb": 2048,
+      "min_available_gib": 2.0,
+      "cobyla_rhobeg": 1.0,
+      "hamiltonian_scaling": "max_abs"
+    },
+    "seeds": [
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "environment": {
+      "runtime": {
+        "python_version": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.3",
+        "scipy_version": "1.18.1",
+        "qiskit_version": "2.5.2",
+        "qiskit_optimization_version": "0.7.0",
+        "qiskit_aer_version": "0.17.2"
+      },
+      "source_sha256": {
+        "placement.py": "7cfa397beb22fdf3feddedc0d889e104a619d6ef3e641ee72a62d82b087deb35",
+        "qubo.py": "7ac7d64500ce1fe73b1b0a34402d51eb88be33372c3906db4b7197552371e9ae",
+        "ising.py": "c8a01c974d5976d96999324bdb871c625f4079a94a9daa5736378b331e9afc57",
+        "qaoa_experiment.py": "20a3f69a493bcd4a96843081e0553fe9b8d73d8158986b215458d9c19f474e70",
+        "penalty_analysis.py": "1ee33001b1ac723df6d2c9bb541ecac27221e30fa77c1dc9fb9777d3d87363ba",
+        "independent_campaign.py": "af953f6f78b4fac9ff49522f3cb8f9677499eb3048401219bd7d411f7ac0c1eb",
+        "scaling_campaign.py": "dce7f8c22d56b1cd7341b269b7ecb55ab9269d025e2ab0d8087f8c0c8ba5810f",
+        "depth_campaign.py": "443c1019e9cb70da3b2df3cd500520d31534489a32c62869323ca5c3c5129b74"
+      }
+    },
+    "arms": {
+      "p1_control": {
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ]
+      },
+      "p2_embedded": {
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "study": {
+      "stage": "matched_budget_depth_comparison",
+      "protocol_version": 1,
+      "primary_metric": "optimal_placement_probability",
+      "common_penalties": [
+        3.0,
+        3.0
+      ],
+      "depths": [
+        1,
+        2
+      ],
+      "role": "exploratory_depth_comparison",
+      "initialization_rule": "fixed_p1_start_plus_zero_final_layer",
+      "budget_rule": "same_max_function_evaluations_and_shots_per_trial",
+      "output_rule": "measured_best_valid_with_frequency_ties_disclosed"
+    }
+  },
+  "design_hash": "a11d18ff9cf156fdae9d87ea55724c7a80cba65e5bf05c32c67ba95154d38367",
+  "planned_runs": [
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p1_control",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 55,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 55
+      },
+      "run_key": "f269969b24c2bc3824d8dd51d9b40c1ae6744ce667428054ff66d34f05f1b86f"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p2_embedded",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 55,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 55
+      },
+      "run_key": "c91c01c7624bd2872e324c5abfa5241cc600bb344811388e4babbba7e1c730c0"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p1_control",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 56,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 56
+      },
+      "run_key": "1598f1f052de5041f74fab8042c52afb5751f095230fea4198e872fcc0a847c4"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p2_embedded",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 56,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 56
+      },
+      "run_key": "78b1d48c83aa5105ceba56fed3d4d12cc73f51713cc4a045c76697654adf16c7"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p1_control",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 57,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 57
+      },
+      "run_key": "4ec484ef2625d94419d4ece4b116ef49919a4e3afa91a6b3305cd20ce0ef2993"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p2_embedded",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 57,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 57
+      },
+      "run_key": "b837503618966cd9a59d6f2b7df01806ee2cf36753cf7c42d35778b52c698d10"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p1_control",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 58,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 58
+      },
+      "run_key": "8eacff5163af5504bc4c24b30cc3514255066fa489077270ed6b9cd49fe52d6c"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p2_embedded",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 58,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 58
+      },
+      "run_key": "9432145cc58cd322d982acfea36ddf01ba24e276156e935004362be56126ad38"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p1_control",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 59,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 1,
+        "initial_point": [
+          0.3,
+          1.0
+        ],
+        "seed": 59
+      },
+      "run_key": "3fd4fac08f0b46f763faf420c04e1b45b54a78fca39cc3173c70be4a2a0438d8"
+    },
+    {
+      "instance_id": "p0_reference",
+      "arm_id": "p2_embedded",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 59,
+      "config": {
+        "shots": 1024,
+        "maxiter": 80,
+        "max_qubits": 23,
+        "max_seconds": 300,
+        "aer_threads": 4,
+        "aer_memory_mb": 2048,
+        "min_available_gib": 2.0,
+        "cobyla_rhobeg": 1.0,
+        "hamiltonian_scaling": "max_abs",
+        "reps": 2,
+        "initial_point": [
+          0.3,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seed": 59
+      },
+      "run_key": "2c9ac9f571328c65d06fc153a94af0ee2beff0b2fde77950686e9d20a0e17bf1"
+    }
+  ],
+  "completed_runs": [
+    {
+      "run_key": "f269969b24c2bc3824d8dd51d9b40c1ae6744ce667428054ff66d34f05f1b86f",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 55,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p1_control_p1_seed55_20261007T070440251854Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "optimality_gap": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 462.9443359375,
+      "mean_active_hosts": 1.0234375,
+      "mean_assignment_error": 2.1328125,
+      "mean_capacity_equation_error": 151.8408203125,
+      "mean_total_squared_error": 153.9736328125,
+      "reconstructed_mean_energy": 462.9443359375,
+      "dominant_bitstring_count": 5,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.0732421875,
+      "elapsed_seconds": 18.90198969999983,
+      "postprocessing_seconds": 2.1461192999995546,
+      "penalty_analysis_seconds": 0.25292699999772594,
+      "cost_function_evals": 31,
+      "process_peak_rss_mib": 305.75,
+      "arm_id": "p1_control",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "γ[0]"
+      ],
+      "initial_point": [
+        0.3,
+        1.0
+      ],
+      "optimal_point": [
+        2.6019569222581405,
+        2.537599057874344
+      ],
+      "optimal_point_raw_hamiltonian": [
+        2.6019569222581405,
+        0.009854753622812986
+      ]
+    },
+    {
+      "run_key": "c91c01c7624bd2872e324c5abfa5241cc600bb344811388e4babbba7e1c730c0",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 55,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p2_embedded_p2_seed55_20261007T070540943885Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 2,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.0009765625,
+      "optimal_placement_probability": 0.0009765625,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 192.462890625,
+      "mean_active_hosts": 1.48828125,
+      "mean_assignment_error": 2.5263671875,
+      "mean_capacity_equation_error": 61.1318359375,
+      "mean_total_squared_error": 63.658203125,
+      "reconstructed_mean_energy": 192.462890625,
+      "dominant_bitstring_count": 1024,
+      "dominant_valid_bitstring_count": 1,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.01171875,
+      "elapsed_seconds": 58.34725729999991,
+      "postprocessing_seconds": 1.9979778999986593,
+      "penalty_analysis_seconds": 0.21073149999938323,
+      "cost_function_evals": 42,
+      "process_peak_rss_mib": 309.96484375,
+      "arm_id": "p2_embedded",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "β[1]",
+        "γ[0]",
+        "γ[1]"
+      ],
+      "initial_point": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "optimal_point": [
+        1.5057239561316718,
+        1.2065146731305374,
+        0.9397124176875167,
+        -0.12213533169393048
+      ],
+      "optimal_point_raw_hamiltonian": [
+        1.5057239561316718,
+        1.2065146731305374,
+        0.0036493686123787055,
+        -0.00047431196774341936
+      ]
+    },
+    {
+      "run_key": "1598f1f052de5041f74fab8042c52afb5751f095230fea4198e872fcc0a847c4",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 56,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p1_control_p1_seed56_20261007T070617234614Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "optimality_gap": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 314.6640625,
+      "mean_active_hosts": 1.19921875,
+      "mean_assignment_error": 2.57421875,
+      "mean_capacity_equation_error": 101.9140625,
+      "mean_total_squared_error": 104.48828125,
+      "reconstructed_mean_energy": 314.6640625,
+      "dominant_bitstring_count": 8,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.0234375,
+      "elapsed_seconds": 33.84172070000204,
+      "postprocessing_seconds": 2.0894401999976253,
+      "penalty_analysis_seconds": 0.24654789999840432,
+      "cost_function_evals": 40,
+      "process_peak_rss_mib": 309.96484375,
+      "arm_id": "p1_control",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "γ[0]"
+      ],
+      "initial_point": [
+        0.3,
+        1.0
+      ],
+      "optimal_point": [
+        2.5216749779139724,
+        1.4439002071293037
+      ],
+      "optimal_point_raw_hamiltonian": [
+        2.5216749779139724,
+        0.0056073794451623445
+      ]
+    },
+    {
+      "run_key": "78b1d48c83aa5105ceba56fed3d4d12cc73f51713cc4a045c76697654adf16c7",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 56,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p2_embedded_p2_seed56_20261007T070712701350Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 2,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "optimality_gap": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 198.0615234375,
+      "mean_active_hosts": 1.470703125,
+      "mean_assignment_error": 2.5009765625,
+      "mean_capacity_equation_error": 63.029296875,
+      "mean_total_squared_error": 65.5302734375,
+      "reconstructed_mean_energy": 198.0615234375,
+      "dominant_bitstring_count": 1024,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.013671875,
+      "elapsed_seconds": 53.21207240000149,
+      "postprocessing_seconds": 1.9121387999985018,
+      "penalty_analysis_seconds": 0.21234610000101384,
+      "cost_function_evals": 39,
+      "process_peak_rss_mib": 310.73828125,
+      "arm_id": "p2_embedded",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "β[1]",
+        "γ[0]",
+        "γ[1]"
+      ],
+      "initial_point": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "optimal_point": [
+        1.5077701928627587,
+        1.2084729128368368,
+        0.9830459052705958,
+        -0.12515848805337904
+      ],
+      "optimal_point_raw_hamiltonian": [
+        1.5077701928627587,
+        1.2084729128368368,
+        0.003817654001050857,
+        -0.0004860523807898215
+      ]
+    },
+    {
+      "run_key": "4ec484ef2625d94419d4ece4b116ef49919a4e3afa91a6b3305cd20ce0ef2993",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 57,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p1_control_p1_seed57_20261007T070738507676Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.001953125,
+      "optimal_placement_probability": 0.001953125,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 417.06640625,
+      "mean_active_hosts": 1.015625,
+      "mean_assignment_error": 2.2236328125,
+      "mean_capacity_equation_error": 136.4599609375,
+      "mean_total_squared_error": 138.68359375,
+      "reconstructed_mean_energy": 417.06640625,
+      "dominant_bitstring_count": 9,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.052734375,
+      "elapsed_seconds": 23.21754829999918,
+      "postprocessing_seconds": 2.1206130999999004,
+      "penalty_analysis_seconds": 0.2250863000008394,
+      "cost_function_evals": 28,
+      "process_peak_rss_mib": 310.73828125,
+      "arm_id": "p1_control",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "γ[0]"
+      ],
+      "initial_point": [
+        0.3,
+        1.0
+      ],
+      "optimal_point": [
+        2.1893802873790382,
+        2.385048596789351
+      ],
+      "optimal_point_raw_hamiltonian": [
+        2.1893802873790382,
+        0.009262324647725634
+      ]
+    },
+    {
+      "run_key": "b837503618966cd9a59d6f2b7df01806ee2cf36753cf7c42d35778b52c698d10",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 57,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p2_embedded_p2_seed57_20261007T070831166004Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 2,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.001953125,
+      "optimal_placement_probability": 0.001953125,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 195.484375,
+      "mean_active_hosts": 1.4716796875,
+      "mean_assignment_error": 2.5,
+      "mean_capacity_equation_error": 62.1708984375,
+      "mean_total_squared_error": 64.6708984375,
+      "reconstructed_mean_energy": 195.484375,
+      "dominant_bitstring_count": 1024,
+      "dominant_valid_bitstring_count": 2,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.017578125,
+      "elapsed_seconds": 50.029505999998946,
+      "postprocessing_seconds": 2.266082899997855,
+      "penalty_analysis_seconds": 0.2023551000020234,
+      "cost_function_evals": 36,
+      "process_peak_rss_mib": 311.6875,
+      "arm_id": "p2_embedded",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "β[1]",
+        "γ[0]",
+        "γ[1]"
+      ],
+      "initial_point": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "optimal_point": [
+        1.4259777465075438,
+        1.2851660208165385,
+        0.9428687199414606,
+        -0.14263124408533442
+      ],
+      "optimal_point_raw_hamiltonian": [
+        1.4259777465075438,
+        1.2851660208165385,
+        0.003661626096860041,
+        -0.0005539077440207162
+      ]
+    },
+    {
+      "run_key": "8eacff5163af5504bc4c24b30cc3514255066fa489077270ed6b9cd49fe52d6c",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 58,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p1_control_p1_seed58_20261007T070909194643Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.0029296875,
+      "optimal_placement_probability": 0.0029296875,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 164.0673828125,
+      "mean_active_hosts": 1.5458984375,
+      "mean_assignment_error": 2.2109375,
+      "mean_capacity_equation_error": 51.962890625,
+      "mean_total_squared_error": 54.173828125,
+      "reconstructed_mean_energy": 164.0673828125,
+      "dominant_bitstring_count": 1024,
+      "dominant_valid_bitstring_count": 3,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.0361328125,
+      "elapsed_seconds": 35.189609799999744,
+      "postprocessing_seconds": 2.4356489999991027,
+      "penalty_analysis_seconds": 0.2664431000011973,
+      "cost_function_evals": 49,
+      "process_peak_rss_mib": 311.90625,
+      "arm_id": "p1_control",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "γ[0]"
+      ],
+      "initial_point": [
+        0.3,
+        1.0
+      ],
+      "optimal_point": [
+        2.715258459525995,
+        0.6377530449743136
+      ],
+      "optimal_point_raw_hamiltonian": [
+        2.715258459525995,
+        0.002476710854269179
+      ]
+    },
+    {
+      "run_key": "9432145cc58cd322d982acfea36ddf01ba24e276156e935004362be56126ad38",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 58,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p2_embedded_p2_seed58_20261007T071010794725Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 2,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.0009765625,
+      "optimal_placement_probability": 0.0009765625,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 163.2529296875,
+      "mean_active_hosts": 1.6015625,
+      "mean_assignment_error": 2.41796875,
+      "mean_capacity_equation_error": 51.4658203125,
+      "mean_total_squared_error": 53.8837890625,
+      "reconstructed_mean_energy": 163.2529296875,
+      "dominant_bitstring_count": 1,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": false,
+      "one_hot_probability": 0.025390625,
+      "elapsed_seconds": 59.25394779999988,
+      "postprocessing_seconds": 1.976680600000691,
+      "penalty_analysis_seconds": 0.2000079999997979,
+      "cost_function_evals": 41,
+      "process_peak_rss_mib": 311.90625,
+      "arm_id": "p2_embedded",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "β[1]",
+        "γ[0]",
+        "γ[1]"
+      ],
+      "initial_point": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "optimal_point": [
+        1.5541011041716826,
+        1.1802430038562304,
+        0.7913402715301738,
+        -0.18476015032624843
+      ],
+      "optimal_point_raw_hamiltonian": [
+        1.5541011041716826,
+        1.1802430038562304,
+        0.0030731661030298013,
+        -0.0007175151468980522
+      ]
+    },
+    {
+      "run_key": "3fd4fac08f0b46f763faf420c04e1b45b54a78fca39cc3173c70be4a2a0438d8",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p1_control",
+      "seed": 59,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p1_control_p1_seed59_20261007T071039555517Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "optimality_gap": 0,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.0009765625,
+      "optimal_placement_probability": 0.0009765625,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 395.7470703125,
+      "mean_active_hosts": 1.0185546875,
+      "mean_assignment_error": 2.23046875,
+      "mean_capacity_equation_error": 129.345703125,
+      "mean_total_squared_error": 131.576171875,
+      "reconstructed_mean_energy": 395.7470703125,
+      "dominant_bitstring_count": 9,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.0439453125,
+      "elapsed_seconds": 26.677771400001802,
+      "postprocessing_seconds": 1.7660656000007293,
+      "penalty_analysis_seconds": 0.1883449999986624,
+      "cost_function_evals": 34,
+      "process_peak_rss_mib": 311.90625,
+      "arm_id": "p1_control",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "γ[0]"
+      ],
+      "initial_point": [
+        0.3,
+        1.0
+      ],
+      "optimal_point": [
+        2.134277026846422,
+        2.378913691704578
+      ],
+      "optimal_point_raw_hamiltonian": [
+        2.134277026846422,
+        0.00923849977361001
+      ]
+    },
+    {
+      "run_key": "2c9ac9f571328c65d06fc153a94af0ee2beff0b2fde77950686e9d20a0e17bf1",
+      "instance_id": "p0_reference",
+      "pair_id": "common_P3",
+      "initial_point_id": "p2_embedded",
+      "seed": 59,
+      "report": "data/reference_results/phase4d_depth_runs/p0_reference_p2_embedded_p2_seed59_20261007T071130215236Z.json",
+      "assignment_penalty": 3.0,
+      "capacity_penalty": 3.0,
+      "num_qubits": 23,
+      "shots": 1024,
+      "reps": 2,
+      "maxiter": 80,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "optimality_gap": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 193.2841796875,
+      "mean_active_hosts": 1.5126953125,
+      "mean_assignment_error": 2.513671875,
+      "mean_capacity_equation_error": 61.41015625,
+      "mean_total_squared_error": 63.923828125,
+      "reconstructed_mean_energy": 193.2841796875,
+      "dominant_bitstring_count": 2,
+      "dominant_valid_bitstring_count": 0,
+      "unique_mode_valid": null,
+      "one_hot_probability": 0.015625,
+      "elapsed_seconds": 48.58356910000293,
+      "postprocessing_seconds": 1.7683990000004997,
+      "penalty_analysis_seconds": 0.1924208999989787,
+      "cost_function_evals": 38,
+      "process_peak_rss_mib": 311.90625,
+      "arm_id": "p2_embedded",
+      "execution_scale": 257.5,
+      "parameter_names": [
+        "β[0]",
+        "β[1]",
+        "γ[0]",
+        "γ[1]"
+      ],
+      "initial_point": [
+        0.3,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "optimal_point": [
+        1.4781367921313429,
+        1.2099480604595692,
+        0.9450121115231876,
+        -0.13129841865205133
+      ],
+      "optimal_point_raw_hamiltonian": [
+        1.4781367921313429,
+        1.2099480604595692,
+        0.0036699499476628645,
+        -0.000509896771464277
+      ]
+    }
+  ],
+  "updated_at_utc": "2026-10-07T07:11:30.265132+00:00",
+  "planned_run_count": 10,
+  "completed_run_count": 10,
+  "remaining_run_keys": []
+}

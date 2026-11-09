@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "nt409_benchmark_v1_1",
+  "created_date": "2026-10-10",
+  "canonical_json": {
+    "sort_keys": true,
+    "ensure_ascii": false,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "allow_nan": false,
+    "encoding": "utf-8"
+  },
+  "protocol_path": "data/benchmarks/nt409_benchmark_v1_1/protocol.json",
+  "protocol_canonical_sha256": "a5377a339d153ec2b7ac576b191acb0cc975ea3c7ab57967f9199d27c21f09f4",
+  "instances": [
+    {
+      "instance_id": "p1_choice",
+      "role": "benchmark",
+      "path": "data/instances/p1_choice.json",
+      "canonical_sha256": "322810c4fd59bbc790119c3997cf4f4885a91e2c92eb0d83ce7c36034104943b",
+      "tasks": 4,
+      "hosts": 2,
+      "encoded_qubits": 20,
+      "reference_feasible_assignments": 11,
+      "reference_optimal_active_hosts": 1
+    },
+    {
+      "instance_id": "p1_tight",
+      "role": "benchmark",
+      "path": "data/instances/p1_tight.json",
+      "canonical_sha256": "303dae49db2b1c70bb774e3c0597fee1a99014211add31876244e3e219606c3a",
+      "tasks": 4,
+      "hosts": 2,
+      "encoded_qubits": 18,
+      "reference_feasible_assignments": 4,
+      "reference_optimal_active_hosts": 2
+    },
+    {
+      "instance_id": "p0_reference",
+      "role": "benchmark",
+      "path": "data/instances/p0_reference.json",
+      "canonical_sha256": "28b1e170fd58c0f81035502d70a75ac4cb6c2951203836712cc399fbf32b5940",
+      "tasks": 4,
+      "hosts": 2,
+      "encoded_qubits": 23,
+      "reference_feasible_assignments": 1,
+      "reference_optimal_active_hosts": 2
+    },
+    {
+      "instance_id": "p1_infeasible",
+      "role": "negative_control",
+      "path": "data/instances/p1_infeasible.json",
+      "canonical_sha256": "6a68773df0f2fd1800ee4770974c99c985898f75b7e084cf438e52af302e6b0c",
+      "tasks": 4,
+      "hosts": 2,
+      "encoded_qubits": 20,
+      "reference_feasible_assignments": 0,
+      "reference_optimal_active_hosts": null
+    }
+  ],
+  "specification_path": "docs/benchmark_a_protocol_v1_1.md",
+  "specification_sha256_lf_utf8": "e4e82b782cc2e1f108dabf8a9b72e121f0a7c23b0df0ca145a9a778bb706d208",
+  "parent_design_sha256": "894415766d240331d1a0235eee92ec915fe7cce9727b7b80b7b6bf61df9ec107",
+  "parent_specification_path": "docs/unified_benchmark_v1.md",
+  "parent_specification_sha256_lf_utf8": "790792bb95848cf0d2004c1ddcfdbd31c8ef9f1202dfd82dfcd5c51ccdc9d0da",
+  "design_sha256": "c7b30d1044cbd9b68c858d1f40e6414aeee388bb2d7114c0ea06b475e5e4d92f"
+}

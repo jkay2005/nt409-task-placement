@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "study_id": "nt409_cvar_v1",
+  "software_validation": false,
+  "instances": [
+    {
+      "instance_id": "a3_dev_n5",
+      "path": "data/benchmarks/nt409_shot_noise_v2/instance.json",
+      "input_sha256": "e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278",
+      "qubo_sha256": "8fa77f91e277724277e5aaf4c1a29b5cec345e91e3660f13a6a166efc44fc515"
+    }
+  ],
+  "depths": [
+    1,
+    2
+  ],
+  "seeds": [
+    400
+  ],
+  "shots": 1024,
+  "final_shots": 1024,
+  "noise_batches": 1,
+  "maxiter": 200,
+  "rhobeg": 1.0,
+  "tol": 0.0001,
+  "threads": 4,
+  "max_seconds": 7200.0,
+  "min_available_gib": 4.0,
+  "encoding": "three_host_domain_wall_v2",
+  "capacity_penalty": 4,
+  "scaling": "max_abs",
+  "mixer": "X",
+  "initial_rule": "fresh p1 anchor [0.3,1] -> repeat beta/gamma for p2",
+  "primary_metric": "exact endpoint P_opt; P_valid separately; no postselection/bit repair",
+  "comparison": "exact only; fresh mean p1:100 + INTERP p2:100 per objective; total cap200; no seed repetitions",
+  "scope": "one fixed previously observed reference; objective study after choosing INTERP on this reference; exploratory, no matched-time/generalization claims",
+  "historical_note": "no trained angles/results imported from Notebook23; alpha1 is a fresh control",
+  "domain_penalty": 4,
+  "total_budget": 200,
+  "local_budget": 100,
+  "interp_rule": "Zhou et al. PRX 10 021067 (2020), Appendix B Eq B1; p1 -> p2 repeats beta and gamma",
+  "winner_rule": "COBYLA returned point under that stage objective; never select using P_opt",
+  "alphas": [
+    1.0,
+    0.25,
+    0.1
+  ]
+}

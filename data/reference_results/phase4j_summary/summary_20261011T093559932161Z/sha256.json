@@ -1,0 +1,12 @@
+{
+  "summary.json": "5a3639e872ea093fddb6bb391a66c3c1dee92737cf721f3212635503ac2d05ab",
+  "audit.json": "5e86cfa15b15ca7f2d2d8ab0b5b044bdec7e62eaef97b264af207b2d675cb9f0",
+  "quantum_runs.csv": "54ac734f76000df8c3e9ee28d7020d9d11e6ed42d99e558d75b4a8f990e6dd2c",
+  "quantum_groups.csv": "799eb2a8454210de53824b55a113b193074d596704eb5ba12fb38c7bd58e0ca3",
+  "controls.csv": "a4da304bea2c7fb87bf23536c1767a1e7782a7f4812f40dbd49e50ad37097adf",
+  "classical_timings.csv": "7c81839382cffe3fdc43010727001dc6a708aec943131d653037a2e9fc0b9749",
+  "notebook17_results.zip": "fd4643ef57d0fc6202c3a9d96aa0c25b56dad752868797b41483ad3e5c6552db",
+  "interpretation.md": "560fdae04ba6f90dd124c6036cbbb8a808f00f198911c20632ba62b34958046d",
+  "summary_quality.png": "882b846d21a064c6079cdd99b31278b1a1f0f0b84f04210d0ec7b65189865062",
+  "cost_comparison.csv": "2c6209ee70615c5f85ccab39155ff227a5a516b5437d1267e540d9d1a55e73d1"
+}

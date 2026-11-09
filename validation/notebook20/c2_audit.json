@@ -1,0 +1,9 @@
+{
+  "validated": true,
+  "archive_sha256": "d742962c36976b6e7a364d11b712cafaa5c661f96183a52b838e728da22c0642",
+  "campaign_id": "20261012T073256184704Z",
+  "design_hash": "89947f444467e9cd78617106dff0e9d59107338fe4b7a999261fd0d1f16b8fc1",
+  "completed_trials": 14,
+  "passed_probes": 8,
+  "audit": "raw counts, semantic reports, ledger, sources modulo LF/CRLF; no quantum rerun"
+}

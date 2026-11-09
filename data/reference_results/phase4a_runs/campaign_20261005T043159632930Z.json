@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "scope": "phase4a_repeated_qaoa_pilot",
+  "campaign_id": "20261005T043159632930Z",
+  "design_hash": "2304b21c3126296d37b0dbd9388680b865feea4315a23a956be83bdec520559c",
+  "design": {
+    "instance_ids": [
+      "p0_reference"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "initial_points": {
+      "goc_cu": [
+        0.3,
+        0.7
+      ],
+      "gamma_nho": [
+        0.3,
+        0.05
+      ]
+    },
+    "penalty": 3,
+    "base_config": {
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 35,
+      "max_qubits": 23,
+      "max_seconds": 300,
+      "aer_threads": 4,
+      "aer_memory_mb": 2048,
+      "min_available_gib": 2.0
+    },
+    "instance_sha256": {
+      "p0_reference": "28b1e170fd58c0f81035502d70a75ac4cb6c2951203836712cc399fbf32b5940"
+    }
+  },
+  "updated_at_utc": "2026-10-05T04:33:48.985040+00:00",
+  "planned_run_count": 6,
+  "completed_run_count": 6,
+  "planned_runs": [
+    {
+      "run_key": "21e2128f2c1ebe2e9cb18bc7db1d1052e16d985944137cae3253b4c9d319bd83",
+      "instance_id": "p0_reference",
+      "initial_point_id": "goc_cu",
+      "seed": 42
+    },
+    {
+      "run_key": "e8674a61190321c666e1aed62b378d708db06d7f4083ade13c448459a2409588",
+      "instance_id": "p0_reference",
+      "initial_point_id": "goc_cu",
+      "seed": 43
+    },
+    {
+      "run_key": "bf0efd551ec7ecfd414e2ae08fb8cb40e1bf9d92e558c1bbc216b6fed372900a",
+      "instance_id": "p0_reference",
+      "initial_point_id": "goc_cu",
+      "seed": 44
+    },
+    {
+      "run_key": "5a6886f67916aad18a72d3a273f6fb46d3e1ce33b678f4197f9e097e71872f33",
+      "instance_id": "p0_reference",
+      "initial_point_id": "gamma_nho",
+      "seed": 42
+    },
+    {
+      "run_key": "71715b1e48459081b1f80144bc9fd8ab6dd0ae36bafb4d27e44bb7b9df8514bf",
+      "instance_id": "p0_reference",
+      "initial_point_id": "gamma_nho",
+      "seed": 43
+    },
+    {
+      "run_key": "53af5a0f7a528048e8031a9b7121ff2b55994e2387dcc2d76552f3ab129d754c",
+      "instance_id": "p0_reference",
+      "initial_point_id": "gamma_nho",
+      "seed": 44
+    }
+  ],
+  "completed_runs": [
+    {
+      "run_key": "21e2128f2c1ebe2e9cb18bc7db1d1052e16d985944137cae3253b4c9d319bd83",
+      "instance_id": "p0_reference",
+      "initial_point_id": "goc_cu",
+      "seed": 42,
+      "report": "data/reference_results/phase3_runs/p0_reference_p1_seed42_20261005T043224195341Z.json",
+      "num_qubits": 23,
+      "penalty": 3.0,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 35,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 658.904296875,
+      "most_frequent_valid": false,
+      "elapsed_seconds": 14.98539399999936,
+      "postprocessing_seconds": 1.5195889999995416,
+      "cost_function_evals": 29,
+      "process_peak_rss_mib": 242.37890625
+    },
+    {
+      "run_key": "e8674a61190321c666e1aed62b378d708db06d7f4083ade13c448459a2409588",
+      "instance_id": "p0_reference",
+      "initial_point_id": "goc_cu",
+      "seed": 43,
+      "report": "data/reference_results/phase3_runs/p0_reference_p1_seed43_20261005T043239230185Z.json",
+      "num_qubits": 23,
+      "penalty": 3.0,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 35,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 631.86328125,
+      "most_frequent_valid": false,
+      "elapsed_seconds": 13.425353000000541,
+      "postprocessing_seconds": 1.4965664999999717,
+      "cost_function_evals": 27,
+      "process_peak_rss_mib": 291.1015625
+    },
+    {
+      "run_key": "bf0efd551ec7ecfd414e2ae08fb8cb40e1bf9d92e558c1bbc216b6fed372900a",
+      "instance_id": "p0_reference",
+      "initial_point_id": "goc_cu",
+      "seed": 44,
+      "report": "data/reference_results/phase3_runs/p0_reference_p1_seed44_20261005T043256641407Z.json",
+      "num_qubits": 23,
+      "penalty": 3.0,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 35,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 683.185546875,
+      "most_frequent_valid": false,
+      "elapsed_seconds": 15.796856000000844,
+      "postprocessing_seconds": 1.5160767999987002,
+      "cost_function_evals": 32,
+      "process_peak_rss_mib": 291.30078125
+    },
+    {
+      "run_key": "5a6886f67916aad18a72d3a273f6fb46d3e1ce33b678f4197f9e097e71872f33",
+      "instance_id": "p0_reference",
+      "initial_point_id": "gamma_nho",
+      "seed": 42,
+      "report": "data/reference_results/phase3_runs/p0_reference_p1_seed42_20261005T043314430444Z.json",
+      "num_qubits": 23,
+      "penalty": 3.0,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 35,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 387.8955078125,
+      "most_frequent_valid": false,
+      "elapsed_seconds": 16.212562500000786,
+      "postprocessing_seconds": 1.4758686000004673,
+      "cost_function_evals": 32,
+      "process_peak_rss_mib": 292.34375
+    },
+    {
+      "run_key": "71715b1e48459081b1f80144bc9fd8ab6dd0ae36bafb4d27e44bb7b9df8514bf",
+      "instance_id": "p0_reference",
+      "initial_point_id": "gamma_nho",
+      "seed": 43,
+      "report": "data/reference_results/phase3_runs/p0_reference_p1_seed43_20261005T043332274825Z.json",
+      "num_qubits": 23,
+      "penalty": 3.0,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 35,
+      "original_best_objective": 2,
+      "observed_best_objective": null,
+      "found_valid": false,
+      "found_optimal": false,
+      "feasible_probability": 0,
+      "optimal_placement_probability": 0,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 683.458984375,
+      "most_frequent_valid": false,
+      "elapsed_seconds": 16.220646100000522,
+      "postprocessing_seconds": 1.529037199999948,
+      "cost_function_evals": 31,
+      "process_peak_rss_mib": 292.43359375
+    },
+    {
+      "run_key": "53af5a0f7a528048e8031a9b7121ff2b55994e2387dcc2d76552f3ab129d754c",
+      "instance_id": "p0_reference",
+      "initial_point_id": "gamma_nho",
+      "seed": 44,
+      "report": "data/reference_results/phase3_runs/p0_reference_p1_seed44_20261005T043348943010Z.json",
+      "num_qubits": 23,
+      "penalty": 3.0,
+      "shots": 1024,
+      "reps": 1,
+      "maxiter": 35,
+      "original_best_objective": 2,
+      "observed_best_objective": 2,
+      "found_valid": true,
+      "found_optimal": true,
+      "feasible_probability": 0.0009765625,
+      "optimal_placement_probability": 0.0009765625,
+      "qubo_ground_state_probability": 0,
+      "final_sample_mean_qubo_energy": 703.5859375,
+      "most_frequent_valid": false,
+      "elapsed_seconds": 15.06412040000032,
+      "postprocessing_seconds": 1.5065366999988328,
+      "cost_function_evals": 29,
+      "process_peak_rss_mib": 293.51171875
+    }
+  ],
+  "remaining_run_keys": []
+}

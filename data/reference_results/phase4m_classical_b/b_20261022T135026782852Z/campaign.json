@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-22T13:50:26.793356+00:00",
+  "protocol_sha256": "40f2a27293c3377112429e57de4f06532d2ee7e0034aae7d9868f9d06d92b626",
+  "runtime": {
+    "machine_label": "Windows / nt409-khiem",
+    "timing_note": "",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "python": "3.12.14 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:37:13) [MSC v.1942 64 bit (AMD64)]",
+    "executable": "c:\\Users\\Khiem\\anaconda3\\envs\\nt409-khiem\\python.exe",
+    "solver_version": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+    "packages": {
+      "numpy": "2.5.3",
+      "ortools": "9.15.6755",
+      "protobuf": "6.33.6",
+      "pandas": "3.0.6"
+    }
+  },
+  "completed_records": 36,
+  "source_sha256": {
+    "src/placement.py": "7cfa397beb22fdf3feddedc0d889e104a619d6ef3e641ee72a62d82b087deb35",
+    "src/classical_baselines.py": "e9a976fd4a75011f13df6b708a7ab76da5c0bcd40d0a819784af4418e1f83155",
+    "src/classical_campaign.py": "065be2931e8cea15bc0ea8a94f6c3e5718ed603703ea91234862501fd6482cc9",
+    "requirements-branch-b.txt": "dfffe8d3f1c8a20673c1962ccba7ca8a1fdc977e237655754b435d926c5503b8",
+    "notebooks/21_classical_baselines_b.ipynb": "ab3eed43056be9ad9335a9f2a28ca61f86d26524540a6e738847482ffd422722"
+  },
+  "finished_utc": "2026-10-22T13:50:27.477042+00:00",
+  "campaign_wall_seconds": 0.6818973000008555,
+  "timing_scope": "warm in-process validation/setup + model construction + solve + result validation; excludes imports, file IO, reference enumeration, model LP export and analysis",
+  "limitations": [
+    "A20 timing includes user-reported sleep; no matched end-to-end speedup claim.",
+    "Fixed known small instances; no independent holdout generalization claim.",
+    "Heuristic failure is not proof of infeasibility; timing repeats are not quality seeds."
+  ]
+}

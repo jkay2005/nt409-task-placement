@@ -1,0 +1,15 @@
+﻿instance_id,family,role,include_in_main_comparison,input_path,input_canonical_sha256,tasks,hosts,optimum_active_hosts,total_assignments,feasible_assignments,optimal_assignments,one_hot_qubits,compact_qubits
+p1_choice,two_host,benchmark,True,data/instances/p1_choice.json,322810c4fd59bbc790119c3997cf4f4885a91e2c92eb0d83ce7c36034104943b,4,2,1,16,11,1,20,16
+p1_tight,two_host,benchmark,True,data/instances/p1_tight.json,303dae49db2b1c70bb774e3c0597fee1a99014211add31876244e3e219606c3a,4,2,2,16,4,4,18,14
+p0_reference,two_host,benchmark,True,data/instances/p0_reference.json,28b1e170fd58c0f81035502d70a75ac4cb6c2951203836712cc399fbf32b5940,4,2,2,16,1,1,23,19
+p1_infeasible,two_host,negative_control,False,data/instances/p1_infeasible.json,6a68773df0f2fd1800ee4770974c99c985898f75b7e084cf438e52af302e6b0c,4,2,,16,0,0,20,16
+a3_dev_n4,three_host,development,False,data/benchmarks/nt409_three_host_v2/instances/a3_dev_n4.json,ecee2ce0d65ee5be4cc1c057c3286ecd331ffb54f72c4b0bfca94b269945747e,4,3,2,81,18,2,,23
+a3_test_n4_1,three_host,test,True,data/benchmarks/nt409_three_host_v2/instances/a3_test_n4_1.json,a97d31bcf5e36fbfb47c2f8dca4f0db20c2f7040a76a6aa04ad99099b9fa9b4f,4,3,2,81,4,1,,20
+a3_test_n4_2,three_host,test,True,data/benchmarks/nt409_three_host_v2/instances/a3_test_n4_2.json,b802b81eda240561125770f7da9f0376a3f80a05b1614bf935297ca497526a22,4,3,2,81,8,2,,22
+a3_test_n4_3,three_host,test,True,data/benchmarks/nt409_three_host_v2/instances/a3_test_n4_3.json,acfdb7c6e642f8b81a5b4fbcd411672916715d053992627fc9a3d1c77c8f5f4d,4,3,2,81,10,2,,22
+a3_dev_n5,three_host,development,False,data/benchmarks/nt409_three_host_v2/instances/a3_dev_n5.json,e6d3ac93ed2d5a831f5d7393750e9a1995b46fbe20d077058a629c7797996278,5,3,2,243,90,8,,25
+a3_test_n5_1,three_host,test,True,data/benchmarks/nt409_three_host_v2/instances/a3_test_n5_1.json,e7df3da96d629861c3dbd882966cb7f7cc75c8088193f004c66eb39f4b13a067,5,3,2,243,28,2,,24
+a3_test_n5_2,three_host,test,True,data/benchmarks/nt409_three_host_v2/instances/a3_test_n5_2.json,7ed78e13cbfa6bc7b27f680c8d814616c9c35b28e9768aff7eae9024d0b5a014,5,3,2,243,42,4,,24
+a3_test_n5_3,three_host,test,True,data/benchmarks/nt409_three_host_v2/instances/a3_test_n5_3.json,c30372c20a376d7193ceb9a413ae247f790cc937ad49fd3500bf44ad6a6117fd,5,3,2,243,106,8,,25
+a3_one_host,three_host,functional_control,False,data/benchmarks/nt409_three_host_v2/instances/a3_one_host.json,1e0340b07eea144df5472fbcb5bbd9c562aff336515b3393d137cd290ead380f,4,3,1,81,21,1,,21
+a3_infeasible,three_host,functional_control,False,data/benchmarks/nt409_three_host_v2/instances/a3_infeasible.json,7f0617c91f9115c884ac85b97668111787df4a34ea4fb60080f939d41e2254aa,4,3,,81,0,0,,23
